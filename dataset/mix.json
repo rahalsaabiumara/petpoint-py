@@ -1,0 +1,365 @@
+[
+    {
+        "intent": "medical_inquiry_dog",
+        "entities": ["animal", "condition", "symptom", "severity", "duration"],
+        "utterances": [],
+        "responses": []
+    },
+    {
+        "intent": "medical_inquiry_cat",
+        "entities": ["animal", "condition", "symptom", "severity", "duration"],
+        "utterances": [],
+        "responses": []
+    },
+    {
+        "intent": "symptom_analysis_dog",
+        "entities": ["animal", "symptom", "severity", "duration"],
+        "utterances": [],
+        "responses": [],
+        "disease_analysis": {
+            "Acral_Lick_Granuloma_Dog": {
+                "related_symptoms": [
+                    "gatal",
+                    "anoreksia",
+                    "lesu",
+                    "benjolan",
+                    "kulit kemerahan",
+                    "hiperpigmentasi",
+                    "kerontokan rambut"
+                ],
+                "possible_conditions": [
+                    "Acral Lick Granuloma",
+                    "Dermatitis"
+                ]
+            },
+            "Acute_Moist_Dermatitis_Dog": {
+                "related_symptoms": [
+                    "gatal",
+                    "penebalan kulit",
+                    "kulit kemerahan",
+                    "kerontokan rambut",
+                    "kulit kering",
+                    "kebotakan"
+                ],
+                "possible_conditions": [
+                    "Acute Moist Dermatitis",
+                    "Dermatitis"
+                ]
+            },
+            "Atopic_Dermatitis_Dog": {
+                "related_symptoms": [
+                    "benjolan",
+                    "kulit kemerahan",
+                    "kerontokan rambut",
+                    "bersin",
+                    "hidung mengeluarkan cairan",
+                    "mata berair",
+                    "bercak kasar",
+                    "kulit kering",
+                    "kebotakan"
+                ],
+                "possible_conditions": [
+                    "Atopic Dermatitis",
+                    "Allergic Dermatitis"
+                ]
+            },
+
+            "Pancreatitis_Dog": {
+                "related_symptoms": [
+                    "muntah",
+                    "diare",
+                    "nyeri perut",
+                    "kehilangan nafsu makan"
+                ],
+                "possible_conditions": [
+                    "Pancreatitis",
+                    "Gastroenteritis"
+                ]
+            },
+            "Hyperthyroidism_Cat": {
+                "related_symptoms": [
+                    "penurunan berat badan",
+                    "haus berlebihan",
+                    "buang air kecil sering"
+                ],
+                "possible_conditions": [
+                    "Hyperthyroidism",
+                    "Gangguan Hormon"
+                ]
+            },
+            "Feline_Panleukopenia_Virus_Cat": {
+                "related_symptoms": [
+                    "diare",
+                    "penurunan nafsu makan",
+                    "dehidrasi",
+                    "tubuh lelah",
+                    "demam"
+                ],
+                "possible_conditions": [
+                    "Feline Panleukopenia Virus",
+                    "Virus"
+                ]
+            },
+            "Feline_Calici_Virus_Cat": {
+                "related_symptoms": [
+                    "sariawan",
+                    "pilek",
+                    "bersin",
+                    "demam",
+                    "hipersalivasi",
+                    "discharge hidung"
+                ],
+                "possible_conditions": [
+                    "Feline Calici Virus",
+                    "Infeksi Pernapasan"
+                ]
+            },
+            "Feline_Viral_Rhinotracheitis_Cat": {
+                "related_symptoms": [
+                    "batuk",
+                    "sesak napas",
+                    "radang tenggorokan",
+                    "discharge hidung dan mata"
+                ],
+                "possible_conditions": [
+                    "Feline Viral Rhinotracheitis",
+                    "Infeksi Pernapasan"
+                ]
+            },
+            "Rabies_Cat": {
+                "related_symptoms": [
+                    "demam",
+                    "agitasi",
+                    "kejang",
+                    "salivasi berlebihan",
+                    "takut air"
+                ],
+                "possible_conditions": [
+                    "Rabies",
+                    "Gangguan Neurologis"
+                ]
+            }
+
+        }
+    },
+    {
+        "intent": "symptom_analysis_cat",
+        "entities": ["animal", "condition", "symptom", "severity", "duration"],
+        "utterances": [],
+        "responses": [],
+        "disease_analysis": {
+            "Dermatophytosis_Cat": {
+                "related_symptoms": [
+                    "sulit berjalan",
+                    "bengkak pada kaki"
+                ],
+                "possible_conditions": [
+                    "Dermatophytosis",
+                    "Infeksi Jamur"
+                ]
+            },
+            "Pyoderma_Cat": {
+                "related_symptoms": [
+                    "kulit bernanah",
+                    "bengkak",
+                    "demam"
+                ],
+                "possible_conditions": [
+                    "Pyoderma",
+                    "Infeksi Bakteri"
+                ]
+            },
+            "Fungal_Infection_Cat": {
+                "related_symptoms": [
+                    "sulit berjalan",
+                    "bengkak pada kaki"
+                ],
+                "possible_conditions": [
+                    "Fungal Infection",
+                    "Infeksi Jamur"
+                ]
+            },
+            "Ringworm_Cat": {
+                "related_symptoms": [
+                    "kebotakan pola melingkar",
+                    "hilang nafsu makan",
+                    "mata berair"
+                ],
+                "possible_conditions": [
+                    "Ringworm",
+                    "Dermatophytosis"
+                ]
+            },
+            "Feline_Leukemia_Cat": {
+                "related_symptoms": [
+                    "lesi kulit",
+                    "gatal",
+                    "bulu rontok"
+                ],
+                "possible_conditions": [
+                    "Feline Leukemia",
+                    "Infeksi Virus"
+                ]
+            },
+            "Calicivirus_Cat": {
+                "related_symptoms": [
+                    "lesi kulit",
+                    "gatal",
+                    "bulu rontok"
+                ],
+                "possible_conditions": [
+                    "Calicivirus",
+                    "Infeksi Pernapasan"
+                ]
+            },
+            "Panleukopenia_Cat": {
+                "related_symptoms": [
+                    "gatal intens",
+                    "kulit merah",
+                    "koreng"
+                ],
+                "possible_conditions": [
+                    "Panleukopenia",
+                    "Infeksi Virus"
+                ]
+            },
+            "Rhinotracheitis_Cat": {
+                "related_symptoms": [
+                    "bengkak pada perut",
+                    "muntah"
+                ],
+                "possible_conditions": [
+                    "Rhinotracheitis",
+                    "Infeksi Pernapasan"
+                ]
+            },
+            "Cholangiohepatitis_Cat": {
+                "related_symptoms": [
+                    "kulit bernanah",
+                    "bengkak",
+                    "demam"
+                ],
+                "possible_conditions": [
+                    "Cholangiohepatitis",
+                    "Infeksi Hati"
+                ]
+            },
+            "Gingivitis_Cat": {
+                "related_symptoms": [
+                    "bulu rontok",
+                    "gatal",
+                    "kehadiran kutu"
+                ],
+                "possible_conditions": [
+                    "Gingivitis",
+                    "Infeksi Gigi"
+                ]
+            },
+            "Diabetes_Melitus_Cat": {
+                "related_symptoms": [
+                    "haus berlebihan",
+                    "lemas",
+                    "sering buang air kecil"
+                ],
+                "possible_conditions": [
+                    "Diabetes Melitus",
+                    "Diabetes"
+                ]
+            },
+            "Feline_Panleukopenia_Virus_Cat": {
+                "related_symptoms": [
+                    "diare",
+                    "penurunan nafsu makan",
+                    "dehidrasi",
+                    "tubuh lelah",
+                    "demam"
+                ],
+                "possible_conditions": [
+                    "Feline Panleukopenia Virus",
+                    "Virus"
+                ]
+            },
+            "Feline_Calici_Virus_Cat": {
+                "related_symptoms": [
+                    "sariawan",
+                    "pilek",
+                    "bersin",
+                    "demam",
+                    "hipersalivasi",
+                    "discharge hidung"
+                ],
+                "possible_conditions": [
+                    "Feline Calici Virus",
+                    "Infeksi Pernapasan"
+                ]
+            },
+            "Feline_Viral_Rhinotracheitis_Cat": {
+                "related_symptoms": [
+                    "batuk",
+                    "sesak napas",
+                    "radang tenggorokan",
+                    "discharge hidung dan mata"
+                ],
+                "possible_conditions": [
+                    "Feline Viral Rhinotracheitis",
+                    "Infeksi Pernapasan"
+                ]
+            },
+            "Rabies_Cat": {
+                "related_symptoms": [
+                    "demam",
+                    "agitasi",
+                    "kejang",
+                    "salivasi berlebihan",
+                    "takut air"
+                ],
+                "possible_conditions": [
+                    "Rabies",
+                    "Gangguan Neurologis"
+                ]
+            }
+
+        }
+    },
+{
+        "intent": "greeting",
+        "utterances": [
+            "Halo",
+            "Hai",
+            "Selamat pagi",
+            "Selamat siang",
+            "Selamat malam",
+            "Selamat Sore"
+        ],
+
+        "responses": [
+            "Halo, bagaimana kabar Anda hari ini?",
+            "Selamat pagi! Ada yang bisa saya bantu?",
+            "Hai! Apa yang bisa saya lakukan untuk Anda?",
+            "Selamat sore! Bagaimana saya bisa membantu?",
+            "Selamat siang! Ada yang bisa saya bantu?",
+            "Selamat Malam! Ada yang bisa saya bantu?"
+        ]
+    },
+    {
+        "intent": "farewell",
+        "utterances": [
+            "Sampai jumpa",
+            "Terima kasih",
+            "Selamat tinggal"
+        ],
+        "responses": [
+           "Terima kasih, semoga hari Anda menyenangkan.",
+            "Sampai jumpa lagi, jaga kesehatan Anda.",
+            "Selamat tinggal, semoga Anda sehat selalu.",
+            "Sampai jumpa, semoga hari Anda baik.",
+            "Selamat tinggal, jaga diri Anda baik-baik.",
+            "Terima kasih, jaga diri Anda baik-baik."        ]
+    },
+    {
+        "intent": "general_conversation",
+        "utterances": [],
+        "responses": []
+    }
+
+]
