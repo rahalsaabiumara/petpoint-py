@@ -6,8 +6,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 from fuzzywuzzy import process
 
 # Load datasets
-disease_df = pd.read_csv('disease_classification.csv')
-conversation_df = pd.read_csv('general_conversation.csv')
+disease_df = pd.read_csv('dataset/disease_classification.csv')
+conversation_df = pd.read_csv('dataset/general_conversation.csv')
 
 # Placeholder TensorFlow model (can be replaced with an actual trained model)
 # For the sake of this example, we'll use a dummy model
