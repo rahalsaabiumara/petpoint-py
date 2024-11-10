@@ -4,8 +4,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 from fuzzywuzzy import process  # Library for fuzzy matching
 
 # Load dataset
-disease_df = pd.read_csv('disease_classification.csv')
-conversation_df = pd.read_csv('general_conversation.csv')
+disease_df = pd.read_csv('dataset/disease_classification.csv')
+conversation_df = pd.read_csv('dataset/disease_classification.csv')
 
 # Enhanced function for chatbot !emergency with multiple symptom collection
 def emergency_chatbot(hewan, gejala_inputs):
