@@ -25,7 +25,7 @@ except LookupError:
     nltk.download('stopwords', download_dir=nltk_data_path)
 
 # Inisialisasi Streamlit
-st.title("Chatbot untuk Kucing dan Anjing")
+st.title("Chatbot Medis Hewan Anjing dan Kucing")
 
 # Fungsi Preprocessing
 def preprocess_text(text, slang_dict, stemmer, custom_stopwords):
@@ -34,7 +34,7 @@ def preprocess_text(text, slang_dict, stemmer, custom_stopwords):
     # Remove URLs, mentions, and hashtags
     text = re.sub(r'http\S+|www\S+|@\S+|#\S+', '', text)
     # Remove or handle emoticons
-    text = re.sub(r'[:;]-?[)D]', '', text)  # Simplified emoticon removal
+    text = re.sub(r'[:;]-?[)D]', '', text)  
     # Remove punctuation and numbers
     text = re.sub(r'[^a-z\s]', '', text)
     # Tokenize
@@ -108,35 +108,26 @@ model_intent, model_ner = load_models()
 
 # Mendefinisikan max_len berdasarkan model
 max_len = model_intent.input_shape[1]
-# tetapkan max_len_ner secara manual
-max_len_ner = max_len  # Pastikan ini sesuai dengan yang digunakan saat pelatihan
+max_len_ner = max_len  
 
 # Fungsi Mengubah Indeks ke Tag
 def sequences_to_tags(sequences, idx2tag):
     return [[idx2tag.get(str(idx), 'O') for idx in sequence] for sequence in sequences]
 
 # Fungsi Prediksi Intent
-def predict_intent(text, threshold=0.5):
+def predict_intent(text):
     preprocessed_text = preprocess_text(text, slang_dict, stemmer, custom_stopwords)
-    if preprocessed_text.strip() == "":
-        return "tidak_diketahui", 0.0
     seq = tokenizer.texts_to_sequences([preprocessed_text])
     seq_padded = pad_sequences(seq, maxlen=max_len, padding='post')
     pred = model_intent.predict(seq_padded)
-    intent_prob = np.max(pred, axis=1)[0]
     intent_idx = np.argmax(pred, axis=1)[0]
-    if intent_prob < threshold:
-        intent = "tidak_diketahui"  
-    else:
-        intent = label_encoder.inverse_transform([intent_idx])[0]
-    return intent, intent_prob
+    intent = label_encoder.inverse_transform([intent_idx])[0]
+    return intent
 
 # Fungsi Prediksi Entitas
 def predict_entities(text):
     preprocessed_text = preprocess_text(text, slang_dict, stemmer, custom_stopwords)
     tokens = nltk.word_tokenize(preprocessed_text)
-    if not tokens:
-        return []
     seq = tokenizer.texts_to_sequences([preprocessed_text])
     seq_padded = pad_sequences(seq, maxlen=max_len_ner, padding='post')
     pred = model_ner.predict(seq_padded)
@@ -170,10 +161,7 @@ def predict_entities(text):
 # Fungsi untuk Mendapatkan Respon Chatbot
 def get_chatbot_response(user_input):
     # Predict intent
-    intent, intent_prob = predict_intent(user_input)
-    if intent == "tidak_diketahui":
-        return "Maaf, saya tidak mengerti maksud Anda. Bisa dijelaskan lebih lanjut atau coba gunakan kata-kata lain?"
-
+    intent = predict_intent(user_input)
     # Predict entities
     entities = predict_entities(user_input)
     entities_dict = {}
@@ -183,16 +171,11 @@ def get_chatbot_response(user_input):
             entities_dict[label].append(token)
         else:
             entities_dict[label] = [token]
-
-    # Mengambil jenis hewan dan gejala
-    animal = ', '.join(entities_dict.get('animal', ['tidak disebutkan']))
-    symptoms = ', '.join(entities_dict.get('symptom', ['tidak disebutkan']))
-
-    # Menentukan respon berdasarkan intent
+    # Find the appropriate response
     intent_data_item = next((item for item in intent_data['intents'] if item['intent'] == intent), None)
     if intent_data_item:
         response_template = random.choice(intent_data_item['responses'])
-        # Mengisi placeholder dalam respon
+        # Replace placeholders in the response
         for entity_label in ['animal', 'condition', 'symptom', 'treatment']:
             placeholder = '{' + entity_label + '}'
             if placeholder in response_template:
@@ -215,9 +198,7 @@ user_input = st.text_input("Anda:", "")
 
 if st.button("Kirim"):
     if user_input.strip() == "":
-        st.warning("Silakan masukkan pesan.")
-    elif not re.search(r'[a-zA-Z]', user_input):
-        st.warning("Input tidak valid. Silakan masukkan teks yang mengandung huruf.")
+        st.write("Silakan masukkan pesan.")
     else:
         response = get_chatbot_response(user_input)
         st.markdown(f"**Chatbot:** {response}")
