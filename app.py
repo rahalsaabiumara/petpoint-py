@@ -25,7 +25,7 @@ except LookupError:
     nltk.download('stopwords', download_dir=nltk_data_path)
 
 # Inisialisasi Streamlit
-st.title("Chatbot Medis Hewan Anjing dan Kucing")
+st.title("Chatbot untuk kucing dan anjing")
 
 # Fungsi Preprocessing
 def preprocess_text(text, slang_dict, stemmer, custom_stopwords):
