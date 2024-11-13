@@ -7,6 +7,10 @@ import re
 from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 import nltk
 
+# Unduh dataset NLTK yang diperlukan
+nltk.download('punkt')
+nltk.download('stopwords')
+
 # Fungsi untuk memuat kamus slang dari file teks
 def load_slang_dict(filepath):
     slang_dict = {}
@@ -18,12 +22,11 @@ def load_slang_dict(filepath):
     return slang_dict
 
 # Memuat kamus slang dari file teks
-slang_dict = load_slang_dict('dataset/combined_slang_words.txt')
+slang_dict = load_slang_dict('models/combined_slang_words.txt')
 
 # Inisialisasi Stemmer
 factory = StemmerFactory()
 stemmer = factory.create_stemmer()
-nltk.download('stopwords')
 stopwords_indonesia = set(nltk.corpus.stopwords.words('indonesian'))
 custom_stopwords = stopwords_indonesia - {'anjing', 'kucing', 'sakit', 'gejala'}
 
@@ -33,14 +36,10 @@ def preprocess_text(text):
     text = re.sub(r'http\S+|www\S+|@\S+|#\S+', '', text)
     text = re.sub(r'[^a-z\s]', '', text)
     tokens = word_tokenize(text)
-    # Normalisasi slang
     tokens = [slang_dict.get(token, token) for token in tokens]
-    # Hapus stopwords
     tokens = [word for word in tokens if word not in custom_stopwords]
-    # Stemming
     tokens = [stemmer.stem(word) for word in tokens]
     return ' '.join(tokens)
-
 
 def predict_intent(text, tokenizer, model, label_encoder):
     seq = tokenizer.texts_to_sequences([text])
