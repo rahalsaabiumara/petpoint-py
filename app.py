@@ -11,8 +11,8 @@ import os
 os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
 
 # Mengatur path untuk NLTK data
-nltk_data_path = os.path.join(os.path.dirname(__file__), 'nltk_data')
-nltk.data.path.append(nltk_data_path)
+nltk_path = os.path.join(os.getcwd(), 'nltk_data')
+nltk.data.path.append(nltk_path)
 
 
 # Import fungsi dari utils
