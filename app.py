@@ -14,11 +14,11 @@ from tf2crf import CRF, ModelWithCRFLoss
 import random
 import pandas as pd
 
-# Tambahkan path ke nltk_data
+# menambahkan path ke nltk_data
 nltk_data_path = os.path.join(os.path.dirname(__file__), 'dataset', 'nltk_data')
 nltk.data.path.append(nltk_data_path)
 
-# Pastikan resource NLTK sudah ada, jika belum, unduh secara otomatis
+# memastikan resource NLTK sudah ada, jika belum, unduh secara otomatis
 try:
     nltk.corpus.stopwords.words('indonesian')
 except LookupError:
@@ -96,19 +96,28 @@ def load_label_encoder():
 # Fungsi Load Models
 @st.cache_resource
 def load_models():
-    # Load model Intent
-    model_intent = tf.keras.models.load_model('models/model_intent')
+    with open("models/tokenizer.json", "r", encoding="utf-8") as f:
+        tokenizer = tf.keras.preprocessing.text.tokenizer_from_json(json.load(f))
 
-    # Load model NER dengan CRF
-    model_ner = tf.keras.models.load_model('models/model_ner_with_crf', custom_objects={'CRF': CRF, 'ModelWithCRFLoss': ModelWithCRFLoss})
+    with open("models/label_encoder.json", "r", encoding="utf-8") as f:
+        label_encoder = LabelEncoder()
+        label_encoder.classes_ = np.array(json.load(f))
 
-    return model_intent, model_ner
+    with open("models/tag2idx.json", "r", encoding="utf-8") as f:
+        tag2idx = json.load(f)
+    with open("models/idx2tag.json", "r", encoding="utf-8") as f:
+        idx2tag = json.load(f)
 
-# Load semua resources
-slang_dict, intent_data, stemmer, custom_stopwords = load_resources()
-tokenizer, tag2idx, idx2tag = load_tokenizer()
-label_encoder = load_label_encoder()
-model_intent, model_ner = load_models()
+    model_intent = tf.keras.models.load_model("models/model_intent")
+    base_model_ner = tf.keras.models.load_model("models/model_ner_with_crf", compile=False)
+    model_ner = ModelWithCRFLoss(base_model_ner)
+
+    # Inisialisasi model NER dengan input shape
+    model_ner.build(input_shape=(None, max_len))
+
+    model_ner.compile()
+
+    return tokenizer, label_encoder, tag2idx, idx2tag, model_intent, model_ner
 
 # Fungsi Mengubah Indeks ke Tag
 def sequences_to_tags(sequences, idx2tag):
