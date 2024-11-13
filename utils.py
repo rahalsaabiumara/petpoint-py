@@ -29,7 +29,11 @@ def predict_entities(text, tokenizer, model, idx2tag):
     seq = tokenizer.texts_to_sequences([text])
     seq_padded = pad_sequences(seq, maxlen=33, padding='post')
     pred = model.predict(seq_padded)
-    pred_tags = [idx2tag.get(idx, 'O') for idx in np.argmax(pred[0], axis=-1)]
+    pred_indices = np.argmax(pred[0], axis=-1)
+    if isinstance(pred_indices, np.integer):
+        pred_indices = [pred_indices]  # Convert to a list if it's a single integer
+    pred_tags = [idx2tag.get(idx, 'O') for idx in pred_indices]
+
 
     entities = []
     for token, tag in zip(tokens, pred_tags):
