@@ -10,7 +10,7 @@ import nltk
 import os
 os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
 
-# Download NLTK data
+# Unduh dataset NLTK yang diperlukan
 nltk.download('punkt')
 nltk.download('stopwords')
 
