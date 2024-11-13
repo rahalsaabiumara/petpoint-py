@@ -24,6 +24,10 @@ try:
 except LookupError:
     nltk.download('stopwords', download_dir=nltk_data_path)
 
+# Debugging: Tampilkan path NLTK dan verifikasi keberadaan stopwords
+# st.write("NLTK Data Path:", nltk.data.path)
+# st.write("Exists stopwords:", os.path.exists(os.path.join(nltk_data_path, 'corpora', 'stopwords', 'indonesian', 'stopwords.txt')))
+
 # Inisialisasi Streamlit
 st.title("Chatbot Medis Hewan Anjing dan Kucing")
 
