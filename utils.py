@@ -8,9 +8,10 @@ from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 import nltk
 
 # Unduh dataset NLTK yang diperlukan
-nltk.download('punkt', download_dir='nltk_data')
-nltk.download('stopwords', download_dir='nltk_data')
-nltk.download('punkt_tab',download_dir='nltk_data')
+nltk.download('punkt')
+nltk.download('punkt_tab')
+nltk.download('stopwords')
+
 
 # Fungsi untuk memuat kamus slang dari file teks
 def load_slang_dict(filepath):
