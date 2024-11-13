@@ -14,19 +14,15 @@ from tf2crf import CRF, ModelWithCRFLoss
 import random
 import pandas as pd
 
-# menambahkan path ke nltk_data
+# Menambahkan path ke nltk_data
 nltk_data_path = os.path.join(os.path.dirname(__file__), 'dataset', 'nltk_data')
 nltk.data.path.append(nltk_data_path)
 
-# memastikan resource NLTK sudah ada, jika belum, unduh secara otomatis
+# Memastikan resource NLTK sudah ada, jika belum, unduh secara otomatis
 try:
     nltk.corpus.stopwords.words('indonesian')
 except LookupError:
     nltk.download('stopwords', download_dir=nltk_data_path)
-
-# Debugging: Tampilkan path NLTK dan verifikasi keberadaan stopwords
-# st.write("NLTK Data Path:", nltk.data.path)
-# st.write("Exists stopwords:", os.path.exists(os.path.join(nltk_data_path, 'corpora', 'stopwords', 'indonesian', 'stopwords.txt')))
 
 # Inisialisasi Streamlit
 st.title("Chatbot Medis Hewan Anjing dan Kucing")
@@ -96,28 +92,23 @@ def load_label_encoder():
 # Fungsi Load Models
 @st.cache_resource
 def load_models():
-    with open("models/tokenizer.json", "r", encoding="utf-8") as f:
-        tokenizer = tf.keras.preprocessing.text.tokenizer_from_json(json.load(f))
+    # Load model Intent
+    model_intent = tf.keras.models.load_model('models/model_intent')
 
-    with open("models/label_encoder.json", "r", encoding="utf-8") as f:
-        label_encoder = LabelEncoder()
-        label_encoder.classes_ = np.array(json.load(f))
+    # Load model NER dengan CRF
+    model_ner = tf.keras.models.load_model('models/model_ner_with_crf', custom_objects={'CRF': CRF, 'ModelWithCRFLoss': ModelWithCRFLoss})
 
-    with open("models/tag2idx.json", "r", encoding="utf-8") as f:
-        tag2idx = json.load(f)
-    with open("models/idx2tag.json", "r", encoding="utf-8") as f:
-        idx2tag = json.load(f)
+    return model_intent, model_ner
 
-    model_intent = tf.keras.models.load_model("models/model_intent")
-    base_model_ner = tf.keras.models.load_model("models/model_ner_with_crf", compile=False)
-    model_ner = ModelWithCRFLoss(base_model_ner)
+# Load semua resources
+slang_dict, intent_data, stemmer, custom_stopwords = load_resources()
+tokenizer, tag2idx, idx2tag = load_tokenizer()
+label_encoder = load_label_encoder()
+model_intent, model_ner = load_models()
 
-    # Inisialisasi model NER dengan input shape
-    model_ner.build(input_shape=(None, max_len))
-
-    model_ner.compile()
-
-    return tokenizer, label_encoder, tag2idx, idx2tag, model_intent, model_ner
+# Mendefinisikan max_len berdasarkan model
+max_len = model_intent.input_shape[1]
+max_len_ner = model_ner.input_shape[1]
 
 # Fungsi Mengubah Indeks ke Tag
 def sequences_to_tags(sequences, idx2tag):
@@ -127,7 +118,7 @@ def sequences_to_tags(sequences, idx2tag):
 def predict_intent(text):
     preprocessed_text = preprocess_text(text, slang_dict, stemmer, custom_stopwords)
     seq = tokenizer.texts_to_sequences([preprocessed_text])
-    seq_padded = pad_sequences(seq, maxlen=model_intent.input_shape[1], padding='post')
+    seq_padded = pad_sequences(seq, maxlen=max_len, padding='post')
     pred = model_intent.predict(seq_padded)
     intent_idx = np.argmax(pred, axis=1)[0]
     intent = label_encoder.inverse_transform([intent_idx])[0]
@@ -138,7 +129,7 @@ def predict_entities(text):
     preprocessed_text = preprocess_text(text, slang_dict, stemmer, custom_stopwords)
     tokens = nltk.word_tokenize(preprocessed_text)
     seq = tokenizer.texts_to_sequences([preprocessed_text])
-    seq_padded = pad_sequences(seq, maxlen=model_ner.input_shape[1], padding='post')
+    seq_padded = pad_sequences(seq, maxlen=max_len_ner, padding='post')
     pred = model_ner.predict(seq_padded)
     ner_preds_labels = pred[0]
 
