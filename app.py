@@ -18,7 +18,7 @@ import pandas as pd
 nltk_data_path = os.path.join(os.path.dirname(__file__), 'dataset', 'nltk_data')
 nltk.data.path.append(nltk_data_path)
 
-# Memastikan resource NLTK sudah ada, jika belum, unduh secara otomatis
+# Memastikan resource NLTK sudah ada, jika belum, download
 try:
     nltk.corpus.stopwords.words('indonesian')
 except LookupError:
@@ -108,8 +108,8 @@ model_intent, model_ner = load_models()
 
 # Mendefinisikan max_len berdasarkan model
 max_len = model_intent.input_shape[1]
-# Karena model_ner adalah ModelWithCRFLoss, yang tidak memiliki input_shape, tetapkan max_len_ner secara manual
-max_len_ner = max_len  # Pastikan ini sesuai dengan yang digunakan saat pelatihan
+
+max_len_ner = max_len
 
 # Fungsi Mengubah Indeks ke Tag
 def sequences_to_tags(sequences, idx2tag):
@@ -172,11 +172,11 @@ def get_chatbot_response(user_input):
             entities_dict[label].append(token)
         else:
             entities_dict[label] = [token]
-    # Find the appropriate response
+    # mencari respon yang sesuai
     intent_data_item = next((item for item in intent_data['intents'] if item['intent'] == intent), None)
     if intent_data_item:
         response_template = random.choice(intent_data_item['responses'])
-        # Replace placeholders in the response
+        # Mengganti placeholder dalam respons
         for entity_label in ['animal', 'condition', 'symptom', 'treatment']:
             placeholder = '{' + entity_label + '}'
             if placeholder in response_template:
