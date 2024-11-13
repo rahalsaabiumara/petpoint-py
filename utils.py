@@ -6,6 +6,8 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 import re
 from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 import nltk
+import os
+os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
 
 # Mengatur path untuk NLTK data
 nltk_data_path = os.path.join(os.path.dirname(__file__), 'nltk_data')
