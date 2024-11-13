@@ -1,5 +1,6 @@
 # app.py
 
+import os
 import streamlit as st
 import json
 import numpy as np
@@ -12,7 +13,6 @@ from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 from tf2crf import CRF, ModelWithCRFLoss
 import random
 import pandas as pd
-import os
 
 # Tambahkan path ke nltk_data
 nltk_data_path = os.path.join(os.path.dirname(__file__), 'dataset', 'nltk_data')
@@ -93,10 +93,10 @@ def load_label_encoder():
 @st.cache_resource
 def load_models():
     # Load model Intent
-    model_intent = tf.keras.models.load_model('models/model_intent.h5')
+    model_intent = tf.keras.models.load_model('models/model_intent')
 
     # Load model NER dengan CRF
-    model_ner = tf.keras.models.load_model('models/model_ner_with_crf.h5', custom_objects={'CRF': CRF, 'ModelWithCRFLoss': ModelWithCRFLoss})
+    model_ner = tf.keras.models.load_model('models/model_ner_with_crf', custom_objects={'CRF': CRF, 'ModelWithCRFLoss': ModelWithCRFLoss})
 
     return model_intent, model_ner
 
