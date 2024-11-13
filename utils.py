@@ -8,7 +8,7 @@ from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 import nltk
 
 # Muat kamus slang
-with open('models/combined_slang_words.json', 'r', encoding='utf-8') as f:
+with open('dataset/combined_slang_words.json', 'r', encoding='utf-8') as f:
     slang_dict = json.load(f)
 
 # Inisialisasi Stemmer
