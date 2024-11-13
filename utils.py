@@ -17,7 +17,7 @@ def preprocess_text(text):
 # Predict intent
 def predict_intent(text, tokenizer, model, label_encoder):
     seq = tokenizer.texts_to_sequences([text])
-    seq_padded = pad_sequences(seq, maxlen=50, padding='post')
+    seq_padded = pad_sequences(seq, maxlen=33, padding='post')
     pred = model.predict(seq_padded)
     intent_idx = np.argmax(pred, axis=1)[0]
     intent = label_encoder.inverse_transform([intent_idx])[0]
@@ -27,7 +27,7 @@ def predict_intent(text, tokenizer, model, label_encoder):
 def predict_entities(text, tokenizer, model, idx2tag):
     tokens = word_tokenize(text)
     seq = tokenizer.texts_to_sequences([text])
-    seq_padded = pad_sequences(seq, maxlen=50, padding='post')
+    seq_padded = pad_sequences(seq, maxlen=33, padding='post')
     pred = model.predict(seq_padded)
     pred_tags = [idx2tag.get(idx, 'O') for idx in np.argmax(pred[0], axis=-1)]
 
