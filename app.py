@@ -11,9 +11,10 @@ import os
 os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
 
 # Unduh dataset NLTK yang diperlukan
-nltk.download('punkt', download_dir='nltk_data')
-nltk.download('stopwords', download_dir='nltk_data')
-nltk.download('punkt_tab',download_dir='nltk_data')
+nltk.download('punkt')
+nltk.download('punkt_tab')
+nltk.download('stopwords')
+
 
 # Import fungsi dari utils
 from utils import preprocess_text, predict_intent, predict_entities
