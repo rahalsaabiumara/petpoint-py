@@ -9,6 +9,11 @@ from nltk.tokenize import word_tokenize
 import zipfile
 import os
 
+# Download NLTK data
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('punkt_tab')
+
 # Import fungsi dari utils
 from utils import preprocess_text, predict_intent, predict_entities
 
