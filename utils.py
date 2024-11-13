@@ -7,9 +7,18 @@ import re
 from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 import nltk
 
-# Muat kamus slang
-with open('dataset/combined_slang_words.json', 'r', encoding='utf-8') as f:
-    slang_dict = json.load(f)
+# Fungsi untuk memuat kamus slang dari file teks
+def load_slang_dict(filepath):
+    slang_dict = {}
+    with open(filepath, 'r', encoding='utf-8') as f:
+        for line in f:
+            parts = line.strip().split(',')
+            if len(parts) == 2:
+                slang_dict[parts[0].strip()] = parts[1].strip()
+    return slang_dict
+
+# Memuat kamus slang dari file teks
+slang_dict = load_slang_dict('dataset/combined_slang_words.txt')
 
 # Inisialisasi Stemmer
 factory = StemmerFactory()
@@ -18,15 +27,20 @@ nltk.download('stopwords')
 stopwords_indonesia = set(nltk.corpus.stopwords.words('indonesian'))
 custom_stopwords = stopwords_indonesia - {'anjing', 'kucing', 'sakit', 'gejala'}
 
+# Fungsi preprocessing teks
 def preprocess_text(text):
     text = text.lower()
     text = re.sub(r'http\S+|www\S+|@\S+|#\S+', '', text)
     text = re.sub(r'[^a-z\s]', '', text)
     tokens = word_tokenize(text)
+    # Normalisasi slang
     tokens = [slang_dict.get(token, token) for token in tokens]
+    # Hapus stopwords
     tokens = [word for word in tokens if word not in custom_stopwords]
+    # Stemming
     tokens = [stemmer.stem(word) for word in tokens]
     return ' '.join(tokens)
+
 
 def predict_intent(text, tokenizer, model, label_encoder):
     seq = tokenizer.texts_to_sequences([text])
