@@ -10,10 +10,9 @@ import nltk
 import os
 os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
 
-# Unduh dataset NLTK yang diperlukan
-nltk.download('punkt')
-nltk.download('punkt_tab')
-nltk.download('stopwords')
+# Mengatur path untuk NLTK data
+nltk_data_path = os.path.join(os.path.dirname(__file__), 'nltk_data')
+nltk.data.path.append(nltk_data_path)
 
 
 # Import fungsi dari utils
@@ -44,19 +43,32 @@ def load_models():
 tokenizer, label_encoder, tag2idx, idx2tag, model_intent, model_ner = load_models()
 
 def get_chatbot_response(user_input):
+    # Prediksi intent
     preprocessed_text = preprocess_text(user_input)
     intent = predict_intent(preprocessed_text, tokenizer, model_intent, label_encoder)
+    
+    # Prediksi entitas
     entities = predict_entities(preprocessed_text, tokenizer, model_ner, idx2tag)
+    entities_dict = {}
+    for token, tag in entities:
+        label = tag.split('-')[-1]
+        if label in entities_dict:
+            entities_dict[label].append(token)
+        else:
+            entities_dict[label] = [token]
     
-    response = f"Intent terdeteksi: {intent}\n"
-    if entities:
-        response += "Entitas yang ditemukan:\n"
-        for token, tag in entities:
-            response += f" - {token}: {tag}\n"
+    # Mendapatkan template respons dari intents dataset
+    intent_data_item = next((item for item in intents_data['intents'] if item['intent'] == intent), None)
+    if intent_data_item:
+        response_template = random.choice(intent_data_item['responses'])
+        for entity_label in ['animal', 'condition', 'symptom', 'treatment']:
+            placeholder = '{' + entity_label + '}'
+            if placeholder in response_template:
+                value = ', '.join(entities_dict.get(entity_label, ['tidak disebutkan']))
+                response_template = response_template.replace(placeholder, value)
+        return response_template
     else:
-        response += "Tidak ada entitas yang ditemukan."
-    
-    return response
+        return "Maaf, saya tidak mengerti. Bisa dijelaskan lebih lanjut?"
 
 st.title("Chatbot Kesehatan Hewan Peliharaan")
 st.write("Masukkan pertanyaan Anda tentang kesehatan hewan peliharaan.")
