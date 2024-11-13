@@ -2,7 +2,6 @@
 fuzzywuzzy==0.18.0
 streamlit
 tensorflow
-tensorflow-addons
 tf2crf
 sastrawi
 nltk
