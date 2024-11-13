@@ -1,57 +1,165 @@
+# app.py
+
 import streamlit as st
 import json
 import numpy as np
 import tensorflow as tf
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from sklearn.preprocessing import LabelEncoder
-from tf2crf import ModelWithCRFLoss
-from nltk.tokenize import word_tokenize
 import nltk
+import re
+from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
+from tf2crf import CRF, ModelWithCRFLoss
+import random
+import pandas as pd
 import os
-os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
 
-# Mengatur path untuk NLTK data
-nltk_path = os.path.join(os.getcwd(), 'nltk_data')
-nltk.data.path.append(nltk_path)
+# Tambahkan path ke nltk_data
+nltk_data_path = os.path.join(os.path.dirname(__file__), 'dataset', 'nltk_data')
+nltk.data.path.append(nltk_data_path)
 
-nltk.download('punkt', download_dir=nltk_path)
-nltk.download('stopwords', download_dir=nltk_path)
-nltk.download('punkt_tab', download_dir=nltk_path)
+# Pastikan resource NLTK sudah ada, jika belum, unduh secara otomatis
+try:
+    nltk.corpus.stopwords.words('indonesian')
+except LookupError:
+    nltk.download('stopwords', download_dir=nltk_data_path)
 
-# Import fungsi dari utils
-from utils import preprocess_text, predict_intent, predict_entities
+# Inisialisasi Streamlit
+st.title("Chatbot Medis Hewan Anjing dan Kucing")
 
-# Memuat model dan file JSON
+# Fungsi Preprocessing
+def preprocess_text(text, slang_dict, stemmer, custom_stopwords):
+    # Lowercase
+    text = text.lower()
+    # Remove URLs, mentions, and hashtags
+    text = re.sub(r'http\S+|www\S+|@\S+|#\S+', '', text)
+    # Remove or handle emoticons
+    text = re.sub(r'[:;]-?[)D]', '', text)  # Simplified emoticon removal
+    # Remove punctuation and numbers
+    text = re.sub(r'[^a-z\s]', '', text)
+    # Tokenize
+    tokens = nltk.word_tokenize(text)
+    # Normalize slang
+    tokens = [slang_dict.get(token, token) for token in tokens]
+    # Remove stopwords
+    tokens = [word for word in tokens if word not in custom_stopwords]
+    # Stemming
+    tokens = [stemmer.stem(word) for word in tokens]
+    return ' '.join(tokens)
+
+# Fungsi Load Resources
 @st.cache_resource
-def load_models():
-    with open("models/tokenizer.json", "r", encoding="utf-8") as f:
-        tokenizer = tf.keras.preprocessing.text.tokenizer_from_json(json.load(f))
+def load_resources():
+    # Load slang dictionary
+    with open('dataset/combined_slang_words.txt', 'r', encoding='utf-8') as f:
+        slang_dict = json.load(f)
 
-    with open("models/label_encoder.json", "r", encoding="utf-8") as f:
-        label_encoder = LabelEncoder()
-        label_encoder.classes_ = np.array(json.load(f))
+    # Load Intent dataset
+    with open('dataset/intents_dataset.json', 'r', encoding='utf-8') as f:
+        intent_data = json.load(f)
 
-    with open("models/tag2idx.json", "r", encoding="utf-8") as f:
+    # Initialize stemmer dan stopwords
+    factory = StemmerFactory()
+    stemmer = factory.create_stemmer()
+    stopwords_indonesia = set(nltk.corpus.stopwords.words('indonesian'))
+    custom_stopwords = stopwords_indonesia - {'anjing', 'kucing', 'sakit', 'gejala'}
+
+    return slang_dict, intent_data, stemmer, custom_stopwords
+
+# Fungsi Load Tokenizer
+@st.cache_resource
+def load_tokenizer():
+    with open('models/tokenizer.json', 'r', encoding='utf-8') as f:
+        tokenizer_json = json.load(f)
+    tokenizer = tf.keras.preprocessing.text.tokenizer_from_json(tokenizer_json)
+
+    with open('models/tag2idx.json', 'r', encoding='utf-8') as f:
         tag2idx = json.load(f)
-    with open("models/idx2tag.json", "r", encoding="utf-8") as f:
+    with open('models/idx2tag.json', 'r', encoding='utf-8') as f:
         idx2tag = json.load(f)
 
-    model_intent = tf.keras.models.load_model("models/model_intent")
-    base_model_ner = tf.keras.models.load_model("models/model_ner_with_crf", compile=False)
-    model_ner = ModelWithCRFLoss(base_model_ner)
-    model_ner.compile()
+    return tokenizer, tag2idx, idx2tag
 
-    return tokenizer, label_encoder, tag2idx, idx2tag, model_intent, model_ner
+# Fungsi Load Label Encoder
+@st.cache_resource
+def load_label_encoder():
+    with open('models/label_encoder.json', 'r', encoding='utf-8') as f:
+        label_encoder_classes = json.load(f)
+    label_encoder = LabelEncoder()
+    label_encoder.classes_ = np.array(label_encoder_classes)
+    return label_encoder
 
-tokenizer, label_encoder, tag2idx, idx2tag, model_intent, model_ner = load_models()
+# Fungsi Load Models
+@st.cache_resource
+def load_models():
+    # Load model Intent
+    model_intent = tf.keras.models.load_model('models/model_intent.h5')
 
+    # Load model NER dengan CRF
+    model_ner = tf.keras.models.load_model('models/model_ner_with_crf.h5', custom_objects={'CRF': CRF, 'ModelWithCRFLoss': ModelWithCRFLoss})
+
+    return model_intent, model_ner
+
+# Load semua resources
+slang_dict, intent_data, stemmer, custom_stopwords = load_resources()
+tokenizer, tag2idx, idx2tag = load_tokenizer()
+label_encoder = load_label_encoder()
+model_intent, model_ner = load_models()
+
+# Fungsi Mengubah Indeks ke Tag
+def sequences_to_tags(sequences, idx2tag):
+    return [[idx2tag.get(str(idx), 'O') for idx in sequence] for sequence in sequences]
+
+# Fungsi Prediksi Intent
+def predict_intent(text):
+    preprocessed_text = preprocess_text(text, slang_dict, stemmer, custom_stopwords)
+    seq = tokenizer.texts_to_sequences([preprocessed_text])
+    seq_padded = pad_sequences(seq, maxlen=model_intent.input_shape[1], padding='post')
+    pred = model_intent.predict(seq_padded)
+    intent_idx = np.argmax(pred, axis=1)[0]
+    intent = label_encoder.inverse_transform([intent_idx])[0]
+    return intent
+
+# Fungsi Prediksi Entitas
+def predict_entities(text):
+    preprocessed_text = preprocess_text(text, slang_dict, stemmer, custom_stopwords)
+    tokens = nltk.word_tokenize(preprocessed_text)
+    seq = tokenizer.texts_to_sequences([preprocessed_text])
+    seq_padded = pad_sequences(seq, maxlen=model_ner.input_shape[1], padding='post')
+    pred = model_ner.predict(seq_padded)
+    ner_preds_labels = pred[0]
+
+    # Pastikan ner_preds_labels adalah list of sequences
+    if isinstance(ner_preds_labels, (list, np.ndarray)):
+        if isinstance(ner_preds_labels[0], (int, np.integer)):
+            ner_preds_labels = [ner_preds_labels]
+        elif isinstance(ner_preds_labels[0], (list, np.ndarray)):
+            pass  # Sudah benar
+        else:
+            raise ValueError("Unexpected element type in ner_preds_labels")
+    else:
+        raise ValueError("Unexpected type for ner_preds_labels")
+
+    pred_tags = sequences_to_tags(ner_preds_labels, idx2tag)
+
+    # Menghapus padding berdasarkan teks asli
+    if len(pred_tags[0]) > len(tokens):
+        pred_tags_clean = [pred_tags[0][:len(tokens)]]
+    else:
+        pred_tags_clean = pred_tags
+
+    entities = []
+    for token, tag in zip(tokens, pred_tags_clean[0]):
+        if tag != 'O':
+            entities.append((token, tag))
+    return entities
+
+# Fungsi untuk Mendapatkan Respon Chatbot
 def get_chatbot_response(user_input):
-    # Prediksi intent
-    preprocessed_text = preprocess_text(user_input)
-    intent = predict_intent(preprocessed_text, tokenizer, model_intent, label_encoder)
-    
-    # Prediksi entitas
-    entities = predict_entities(preprocessed_text, tokenizer, model_ner, idx2tag)
+    # Predict intent
+    intent = predict_intent(user_input)
+    # Predict entities
+    entities = predict_entities(user_input)
     entities_dict = {}
     for token, tag in entities:
         label = tag.split('-')[-1]
@@ -59,12 +167,17 @@ def get_chatbot_response(user_input):
             entities_dict[label].append(token)
         else:
             entities_dict[label] = [token]
-    
-    # Mendapatkan template respons dari intents dataset
-    intent_data_item = next((item for item in intents_data['intents'] if item['intent'] == intent), None)
+
+    # Mengambil jenis hewan dan gejala
+    animal = ', '.join(entities_dict.get('animal', ['tidak disebutkan']))
+    symptoms = ', '.join(entities_dict.get('symptom', ['tidak disebutkan']))
+
+    # Menentukan respon berdasarkan intent
+    intent_data_item = next((item for item in intent_data['intents'] if item['intent'] == intent), None)
     if intent_data_item:
         response_template = random.choice(intent_data_item['responses'])
-        for entity_label in ['animal', 'condition', 'symptom', 'treatment']:
+        # Mengisi placeholder dalam respon
+        for entity_label in ['animal', 'symptom', 'condition', 'treatment']:
             placeholder = '{' + entity_label + '}'
             if placeholder in response_template:
                 value = ', '.join(entities_dict.get(entity_label, ['tidak disebutkan']))
@@ -73,14 +186,28 @@ def get_chatbot_response(user_input):
     else:
         return "Maaf, saya tidak mengerti. Bisa dijelaskan lebih lanjut?"
 
-st.title("Chatbot Kesehatan Hewan Peliharaan")
-st.write("Masukkan pertanyaan Anda tentang kesehatan hewan peliharaan.")
+# Fungsi untuk Menampilkan Entitas dalam Tabel
+def display_entities(entities):
+    if entities:
+        df = pd.DataFrame(entities, columns=["Token", "Tag"])
+        st.table(df)
+    else:
+        st.write("Tidak ada entitas yang diprediksi.")
 
-user_input = st.text_input("Input Anda:")
+# Streamlit UI
+user_input = st.text_input("Anda:", "")
 
 if st.button("Kirim"):
-    if user_input:
-        response = get_chatbot_response(user_input)
-        st.text_area("Respons Chatbot:", value=response, height=200)
+    if user_input.strip() == "":
+        st.write("Silakan masukkan pesan.")
     else:
-        st.warning("Silakan masukkan pertanyaan.")
+        response = get_chatbot_response(user_input)
+        st.markdown(f"**Chatbot:** {response}")
+
+        # Menampilkan entitas yang diprediksi
+        entities = predict_entities(user_input)
+        if entities:
+            st.subheader("Entitas yang Diprediksi:")
+            display_entities(entities)
+        else:
+            st.write("Tidak ada entitas yang diprediksi.")
