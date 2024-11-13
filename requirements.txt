@@ -1,0 +1,12 @@
+﻿pandas==2.2.3
+fuzzywuzzy==0.18.0
+streamlit
+tensorflow==2.11.0
+tensorflow-addons
+tf2crf
+sastrawi
+nltk
+scikit-learn
+matplotlib
+imbalanced-learn
+ijson
