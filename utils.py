@@ -7,13 +7,12 @@ import re
 from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 import nltk
 
-# Unduh dataset NLTK yang diperlukan
-nltk.download('punkt')
-nltk.download('punkt_tab')
-nltk.download('stopwords')
+# Mengatur path untuk NLTK data
+nltk_data_path = os.path.join(os.path.dirname(__file__), 'nltk_data')
+nltk.data.path.append(nltk_data_path)
 
 
-# Fungsi untuk memuat kamus slang dari file teks
+# Memuat kamus slang dari file teks
 def load_slang_dict(filepath):
     slang_dict = {}
     with open(filepath, 'r', encoding='utf-8') as f:
@@ -23,7 +22,6 @@ def load_slang_dict(filepath):
                 slang_dict[parts[0].strip()] = parts[1].strip()
     return slang_dict
 
-# Memuat kamus slang dari file teks
 slang_dict = load_slang_dict('dataset/combined_slang_words.txt')
 
 # Inisialisasi Stemmer
@@ -52,14 +50,11 @@ def predict_intent(text, tokenizer, model, label_encoder):
     return intent
 
 def predict_entities(text, tokenizer, model, idx2tag):
-    preprocessed_text = preprocess_text(text)
-    tokens = word_tokenize(preprocessed_text)
-    seq = tokenizer.texts_to_sequences([preprocessed_text])
+    tokens = word_tokenize(text)
+    seq = tokenizer.texts_to_sequences([text])
     seq_padded = pad_sequences(seq, maxlen=33, padding='post')
     pred = model.predict(seq_padded)
     pred_indices = np.argmax(pred[0], axis=-1)
-    if isinstance(pred_indices, np.integer):
-        pred_indices = [pred_indices]
     pred_tags = [idx2tag.get(idx, 'O') for idx in pred_indices]
 
     entities = []
