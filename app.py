@@ -8,6 +8,7 @@ from tf2crf import ModelWithCRFLoss
 from nltk.tokenize import word_tokenize
 import zipfile
 import os
+os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
 
 # Download NLTK data
 nltk.download('punkt')
