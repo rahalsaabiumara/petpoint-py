@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "intents": [
         {
@@ -6840,3 +6841,2933 @@
         }
     ]
 }
+=======
+[
+    {
+        "intent": "medical_inquiry_dog",
+        "entities": [
+            "animal",
+            "condition",
+            "symptom",
+            "severity",
+            "duration"
+        ],
+        "utterances": [],
+        "responses": []
+    },
+    {
+        "intent": "medical_inquiry_cat",
+        "entities": [
+            "animal",
+            "condition",
+            "symptom",
+            "severity",
+            "duration"
+        ],
+        "utterances": [],
+        "responses": []
+    },
+    {
+        "intent": "symptom_analysis_dog",
+        "entities": [
+            "animal",
+            "symptom",
+            "severity",
+            "duration"
+        ],
+        "utterances": [],
+        "responses": [],
+        "disease_analysis": {
+             "Acral_Lick_Granuloma_Anjing": {
+                "related_symptoms": [
+                    "Gatal",
+                    "Kekuranan nafsu makan (anoreksia)",
+                    "Kekurangan antusiasme (lesu)",
+                    "Benjolan",
+                    "Kulit berwarna  kemerahan",
+                    "Area kulit tertentu tampak lebih gelap (Hiperpigmentasi)",
+                    "Kerontokan rambut",
+                    "Rambut tampak memiliki warna dan struktur yang sedikit     berbeda",
+                    "Kulit kering dan kasar  atau kusam",
+                    "Kebotakan."
+                ],
+                "possible_conditions": [
+                    "Acral Lick Granuloma"
+                ],
+                "treatment": "Gunakan obat antihistamin (hidroxyzine, chlorpheniramine, dexopin), Gunakan obat topikal kortikosteroid."
+            },
+            "Acute_Moist_Dermatitis_Anjing": {
+                "related_symptoms": [
+                    "Gatal",
+                    "Penebalan kulit",
+                    "Kulit berwarna kemerahan",
+                    "Kerontokan rambut",
+                    "Kulit kering dan kasar atau kusam",
+                    "Kebotakan."
+                ],
+                "possible_conditions": [
+                    "Acute Moist Dermatitis"
+                ],
+                "treatment": "Cukur rambut sampai bersih pada permukaan       kulit, Gunakan obat kortikosteroid seperti dexametasone untuk anti inflamasi adanya radang, Gunakan obat antihistamin seperti vetadryll."
+            },
+            "Atopic_Dermatitis_Anjing": {
+                "related_symptoms": [
+                    "Benjolan",
+                    "Kulit berwarna kemerahan",
+                    "Kerontokan rambut",
+                    "Bersin-bersin",
+                    "Hidung mengeluarkan cairan",
+                    "Mata berair",
+                    "Bercak kasar pada kulit",
+                    "Kulit kering dan kasar atau kusam",
+                    "Kebotakan."
+                ],
+                "possible_conditions": [
+                    "Atopic Dermatitis"
+                ],
+                "treatment": "Gunakan shampo mengandung benzoyl peroxida (4-7 hari), Gunakan spray atau lotion yang mengandung hydrocortisone, Beri makanan yang mengandung suplemen fatty acid, omega-3 dan omega-6, Gunakan obat anti radang dan anti alergi, Gunakan anastesi lokal dan topikal untuk menghilangkan gatal dan sakit yang muncul, Beri makanan yang mengandung asam linoleat atau asam lemak omega-3 untuk memperbaiki kondisi kulit, Gunakan antihistamin dan kortikosteroid (dexametasone)."
+            },
+            "Follicular_Dysplasia_Anjing": {
+                "related_symptoms": [
+                    "Area kulit tertentu tampak lebih gelap (Hiperpigmentasi),Kerontokan rambut",
+                    "Bercak kasar pada kulit",
+                    "Rambut tampak memiliki warna dan struktur yang sedikit berbeda",
+                    "Kulit kering dan kasar atau kusam",
+                    "Kulit bersisik",
+                    "Kebotakan."
+                ],
+                "possible_conditions": [
+                    "Follicular Dysplasia"
+                ],
+                "treatment": "Berikan suplemen yang mengandung asam lemak essensial, Gunakan shampoo antimikroba topikal, lalu bilas dengan conditioner."
+            },
+            "Malassezia_Dermatitis_Anjing": {
+                "related_symptoms": [
+                    "Gatal",
+                    "Kekuranan nafsu makan (anoreksia)",
+                    "Kekurangan antusiasme (lesu)",
+                    "Pembengkakan",
+                    "Kerontokan rambut",
+                    "Kulit kering dan kasar atau kusam",
+                    "Kulit bersisik",
+                    "Kebotakan."
+                ],
+                "possible_conditions": [
+                    "Malassezia Dermatitis"
+                ],
+                "treatment": "Mandi dengan shampo dengan kandungan sulfur 0,5% dan chlorhexadin 0,5% (2x seminggu)."
+            },
+            "Sarcoptic_Mange_Anjing": {
+                "related_symptoms": [
+                    "Gatal",
+                    "Benjolan",
+                    "Kulit berwarna kemerahan",
+                    "Area kulit tertentu tampak lebih gelap (Hiperpigmentasi)",
+                    "Kulit bernanah",
+                    "Kerontokan rambut,Bercak kasar pada kulit",
+                    "Kulit bersisik",
+                    "Kebotakan."
+                ],
+                "possible_conditions": [
+                    "Sarcoptic Mange"
+                ],
+                "treatment": "Mandi dengan shampo atau sabun dengan kandungan sulfur 2-3% , 7 hari sekali sampai sembuh, minimal 6-8x, Salep topikal dioleskan pada daerah rontok, kerak, dan gatal (salep scabisid),sebelumnya dibersihkan dengan air hangat 2-3x dalam seminggu, Cukur bagian rambut yang gatal, lalu mandikan dengan shampo dengan kandungan benzoyl peroxide, Mandi menggunakan amitraz 1:100 ml, Gunakan invermectin peroral, Kontradiksi untuk anjing ras collie dan anjing gembala, dapat menyebabkan kematian jika penggunaan dengan dosis tinggi, Gunakan mulbemycin oxime, jika kontradiksi terhadap obat invermectin, Gunakan kortikosteroid untuk mengurangi rasa gatal (1-3 hari), Sebagai tindakan preventif sebaiknya anjing diletakkan di lingkungan tertutup (indoor)."
+            },
+            "Dermatophytosis_Anjing": {
+                "related_symptoms": [
+                    "Gatal",
+                    "Kulit berwarna kemerahan",
+                    "Area kulit tertentu tampak lebih gelap (Hiperpigmentasi)",
+                    "Kulit bernanah",
+                    "Kerontokan rambut",
+                    "Bercak kasar pada kulit",
+                    "Kulit bersisik",
+                    "Kebotakan",
+                    "Luka pada wajah."
+                ],
+                "possible_conditions": [
+                    "Dermatophytosis"
+                ],
+                "treatment": "Gunakan shampoo yang mengandung chlorhexidine dan miconazole, Gunakan obat anti jamur (griseofulvin, ketoconazole, itraconazole)."
+            },
+            "Pemphigus_Foliaceus_Anjing": {
+                "related_symptoms": [
+                    "Gatal",
+                    "Kekurangan nafsu makan (anoreksia)",
+                    "Penebalan kulit",
+                    "Kulit berwarna kemerahan",
+                    "Luka pada hidung",
+                    "Kulit bersisik",
+                    "Luka pada wajah."
+                ],
+                "possible_conditions": [
+                    "Pemphigus Foliaceus"
+                ],
+                "treatment": "Gunakan kortikosteroid (prednisone, dexametasone), Gunakan antibiotik tetrasiulin, dekosiulin untuk menghindari infeksi sekunder, Jika anjing diobati dengan kortikosteroid sebaiknya pakan diubah menjadi rendah lemak agar hewan terhindar dari  pancreatitis."
+            },
+            "Demodicosis_Anjing": {
+                "related_symptoms": [
+                    "Gatal",
+                    "Kekuranan nafsu makan (anoreksia)",
+                    "Kekurangan antusiasme (lesu)",
+                    "Kulit berwarna kemerahan",
+                    "Area kulit tertentu tampak lebih gelap (Hiperpigmentasi)",
+                    "Kerontokan rambut",
+                    "Luka pada hidung",
+                    "Kulit bersisik",
+                    "Kebotakan."
+                ],
+                "possible_conditions": [
+                    "Demodicosis"
+                ],
+                "treatment": "Gunakan invermectin seminggu sekali, Gunakan amitraz 1:100 ml untuk mandi, Gunakan obat anti bakteri seperti erythromycin."
+            },
+            "Pediculosis_Anjing": {
+                "related_symptoms": [
+                    "Gatal",
+                    "Penebalan kulit",
+                    "Benjolan",
+                    "Area kulit tertentu tampak lebih gelap (Hiperpigmentasi)",
+                    "Kulit bernanah",
+                    "Kerontokan rambut",
+                    "Bercak kasar pada kulit",
+                    "Rambut tampak memiliki warna dan struktur yang sedikit berbeda",
+                    "Kulit kering dan kasar atau kusam."
+                ],
+                "possible_conditions": [
+                    "Pediculosis"
+                ],
+                "treatment": "Gunakan shampoo yang mengandung pyrethrin, Gunakan spray insektisida seperti fipronil dan selamectin, Mencukur bulu yang terserang oleh kutu."
+            },
+            "Parvovirus_Anjing": {
+                "related_symptoms": [
+                    "Demam",
+                    "Muntah",
+                    "Diare berdarah",
+                    "Lemas",
+                    "Kehilangan nafsu makan"
+                ],
+                "possible_conditions": [
+                    "Parvovirus"
+                ],
+                "treatment": "Terapi cairan IV, Antibiotik, Antiemetik"
+            },
+            "Distemper_Anjing": {
+                "related_symptoms": [
+                    "Batuk",
+                    "Demam",
+                    "Kehilangan nafsu makan",
+                    "Lemas",
+                    "Konjungtivitis",
+                    "Hidung berair"
+                ],
+                "possible_conditions": [
+                    "Distemper"
+                ],
+                "treatment": "Isolasi, Antibiotik untuk infeksi sekunder, Terapi suportif"
+            },
+            "Rabies_Anjing": {
+                "related_symptoms": [
+                    "Demam",
+                    "Agitasi",
+                    "Kejang",
+                    "Salivasi berlebihan",
+                    "Takut air"
+                ],
+                "possible_conditions": [
+                    "Rabies"
+                ],
+                "treatment": "Vaksinasi untuk pencegahan"
+            },
+            "Hepatitis_Infeksius_Anjing": {
+                "related_symptoms": [
+                    "Demam",
+                    "Pembengkakan perut",
+                    "Menguningnya kulit",
+                    "Pendarahan",
+                    "Kehilangan nafsu makan"
+                ],
+                "possible_conditions": [
+                    "Hepatitis Infeksius"
+                ],
+                "treatment": "Terapi cairan, Antibiotik, Terapi simptomatik"
+            },
+            "Leptospirosis_Anjing": {
+                "related_symptoms": [
+                    "Demam",
+                    "Muntah",
+                    "Kuning pada kulit dan mata",
+                    "Kehilangan nafsu makan",
+                    "Lemas"
+                ],
+                "possible_conditions": [
+                    "Leptospirosis"
+                ],
+                "treatment": "Antibiotik (doxycycline, penicillin), Terapi cairan"
+            },
+            "Scabies_Anjing": {
+                "related_symptoms": [
+                    "Kulit gatal",
+                    "Merah",
+                    "Rontok",
+                    "Luka terbuka"
+                ],
+                "possible_conditions": [
+                    "Scabies"
+                ],
+                "treatment": "Obat antiparasit (ivermectin), Kebersihan lingkungan"
+            },
+            "Otitis_Anjing": {
+                "related_symptoms": [
+                    "Gatal di telinga",
+                    "Kepala miring",
+                    "Bau tidak sedap dari telinga"
+                ],
+                "possible_conditions": [
+                    "Otitis"
+                ],
+                "treatment": "Pembersihan telinga, Antibiotik, Obat tetes anti inflamasi"
+            },
+            "Ringworm_Anjing": {
+                "related_symptoms": [
+                    "Bercak bulat merah",
+                    "Gatal",
+                    "Rambut rontok di sekitar bercak"
+                ],
+                "possible_conditions": [
+                    "Ringworm"
+                ],
+                "treatment": "Antijamur topikal, Shampoo khusus"
+            },
+            "Coccidiosis_Anjing": {
+                "related_symptoms": [
+                    "Diare",
+                    "Penurunan berat badan",
+                    "Kotoran berdarah"
+                ],
+                "possible_conditions": [
+                    "Coccidiosis"
+                ],
+                "treatment": "Antibiotik (sulfadimethoxine), Terapi cairan"
+            },
+            "Ehrlichiosis_Anjing": {
+                "related_symptoms": [
+                    "Demam",
+                    "Kehilangan nafsu makan",
+                    "Lemas",
+                    "Anemia"
+                ],
+                "possible_conditions": [
+                    "Ehrlichiosis"
+                ],
+                "treatment": "Antibiotik (doxycycline), Terapi suportif"
+            },
+            "Urolithiasis_Anjing": {
+                "related_symptoms": [
+                    "Sulit buang air kecil",
+                    "Urine berdarah",
+                    "Nyeri pada perut"
+                ],
+                "possible_conditions": [
+                    "Urolithiasis"
+                ],
+                "treatment": "Diet khusus, Obat penghancur batu, Operasi jika diperlukan"
+            },
+            "Gastroenteritis_Anjing": {
+                "related_symptoms": [
+                    "Diare",
+                    "Muntah",
+                    "Kehilangan nafsu makan"
+                ],
+                "possible_conditions": [
+                    "Gastroenteritis"
+                ],
+                "treatment": "Terapi cairan, Antiemetik, Antibiotik"
+            },
+            "Canine_Influenza_Anjing": {
+                "related_symptoms": [
+                    "Batuk",
+                    "Demam",
+                    "Kehilangan nafsu makan",
+                    "Lemas"
+                ],
+                "possible_conditions": [
+                    "Canine Influenza"
+                ],
+                "treatment": "Isolasi, Terapi suportif, Antiviral"
+            },
+            "Kennel_Cough_Anjing": {
+                "related_symptoms": [
+                    "Batuk",
+                    "Kehilangan nafsu makan",
+                    "Lemas"
+                ],
+                "possible_conditions": [
+                    "Kennel Cough"
+                ],
+                "treatment": "Obat batuk, Antibiotik, Terapi suportif"
+            },
+            "Lyme_Disease_Anjing": {
+                "related_symptoms": [
+                    "Demam",
+                    "Nyeri sendi",
+                    "Lemas",
+                    "Kehilangan nafsu makan"
+                ],
+                "possible_conditions": [
+                    "Lyme Disease"
+                ],
+                "treatment": "Antibiotik (doxycycline), Antiinflamasi"
+            },
+            "Pancreatitis_Anjing": {
+                "related_symptoms": [
+                    "Muntah",
+                    "Diare",
+                    "Nyeri perut",
+                    "Kehilangan nafsu makan"
+                ],
+                "possible_conditions": [
+                    "Pancreatitis"
+                ],
+                "treatment": "Diet rendah lemak, Terapi cairan, Analgesik"
+            },
+            "Hypothyroidism_Anjing": {
+                "related_symptoms": [
+                    "Berat badan bertambah",
+                    "Lesu",
+                    "Kulit kering",
+                    "Kerontokan bulu"
+                ],
+                "possible_conditions": [
+                    "Hypothyroidism"
+                ],
+                "treatment": "Obat hormon tiroksin"
+            },
+            "Cushing's_Disease_Anjing": {
+                "related_symptoms": [
+                    "Perut membesar",
+                    "Rambut rontok",
+                    "Lemas"
+                ],
+                "possible_conditions": [
+                    "Cushing's Disease"
+                ],
+                "treatment": "Penghambat produksi kortisol (trilostane), Operasi pada tumor"
+            },
+            "Heartworm_Anjing": {
+                "related_symptoms": [
+                    "Batuk",
+                    "Lemas",
+                    "Nafas pendek",
+                    "Berat badan turun"
+                ],
+                "possible_conditions": [
+                    "Heartworm"
+                ],
+                "treatment": "Obat antiparasit, Terapi suportif"
+            },
+            "Flea_Allergy_Dermatitis_Anjing": {
+                "related_symptoms": [
+                    "Gatal",
+                    "Kemerahan",
+                    "Rambut rontok di sekitar area gigitan"
+                ],
+                "possible_conditions": [
+                    "Flea Allergy Dermatitis"
+                ],
+                "treatment": "Antiparasit, Antihistamin"
+            },
+            "Pyometra_Anjing": {
+                "related_symptoms": [
+                    "Demam",
+                    "Lemas",
+                    "Perut membesar",
+                    "Kehilangan nafsu makan"
+                ],
+                "possible_conditions": [
+                    "Pyometra"
+                ],
+                "treatment": "Operasi pengangkatan rahim"
+            },
+            "Ear_Mites_Anjing": {
+                "related_symptoms": [
+                    "Gatal di telinga",
+                    "Kotoran berlebihan",
+                    "Bau tidak sedap"
+                ],
+                "possible_conditions": [
+                    "Ear Mites"
+                ],
+                "treatment": "Obat tetes telinga antiparasit, Pembersihan telinga"
+            },
+            "Cherry_Eye_Anjing": {
+                "related_symptoms": [
+                    "Bengkak pada mata",
+                    "Mata merah"
+                ],
+                "possible_conditions": [
+                    "Cherry Eye"
+                ],
+                "treatment": "Operasi untuk mengembalikan posisi kelenjar"
+            },
+            "Anal_Sac_Disease_Anjing": {
+                "related_symptoms": [
+                    "Bau tidak sedap dari anus",
+                    "Sering menggaruk atau menggigit area anus"
+                ],
+                "possible_conditions": [
+                    "Anal Sac Disease"
+                ],
+                "treatment": "Pengosongan kelenjar, Antibiotik"
+            },
+            "Anemia_Anjing": {
+                "related_symptoms": [
+                    "Gusi pucat",
+                    "Nafas cepat",
+                    "Lesu"
+                ],
+                "possible_conditions": [
+                    "Anemia"
+                ],
+                "treatment": "Transfusi darah, Terapi besi"
+            },
+            "Arthritis_Anjing": {
+                "related_symptoms": [
+                    "Nyeri sendi",
+                    "Kesulitan bergerak",
+                    "Kekakuan"
+                ],
+                "possible_conditions": [
+                    "Arthritis"
+                ],
+                "treatment": "Antiinflamasi, Terapi fisik"
+            },
+            "Allergic_Dermatitis_Anjing": {
+                "related_symptoms": [
+                    "Gatal",
+                    "Kemerahan",
+                    "Pembengkakan di sekitar area tertentu"
+                ],
+                "possible_conditions": [
+                    "Allergic Dermatitis"
+                ],
+                "treatment": "Antihistamin, Steroid topikal"
+            },
+            "Kennel_Stress_Anjing": {
+                "related_symptoms": [
+                    "Mual",
+                    "Kurang nafsu makan",
+                    "Stress"
+                ],
+                "possible_conditions": [
+                    "Kennel Stress"
+                ],
+                "treatment": "Lingkungan tenang, Pemberian cairan, Probiotik"
+            },
+            "Tooth_Abscess_Anjing": {
+                "related_symptoms": [
+                    "Nyeri pada gigi",
+                    "Pembengkakan pada wajah"
+                ],
+                "possible_conditions": [
+                    "Tooth Abscess"
+                ],
+                "treatment": "Ekstraksi gigi, Antibiotik"
+            },
+            "Bladder_Infection_Anjing": {
+                "related_symptoms": [
+                    "Sering buang air kecil",
+                    "Nyeri saat buang air kecil"
+                ],
+                "possible_conditions": [
+                    "Bladder Infection"
+                ],
+                "treatment": "Antibiotik, Terapi cairan"
+            },
+            "Bone_Cancer_Anjing": {
+                "related_symptoms": [
+                    "Nyeri pada tulang",
+                    "Lesu",
+                    "Pembengkakan pada area tertentu"
+                ],
+                "possible_conditions": [
+                    "Bone Cancer"
+                ],
+                "treatment": "Kemoterapi, Analgesik"
+            },
+            "Bronchitis_Anjing": {
+                "related_symptoms": [
+                    "Batuk",
+                    "Nafas pendek",
+                    "Demam"
+                ],
+                "possible_conditions": [
+                    "Bronchitis"
+                ],
+                "treatment": "Antibiotik, Terapi inhalasi"
+            },
+            "Cancer_Anjing": {
+                "related_symptoms": [
+                    "Benjolan",
+                    "Kehilangan nafsu makan",
+                    "Lemas"
+                ],
+                "possible_conditions": [
+                    "Cancer"
+                ],
+                "treatment": "Kemoterapi, Radioterapi"
+            },
+            "Cataracts_Anjing": {
+                "related_symptoms": [
+                    "Kabur penglihatan",
+                    "Pembengkakan lensa mata"
+                ],
+                "possible_conditions": [
+                    "Cataracts"
+                ],
+                "treatment": "Operasi katarak"
+            },
+            "Chronic_Renal_Failure_Anjing": {
+                "related_symptoms": [
+                    "Lesu",
+                    "Haus berlebihan",
+                    "Sering buang air kecil"
+                ],
+                "possible_conditions": [
+                    "Chronic Renal Failure"
+                ],
+                "treatment": "Diet rendah protein, Terapi cairan"
+            },
+            "Colitis_Anjing": {
+                "related_symptoms": [
+                    "Diare",
+                    "Nyeri perut",
+                    "Gas berlebih"
+                ],
+                "possible_conditions": [
+                    "Colitis"
+                ],
+                "treatment": "Diet tinggi serat, Probiotik, Antibiotik"
+            },
+            "Conjunctivitis_Anjing": {
+                "related_symptoms": [
+                    "Mata merah",
+                    "Gatal",
+                    "Berair"
+                ],
+                "possible_conditions": [
+                    "Conjunctivitis"
+                ],
+                "treatment": "Antibiotik tetes mata, Kompres hangat"
+            },
+            "Corneal_Ulcers_Anjing": {
+                "related_symptoms": [
+                    "Mata berair",
+                    "Kemerahan",
+                    "Nyeri"
+                ],
+                "possible_conditions": [
+                    "Corneal Ulcers"
+                ],
+                "treatment": "Obat tetes antibiotik, Pelindung mata"
+            },
+            "Cryptorchidism_Anjing": {
+                "related_symptoms": [
+                    "Testis tidak turun"
+                ],
+                "possible_conditions": [
+                    "Cryptorchidism"
+                ],
+                "treatment": "Operasi pengangkatan testis"
+            },
+            "Diabetes_Anjing": {
+                "related_symptoms": [
+                    "Haus berlebihan",
+                    "Lemas",
+                    "Sering buang air kecil"
+                ],
+                "possible_conditions": [
+                    "Diabetes"
+                ],
+                "treatment": "Pemberian insulin"
+            },
+            "Dry_Eye_Anjing": {
+                "related_symptoms": [
+                    "Mata kering",
+                    "Rasa gatal",
+                    "Perih"
+                ],
+                "possible_conditions": [
+                    "Dry Eye"
+                ],
+                "treatment": "Obat tetes mata pelembap"
+            },
+            "Ear_Hematoma_Anjing": {
+                "related_symptoms": [
+                    "Pembengkakan telinga",
+                    "Nyeri"
+                ],
+                "possible_conditions": [
+                    "Ear Hematoma"
+                ],
+                "treatment": "Operasi untuk mengeringkan darah"
+            },
+            "Epilepsy_Anjing": {
+                "related_symptoms": [
+                    "Kejang",
+                    "Penurunan kesadaran"
+                ],
+                "possible_conditions": [
+                    "Epilepsy"
+                ],
+                "treatment": "Obat antikonvulsan"
+            },
+            "Esophagitis_Anjing": {
+                "related_symptoms": [
+                    "Nyeri saat makan",
+                    "Batuk",
+                    "Saliva berlebih"
+                ],
+                "possible_conditions": [
+                    "Esophagitis"
+                ],
+                "treatment": "Antibiotik, Antiinflamasi, Diet lembut"
+            },
+            "Eye_Infection_Anjing": {
+                "related_symptoms": [
+                    "Mata merah",
+                    "Berair",
+                    "Gatal"
+                ],
+                "possible_conditions": [
+                    "Eye Infection"
+                ],
+                "treatment": "Antibiotik tetes mata"
+            },
+            "Folliculitis_Anjing": {
+                "related_symptoms": [
+                    "Benjolan di kulit",
+                    "Rambut rontok"
+                ],
+                "possible_conditions": [
+                    "Folliculitis"
+                ],
+                "treatment": "Antibiotik, Pembersih topikal"
+            },
+            "Glaucoma_Anjing": {
+                "related_symptoms": [
+                    "Nyeri mata",
+                    "Pembengkakan"
+                ],
+                "possible_conditions": [
+                    "Glaucoma"
+                ],
+                "treatment": "Obat tetes untuk mengurangi tekanan mata"
+            },
+            "Gingivitis_Anjing": {
+                "related_symptoms": [
+                    "Gusi merah",
+                    "Bau mulut"
+                ],
+                "possible_conditions": [
+                    "Gingivitis"
+                ],
+                "treatment": "Pembersihan gigi, Antibiotik"
+            },
+            "Heat_Stroke_Anjing": {
+                "related_symptoms": [
+                    "Suhu tubuh tinggi",
+                    "Lemas",
+                    "Nafas cepat"
+                ],
+                "possible_conditions": [
+                    "Heat Stroke"
+                ],
+                "treatment": "Pendinginan tubuh, Cairan IV"
+            },
+            "Hemangiosarcoma_Anjing": {
+                "related_symptoms": [
+                    "Lesu",
+                    "Pembengkakan perut"
+                ],
+                "possible_conditions": [
+                    "Hemangiosarcoma"
+                ],
+                "treatment": "Operasi, Kemoterapi"
+            },
+            "Hip_Dysplasia_Anjing": {
+                "related_symptoms": [
+                    "Nyeri sendi",
+                    "Lemas"
+                ],
+                "possible_conditions": [
+                    "Hip Dysplasia"
+                ],
+                "treatment": "Obat antiinflamasi, Terapi fisik"
+            },
+            "Hyperkeratosis_Anjing": {
+                "related_symptoms": [
+                    "Kulit keras",
+                    "Pecah-pecah"
+                ],
+                "possible_conditions": [
+                    "Hyperkeratosis"
+                ],
+                "treatment": "Pelembap topikal, Salep khusus"
+            },
+            "Infectious_Tracheobronchitis_Anjing": {
+                "related_symptoms": [
+                    "Batuk",
+                    "Hidung berair"
+                ],
+                "possible_conditions": [
+                    "Infectious Tracheobronchitis"
+                ],
+                "treatment": "Antibiotik, Terapi suportif"
+            },
+            "Intestinal_Parasites_Anjing": {
+                "related_symptoms": [
+                    "Diare",
+                    "Kehilangan berat badan",
+                    "Perut buncit"
+                ],
+                "possible_conditions": [
+                    "Intestinal Parasites"
+                ],
+                "treatment": "Antiparasit, Terapi cairan"
+            },
+            "Kidney_Disease_Anjing": {
+                "related_symptoms": [
+                    "Haus berlebihan",
+                    "Lemas",
+                    "Mual"
+                ],
+                "possible_conditions": [
+                    "Kidney Disease"
+                ],
+                "treatment": "Diet khusus, Terapi cairan"
+            },
+            "Liver_Disease_Anjing": {
+                "related_symptoms": [
+                    "Muntah",
+                    "Lemas",
+                    "Demam"
+                ],
+                "possible_conditions": [
+                    "Liver Disease"
+                ],
+                "treatment": "Diet rendah protein, Terapi cairan"
+            },
+            "Mange_Anjing": {
+                "related_symptoms": [
+                    "Kulit kasar",
+                    "Gatal",
+                    "Kemerahan"
+                ],
+                "possible_conditions": [
+                    "Mange"
+                ],
+                "treatment": "Obat antiparasit topikal, Kebersihan lingkungan"
+            },
+            "Melanoma_Anjing": {
+                "related_symptoms": [
+                    "Benjolan hitam di kulit"
+                ],
+                "possible_conditions": [
+                    "Melanoma"
+                ],
+                "treatment": "Operasi, Kemoterapi"
+            },
+            "Metritis_Anjing": {
+                "related_symptoms": [
+                    "Nyeri perut",
+                    "Demam",
+                    "Bau mulut"
+                ],
+                "possible_conditions": [
+                    "Metritis"
+                ],
+                "treatment": "Antibiotik, Operasi"
+            },
+            "Mitral_Valve_Disease_Anjing": {
+                "related_symptoms": [
+                    "Pucat",
+                    "Gusi bengkak"
+                ],
+                "possible_conditions": [
+                    "Mitral Valve Disease"
+                ],
+                "treatment": "Obat jantung, Diet rendah natrium"
+            },
+            "Mouth_Ulcers_Anjing": {
+                "related_symptoms": [
+                    "Nyeri di mulut",
+                    "Air liur berlebihan"
+                ],
+                "possible_conditions": [
+                    "Mouth Ulcers"
+                ],
+                "treatment": "Antiseptik mulut, Diet lembut"
+            },
+            "Nasal_Mites_Anjing": {
+                "related_symptoms": [
+                    "Gatal pada hidung",
+                    "Bersin"
+                ],
+                "possible_conditions": [
+                    "Nasal Mites"
+                ],
+                "treatment": "Obat antiparasit hidung"
+            },
+            "Obesity_Anjing": {
+                "related_symptoms": [
+                    "Berat badan berlebih",
+                    "Lesu"
+                ],
+                "possible_conditions": [
+                    "Obesity"
+                ],
+                "treatment": "Diet khusus, Olahraga"
+            },
+            "Parasitic_Infection_Anjing": {
+                "related_symptoms": [
+                    "Kulit gatal",
+                    "Rambut rontok"
+                ],
+                "possible_conditions": [
+                    "Parasitic Infection"
+                ],
+                "treatment": "Antiparasit oral atau topikal"
+            },
+            "Pericardial_Effusion_Anjing": {
+                "related_symptoms": [
+                    "Nyeri dada",
+                    "Sesak napas"
+                ],
+                "possible_conditions": [
+                    "Pericardial Effusion"
+                ],
+                "treatment": "Drainase cairan, Obat antiinflamasi"
+            },
+            "Pneumonia_Anjing": {
+                "related_symptoms": [
+                    "Demam",
+                    "Batuk",
+                    "Lemas"
+                ],
+                "possible_conditions": [
+                    "Pneumonia"
+                ],
+                "treatment": "Antibiotik, Terapi cairan"
+            },
+            "Prostatitis_Anjing": {
+                "related_symptoms": [
+                    "Nyeri saat buang air kecil",
+                    "Demam"
+                ],
+                "possible_conditions": [
+                    "Prostatitis"
+                ],
+                "treatment": "Antibiotik, Terapi cairan"
+            },
+            "Pulmonary_Edema_Anjing": {
+                "related_symptoms": [
+                    "Sesak napas",
+                    "Lemas"
+                ],
+                "possible_conditions": [
+                    "Pulmonary Edema"
+                ],
+                "treatment": "Diuretik, Oksigen"
+            },
+            "Seborrhea_Anjing": {
+                "related_symptoms": [
+                    "Kulit kering",
+                    "Bersisik",
+                    "Gatal"
+                ],
+                "possible_conditions": [
+                    "Seborrhea"
+                ],
+                "treatment": "Shampoo khusus, Pelembap topikal"
+            },
+            "Separation_Anxiety_Anjing": {
+                "related_symptoms": [
+                    "Gelisah saat ditinggal sendiri",
+                    "Menggonggong terus menerus"
+                ],
+                "possible_conditions": [
+                    "Separation Anxiety"
+                ],
+                "treatment": "Latihan perilaku, Terapi obat jika diperlukan"
+            },
+            "Skin_Allergies_Anjing": {
+                "related_symptoms": [
+                    "Gatal",
+                    "Bintik merah",
+                    "Rambut rontok"
+                ],
+                "possible_conditions": [
+                    "Skin Allergies"
+                ],
+                "treatment": "Antihistamin, Steroid"
+            },
+            "Splenomegaly_Anjing": {
+                "related_symptoms": [
+                    "Perut membesar",
+                    "Lesu"
+                ],
+                "possible_conditions": [
+                    "Splenomegaly"
+                ],
+                "treatment": "Terapi penyebab utama, Operasi jika diperlukan"
+            },
+            "Tetanus_Anjing": {
+                "related_symptoms": [
+                    "Kaku otot",
+                    "Kejang"
+                ],
+                "possible_conditions": [
+                    "Tetanus"
+                ],
+                "treatment": "Antibiotik, Relaksan otot"
+            },
+            "Thyroid_Cancer_Anjing": {
+                "related_symptoms": [
+                    "Benjolan pada leher",
+                    "Lesu"
+                ],
+                "possible_conditions": [
+                    "Thyroid Cancer"
+                ],
+                "treatment": "Operasi, Kemoterapi"
+            },
+            "Tick-borne_Disease_Anjing": {
+                "related_symptoms": [
+                    "Demam",
+                    "Lesu",
+                    "Nyeri sendi"
+                ],
+                "possible_conditions": [
+                    "Tick-borne Disease"
+                ],
+                "treatment": "Antibiotik, Terapi suportif"
+            },
+            "Tonsillitis_Anjing": {
+                "related_symptoms": [
+                    "Tenggorokan sakit",
+                    "Demam"
+                ],
+                "possible_conditions": [
+                    "Tonsillitis"
+                ],
+                "treatment": "Antibiotik, Terapi cairan"
+            },
+            "Toxoplasmosis_Anjing": {
+                "related_symptoms": [
+                    "Lemas",
+                    "Mual",
+                    "Kehilangan nafsu makan"
+                ],
+                "possible_conditions": [
+                    "Toxoplasmosis"
+                ],
+                "treatment": "Antibiotik, Terapi cairan"
+            },
+            "Ulcerative_Keratitis_Anjing": {
+                "related_symptoms": [
+                    "Nyeri mata",
+                    "Luka pada kornea"
+                ],
+                "possible_conditions": [
+                    "Ulcerative Keratitis"
+                ],
+                "treatment": "Obat tetes antibiotik, Pelindung mata"
+            },
+            "Vaginitis_Anjing": {
+                "related_symptoms": [
+                    "Pembengkakan di sekitar vagina",
+                    "Lemas"
+                ],
+                "possible_conditions": [
+                    "Vaginitis"
+                ],
+                "treatment": "Antibiotik, Pembersihan lokal"
+            },
+            "Vestibular_Disease_Anjing": {
+                "related_symptoms": [
+                    "Kepala miring",
+                    "Kehilangan keseimbangan"
+                ],
+                "possible_conditions": [
+                    "Vestibular Disease"
+                ],
+                "treatment": "Terapi suportif, Antiinflamasi"
+            },
+            "Worm_Infestation_Anjing": {
+                "related_symptoms": [
+                    "Cacing di feses",
+                    "Penurunan berat badan"
+                ],
+                "possible_conditions": [
+                    "Worm Infestation"
+                ],
+                "treatment": "Obat cacing oral"
+            },
+            "Zinc_Deficiency_Anjing": {
+                "related_symptoms": [
+                    "Kulit bersisik",
+                    "Rambut rontok"
+                ],
+                "possible_conditions": [
+                    "Zinc Deficiency"
+                ],
+                "treatment": "Suplemen seng, Diet khusus"
+            },
+            "Acanthosis_Nigricans_Anjing": {
+                "related_symptoms": [
+                    "Kulit menghitam",
+                    "Gatal"
+                ],
+                "possible_conditions": [
+                    "Acanthosis Nigricans"
+                ],
+                "treatment": "Antiinflamasi topikal, Pelembap"
+            },
+            "Addison's_Disease_Anjing": {
+                "related_symptoms": [
+                    "Lemas",
+                    "Muntah",
+                    "Penurunan berat badan"
+                ],
+                "possible_conditions": [
+                    "Addison's Disease"
+                ],
+                "treatment": "Pemberian hormon kortisol"
+            },
+            "Adrenal_Tumors_Anjing": {
+                "related_symptoms": [
+                    "Berat badan naik",
+                    "Lesu"
+                ],
+                "possible_conditions": [
+                    "Adrenal Tumors"
+                ],
+                "treatment": "Operasi, Terapi hormon"
+            },
+            "Anaplasmosis_Anjing": {
+                "related_symptoms": [
+                    "Demam",
+                    "Lesu",
+                    "Nyeri sendi"
+                ],
+                "possible_conditions": [
+                    "Anaplasmosis"
+                ],
+                "treatment": "Antibiotik, Terapi suportif"
+            },
+            "Bloat_Anjing": {
+                "related_symptoms": [
+                    "Perut buncit",
+                    "Muntah",
+                    "Lemas"
+                ],
+                "possible_conditions": [
+                    "Bloat"
+                ],
+                "treatment": "Operasi darurat, Terapi cairan"
+            },
+            "Cancerous_Tumors_Anjing": {
+                "related_symptoms": [
+                    "Benjolan",
+                    "Kehilangan nafsu makan"
+                ],
+                "possible_conditions": [
+                    "Cancerous Tumors"
+                ],
+                "treatment": "Kemoterapi, Operasi"
+            },
+            "Dental_Disease_Anjing": {
+                "related_symptoms": [
+                    "Nafas bau",
+                    "Gusi bengkak"
+                ],
+                "possible_conditions": [
+                    "Dental Disease"
+                ],
+                "treatment": "Pembersihan gigi, Antibiotik"
+            },
+            "Ectropion_Anjing": {
+                "related_symptoms": [
+                    "Kelopak mata turun",
+                    "Mata merah"
+                ],
+                "possible_conditions": [
+                    "Ectropion"
+                ],
+                "treatment": "Operasi, Obat tetes mata"
+            },
+            "Elbow_Dysplasia_Anjing": {
+                "related_symptoms": [
+                    "Nyeri pada siku",
+                    "Lemas"
+                ],
+                "possible_conditions": [
+                    "Elbow Dysplasia"
+                ],
+                "treatment": "Antiinflamasi, Terapi fisik"
+            },
+            "Encephalitis_Anjing": {
+                "related_symptoms": [
+                    "Demam",
+                    "Penurunan kesadaran"
+                ],
+                "possible_conditions": [
+                    "Encephalitis"
+                ],
+                "treatment": "Antibiotik, Kortikosteroid"
+            },
+            "Glucosuria_Anjing": {
+                "related_symptoms": [
+                    "Haus berlebihan",
+                    "Buang air kecil sering"
+                ],
+                "possible_conditions": [
+                    "Glucosuria"
+                ],
+                "treatment": "Pengobatan diabetes, Diet rendah gula"
+            },
+            "Hemophilia_Anjing": {
+                "related_symptoms": [
+                    "Pendarahan mudah",
+                    "Gusi pucat"
+                ],
+                "possible_conditions": [
+                    "Hemophilia"
+                ],
+                "treatment": "Transfusi darah, Terapi faktor pembekuan"
+            },
+            "Hypercalcemia_Anjing": {
+                "related_symptoms": [
+                    "Haus berlebihan",
+                    "Lemas",
+                    "Muntah"
+                ],
+                "possible_conditions": [
+                    "Hypercalcemia"
+                ],
+                "treatment": "Diet rendah kalsium, Terapi cairan"
+            },
+            "Inguinal_Hernia_Anjing": {
+                "related_symptoms": [
+                    "Benjolan di area selangkangan",
+                    "Nyeri saat bergerak"
+                ],
+                "possible_conditions": [
+                    "Inguinal Hernia"
+                ],
+                "treatment": "Operasi hernia, Terapi suportif"
+            },
+            "Lung_Cancer_Anjing": {
+                "related_symptoms": [
+                    "Batuk kronis",
+                    "Kesulitan bernapas",
+                    "Lemas"
+                ],
+                "possible_conditions": [
+                    "Lung Cancer"
+                ],
+                "treatment": "Kemoterapi, Terapi suportif"
+            },
+            "Mastitis_Anjing": {
+                "related_symptoms": [
+                    "Pembengkakan kelenjar susu",
+                    "Nyeri",
+                    "Demam"
+                ],
+                "possible_conditions": [
+                    "Mastitis"
+                ],
+                "treatment": "Antibiotik, Kompres hangat"
+            },
+            "Megaesophagus_Anjing": {
+                "related_symptoms": [
+                    "Muntah",
+                    "Kesulitan menelan",
+                    "Berat badan turun"
+                ],
+                "possible_conditions": [
+                    "Megaesophagus"
+                ],
+                "treatment": "Diet khusus, Pemberian makan dengan posisi tegak"
+            },
+            "Melioidosis_Anjing": {
+                "related_symptoms": [
+                    "Demam tinggi",
+                    "Nyeri otot",
+                    "Lesu"
+                ],
+                "possible_conditions": [
+                    "Melioidosis"
+                ],
+                "treatment": "Antibiotik spektrum luas"
+            },
+            "Multiple_Myeloma_Anjing": {
+                "related_symptoms": [
+                    "Nyeri tulang",
+                    "Lemas",
+                    "Anemia"
+                ],
+                "possible_conditions": [
+                    "Multiple Myeloma"
+                ],
+                "treatment": "Kemoterapi, Analgesik"
+            },
+            "Myasthenia_Gravis_Anjing": {
+                "related_symptoms": [
+                    "Kelemahan otot",
+                    "Kesulitan menelan",
+                    "Keletihan"
+                ],
+                "possible_conditions": [
+                    "Myasthenia Gravis"
+                ],
+                "treatment": "Antikolinesterase, Kortikosteroid"
+            },
+            "Neoplasia_Anjing": {
+                "related_symptoms": [
+                    "Benjolan",
+                    "Kehilangan nafsu makan",
+                    "Berat badan turun"
+                ],
+                "possible_conditions": [
+                    "Neoplasia"
+                ],
+                "treatment": "Operasi, Kemoterapi"
+            },
+            "Optic_Neuritis_Anjing": {
+                "related_symptoms": [
+                    "Kehilangan penglihatan mendadak",
+                    "Nyeri mata"
+                ],
+                "possible_conditions": [
+                    "Optic Neuritis"
+                ],
+                "treatment": "Kortikosteroid, Terapi suportif"
+            },
+            "Osteochondritis_Anjing": {
+                "related_symptoms": [
+                    "Nyeri sendi",
+                    "Kesulitan bergerak",
+                    "Lemas"
+                ],
+                "possible_conditions": [
+                    "Osteochondritis"
+                ],
+                "treatment": "Operasi, Terapi fisik"
+            },
+            "Osteosarcoma_Anjing": {
+                "related_symptoms": [
+                    "Nyeri tulang",
+                    "Pembengkakan",
+                    "Lemas"
+                ],
+                "possible_conditions": [
+                    "Osteosarcoma"
+                ],
+                "treatment": "Kemoterapi, Operasi"
+            },
+            "Paronychia_Anjing": {
+                "related_symptoms": [
+                    "Pembengkakan pada area kuku",
+                    "Nyeri"
+                ],
+                "possible_conditions": [
+                    "Paronychia"
+                ],
+                "treatment": "Antibiotik, Pembersihan area kuku"
+            },
+            "Peritonitis_Anjing": {
+                "related_symptoms": [
+                    "Demam",
+                    "Nyeri perut",
+                    "Mual"
+                ],
+                "possible_conditions": [
+                    "Peritonitis"
+                ],
+                "treatment": "Antibiotik, Terapi cairan"
+            },
+            "Pituitary_Tumor_Anjing": {
+                "related_symptoms": [
+                    "Kelelahan",
+                    "Perubahan perilaku",
+                    "Kebotakan"
+                ],
+                "possible_conditions": [
+                    "Pituitary Tumor"
+                ],
+                "treatment": "Terapi hormon, Operasi"
+            },
+            "Polydipsia_Anjing": {
+                "related_symptoms": [
+                    "Sering haus",
+                    "Buang air kecil sering"
+                ],
+                "possible_conditions": [
+                    "Polydipsia"
+                ],
+                "treatment": "Identifikasi penyebab, Diet khusus"
+            },
+            "Polyuria_Anjing": {
+                "related_symptoms": [
+                    "Buang air kecil sering",
+                    "Dehidrasi"
+                ],
+                "possible_conditions": [
+                    "Polyuria"
+                ],
+                "treatment": "Terapi cairan, Identifikasi penyebab"
+            },
+            "Portosystemic_Shunt_Anjing": {
+                "related_symptoms": [
+                    "Lemas",
+                    "Muntah",
+                    "Kehilangan nafsu makan"
+                ],
+                "possible_conditions": [
+                    "Portosystemic Shunt"
+                ],
+                "treatment": "Operasi, Diet khusus"
+            },
+            "Proptosis_Anjing": {
+                "related_symptoms": [
+                    "Mata menonjol keluar",
+                    "Nyeri"
+                ],
+                "possible_conditions": [
+                    "Proptosis"
+                ],
+                "treatment": "Operasi, Antibiotik"
+            },
+            "Pulmonary_Hypertension_Anjing": {
+                "related_symptoms": [
+                    "Sesak napas",
+                    "Kelelahan",
+                    "Pucat"
+                ],
+                "possible_conditions": [
+                    "Pulmonary Hypertension"
+                ],
+                "treatment": "Obat pengatur tekanan darah, Terapi suportif"
+            },
+            "Rectal_Prolapse_Anjing": {
+                "related_symptoms": [
+                    "Jaringan rektum menonjol keluar",
+                    "Nyeri"
+                ],
+                "possible_conditions": [
+                    "Rectal Prolapse"
+                ],
+                "treatment": "Operasi, Terapi suportif"
+            },
+            "Renal_Dysplasia_Anjing": {
+                "related_symptoms": [
+                    "Haus berlebihan",
+                    "Mual",
+                    "Berat badan turun"
+                ],
+                "possible_conditions": [
+                    "Renal Dysplasia"
+                ],
+                "treatment": "Terapi cairan, Diet khusus"
+            },
+            "Retinal_Atrophy_Anjing": {
+                "related_symptoms": [
+                    "Kehilangan penglihatan",
+                    "Kesulitan melihat di malam hari"
+                ],
+                "possible_conditions": [
+                    "Retinal Atrophy"
+                ],
+                "treatment": "Tidak ada pengobatan, Terapi suportif"
+            },
+            "Rheumatoid_Arthritis_Anjing": {
+                "related_symptoms": [
+                    "Nyeri sendi",
+                    "Kekakuan",
+                    "Pembengkakan"
+                ],
+                "possible_conditions": [
+                    "Rheumatoid Arthritis"
+                ],
+                "treatment": "Antiinflamasi, Terapi fisik"
+            },
+            "Salivary_Mucocele_Anjing": {
+                "related_symptoms": [
+                    "Pembengkakan di bawah lidah atau rahang",
+                    "Nyeri"
+                ],
+                "possible_conditions": [
+                    "Salivary Mucocele"
+                ],
+                "treatment": "Operasi drainase, Terapi suportif"
+            },
+            "Sepsis_Anjing": {
+                "related_symptoms": [
+                    "Demam",
+                    "Lemas",
+                    "Nafas cepat"
+                ],
+                "possible_conditions": [
+                    "Sepsis"
+                ],
+                "treatment": "Antibiotik, Terapi cairan intensif"
+            },
+            "Sialadenitis_Anjing": {
+                "related_symptoms": [
+                    "Pembengkakan kelenjar air liur",
+                    "Nyeri",
+                    "Demam"
+                ],
+                "possible_conditions": [
+                    "Sialadenitis"
+                ],
+                "treatment": "Antibiotik, Obat antiinflamasi"
+            },
+            "Spinal_Cord_Tumor_Anjing": {
+                "related_symptoms": [
+                    "Kehilangan keseimbangan",
+                    "Nyeri",
+                    "Kelemahan otot"
+                ],
+                "possible_conditions": [
+                    "Spinal Cord Tumor"
+                ],
+                "treatment": "Operasi, Radioterapi"
+            },
+            "Spondylosis_Anjing": {
+                "related_symptoms": [
+                    "Nyeri punggung",
+                    "Kekakuan",
+                    "Kesulitan bergerak"
+                ],
+                "possible_conditions": [
+                    "Spondylosis"
+                ],
+                "treatment": "Antiinflamasi, Terapi fisik"
+            },
+            "Synovial_Sarcoma_Anjing": {
+                "related_symptoms": [
+                    "Pembengkakan sendi",
+                    "Nyeri",
+                    "Lesu"
+                ],
+                "possible_conditions": [
+                    "Synovial Sarcoma"
+                ],
+                "treatment": "Kemoterapi, Operasi"
+            },
+            "Testicular_Cancer_Anjing": {
+                "related_symptoms": [
+                    "Pembesaran testis",
+                    "Nyeri"
+                ],
+                "possible_conditions": [
+                    "Testicular Cancer"
+                ],
+                "treatment": "Operasi pengangkatan testis"
+            },
+            "Tympanic_Membrane_Rupture_Anjing": {
+                "related_symptoms": [
+                    "Kehilangan pendengaran",
+                    "Nyeri di telinga"
+                ],
+                "possible_conditions": [
+                    "Tympanic Membrane Rupture"
+                ],
+                "treatment": "Antibiotik, Terapi suportif"
+            },
+            "Urinary_Incontinence_Anjing": {
+                "related_symptoms": [
+                    "Kebocoran urin",
+                    "Sering buang air kecil"
+                ],
+                "possible_conditions": [
+                    "Urinary Incontinence"
+                ],
+                "treatment": "Obat pengontrol kandung kemih"
+            },
+            "Uveal_Melanoma_Anjing": {
+                "related_symptoms": [
+                    "Benjolan di mata",
+                    "Kehilangan penglihatan"
+                ],
+                "possible_conditions": [
+                    "Uveal Melanoma"
+                ],
+                "treatment": "Operasi, Kemoterapi"
+            },
+            "Vascular_Ring_Anomaly_Anjing": {
+                "related_symptoms": [
+                    "Kesulitan menelan",
+                    "Penurunan berat badan"
+                ],
+                "possible_conditions": [
+                    "Vascular Ring Anomaly"
+                ],
+                "treatment": "Operasi korektif"
+            },
+            "Von_Willebrand's_Disease_Anjing": {
+                "related_symptoms": [
+                    "Pendarahan mudah",
+                    "Luka sulit sembuh"
+                ],
+                "possible_conditions": [
+                    "Von Willebrand's Disease"
+                ],
+                "treatment": "Transfusi darah, Terapi faktor pembekuan"
+            },
+            "Windpuffs_Anjing": {
+                "related_symptoms": [
+                    "Pembengkakan sendi",
+                    "Nyeri"
+                ],
+                "possible_conditions": [
+                    "Windpuffs"
+                ],
+                "treatment": "Antiinflamasi, Kompres dingin"
+            },
+            "Wobbler_Syndrome_Anjing": {
+                "related_symptoms": [
+                    "Kesulitan berjalan",
+                    "Kehilangan keseimbangan"
+                ],
+                "possible_conditions": [
+                    "Wobbler Syndrome"
+                ],
+                "treatment": "Operasi, Terapi fisik"
+            },
+            "Xerostomia_Anjing": {
+                "related_symptoms": [
+                    "Mulut kering",
+                    "Kesulitan menelan"
+                ],
+                "possible_conditions": [
+                    "Xerostomia"
+                ],
+                "treatment": "Pelembap mulut, Terapi suportif"
+            },
+            "Yersiniosis_Anjing": {
+                "related_symptoms": [
+                    "Diare",
+                    "Demam",
+                    "Nyeri perut"
+                ],
+                "possible_conditions": [
+                    "Yersiniosis"
+                ],
+                "treatment": "Antibiotik, Terapi cairan"
+            },
+            "Zoonotic_Disease_Anjing": {
+                "related_symptoms": [
+                    "Gejala tergantung penyakit",
+                    "Berpotensi menular ke manusia"
+                ],
+                "possible_conditions": [
+                    "Zoonotic Disease"
+                ],
+                "treatment": "Isolasi, Terapi sesuai penyakit"
+            },
+            "Zygomycosis_Anjing": {
+                "related_symptoms": [
+                    "Benjolan kulit",
+                    "Ulkus",
+                    "Demam"
+                ],
+                "possible_conditions": [
+                    "Zygomycosis"
+                ],
+                "treatment": "Antijamur, Antibiotik"
+            },
+            "Alopecia_X_Anjing": {
+                "related_symptoms": [
+                    "Kebotakan",
+                    "Kulit kering"
+                ],
+                "possible_conditions": [
+                    "Alopecia X"
+                ],
+                "treatment": "Terapi hormon, Suplementasi vitamin"
+            },
+            "Anal_Fistula_Anjing": {
+                "related_symptoms": [
+                    "Nyeri saat duduk",
+                    "Bau tidak sedap dari anus"
+                ],
+                "possible_conditions": [
+                    "Anal Fistula"
+                ],
+                "treatment": "Operasi, Antibiotik"
+            },
+            "Arterial_Thrombosis_Anjing": {
+                "related_symptoms": [
+                    "Nyeri kaki",
+                    "Kaki bengkak",
+                    "Lemas"
+                ],
+                "possible_conditions": [
+                    "Arterial Thrombosis"
+                ],
+                "treatment": "Antikoagulan, Terapi suportif"
+            },
+            "Aspergillosis_Anjing": {
+                "related_symptoms": [
+                    "Kesulitan bernapas",
+                    "Hidung berair",
+                    "Demam"
+                ],
+                "possible_conditions": [
+                    "Aspergillosis"
+                ],
+                "treatment": "Antijamur, Terapi suportif"
+            },
+            "Biliary_Disease_Anjing": {
+                "related_symptoms": [
+                    "Kuning pada kulit dan mata",
+                    "Mual",
+                    "Kehilangan nafsu makan"
+                ],
+                "possible_conditions": [
+                    "Biliary Disease"
+                ],
+                "treatment": "Antibiotik, Terapi cairan"
+            },
+            "Botfly_Infestation_Anjing": {
+                "related_symptoms": [
+                    "Benjolan di kulit",
+                    "Gatal",
+                    "Nyeri"
+                ],
+                "possible_conditions": [
+                    "Botfly Infestation"
+                ],
+                "treatment": "Pengangkatan larva, Antiinflamasi"
+            },
+            "Cardiac_Tamponade_Anjing": {
+                "related_symptoms": [
+                    "Sesak napas",
+                    "Lemas",
+                    "Kelelahan"
+                ],
+                "possible_conditions": [
+                    "Cardiac Tamponade"
+                ],
+                "treatment": "Drainase cairan, Terapi cairan"
+            },
+            "Cholangitis_Anjing": {
+                "related_symptoms": [
+                    "Demam",
+                    "Kuning pada kulit dan mata",
+                    "Nyeri perut"
+                ],
+                "possible_conditions": [
+                    "Cholangitis"
+                ],
+                "treatment": "Antibiotik, Terapi cairan"
+            },
+            "Chordoma_Anjing": {
+                "related_symptoms": [
+                    "Nyeri punggung",
+                    "Pembengkakan di tulang belakang"
+                ],
+                "possible_conditions": [
+                    "Chordoma"
+                ],
+                "treatment": "Operasi, Terapi suportif"
+            },
+            "Chylothorax_Anjing": {
+                "related_symptoms": [
+                    "Kesulitan bernapas",
+                    "Pembesaran perut"
+                ],
+                "possible_conditions": [
+                    "Chylothorax"
+                ],
+                "treatment": "Drainase cairan, Diet rendah lemak"
+            },
+            "Coccidioidomycosis_Anjing": {
+                "related_symptoms": [
+                    "Demam",
+                    "Batuk",
+                    "Lesu"
+                ],
+                "possible_conditions": [
+                    "Coccidioidomycosis"
+                ],
+                "treatment": "Antijamur, Terapi suportif"
+            },
+            "Corneal_Dystrophy_Anjing": {
+                "related_symptoms": [
+                    "Kabur penglihatan",
+                    "Mata berair"
+                ],
+                "possible_conditions": [
+                    "Corneal Dystrophy"
+                ],
+                "treatment": "Obat tetes mata, Terapi suportif"
+            },
+            "Cranial_Cruciate_Ligament_Rupture_Anjing": {
+                "related_symptoms": [
+                    "Kaki pincang",
+                    "Nyeri sendi"
+                ],
+                "possible_conditions": [
+                    "Cranial Cruciate Ligament Rupture"
+                ],
+                "treatment": "Operasi perbaikan ligamen"
+            },
+            "Cutaneous_Vasculitis_Anjing": {
+                "related_symptoms": [
+                    "Lesi kulit",
+                    "Rontok rambut"
+                ],
+                "possible_conditions": [
+                    "Cutaneous Vasculitis"
+                ],
+                "treatment": "Antibiotik, Kortikosteroid"
+            },
+            "Deafness_Anjing": {
+                "related_symptoms": [
+                    "Kehilangan pendengaran",
+                    "Tidak merespons suara"
+                ],
+                "possible_conditions": [
+                    "Deafness"
+                ],
+                "treatment": "Terapi suportif, Pelatihan"
+            },
+            "Degenerative_Myelopathy_Anjing": {
+                "related_symptoms": [
+                    "Kelemahan kaki belakang",
+                    "Kesulitan berjalan"
+                ],
+                "possible_conditions": [
+                    "Degenerative Myelopathy"
+                ],
+                "treatment": "Terapi fisik, Terapi suportif"
+            },
+            "Dermatitis_Herpetiformis_Anjing": {
+                "related_symptoms": [
+                    "Gatal",
+                    "Lesi kulit",
+                    "Rontok rambut"
+                ],
+                "possible_conditions": [
+                    "Dermatitis Herpetiformis"
+                ],
+                "treatment": "Antihistamin, Kortikosteroid"
+            },
+            "Diaphragmatic_Hernia_Anjing": {
+                "related_symptoms": [
+                    "Kesulitan bernapas",
+                    "Pembengkakan perut"
+                ],
+                "possible_conditions": [
+                    "Diaphragmatic Hernia"
+                ],
+                "treatment": "Operasi hernia"
+            },
+            "Discospondylitis_Anjing": {
+                "related_symptoms": [
+                    "Nyeri punggung",
+                    "Kesulitan bergerak",
+                    "Lemas"
+                ],
+                "possible_conditions": [
+                    "Discospondylitis"
+                ],
+                "treatment": "Antibiotik, Antiinflamasi"
+            },
+            "Dyspnea_Anjing": {
+                "related_symptoms": [
+                    "Sesak napas",
+                    "Nafas cepat"
+                ],
+                "possible_conditions": [
+                    "Dyspnea"
+                ],
+                "treatment": "Oksigen, Terapi sesuai penyebab"
+            },
+            "Elbow_Hygroma_Anjing": {
+                "related_symptoms": [
+                    "Benjolan lunak pada siku",
+                    "Tidak nyeri"
+                ],
+                "possible_conditions": [
+                    "Elbow Hygroma"
+                ],
+                "treatment": "Drainase cairan, Pelindung siku"
+            },
+            "Enamel_Hypoplasia_Anjing": {
+                "related_symptoms": [
+                    "Gigi kuning atau coklat",
+                    "Email tidak rata"
+                ],
+                "possible_conditions": [
+                    "Enamel Hypoplasia"
+                ],
+                "treatment": "Perawatan gigi, Poles gigi"
+            },
+            "Entropion_Anjing": {
+                "related_symptoms": [
+                    "Kelopak mata masuk ke dalam",
+                    "Iritasi mata"
+                ],
+                "possible_conditions": [
+                    "Entropion"
+                ],
+                "treatment": "Operasi koreksi kelopak mata"
+            },
+            "Esophageal_Stricture_Anjing": {
+                "related_symptoms": [
+                    "Kesulitan menelan",
+                    "Muntah"
+                ],
+                "possible_conditions": [
+                    "Esophageal Stricture"
+                ],
+                "treatment": "Operasi pelebaran esofagus"
+            },
+            "Fungal_Pneumonia_Anjing": {
+                "related_symptoms": [
+                    "Batuk",
+                    "Demam",
+                    "Lesu"
+                ],
+                "possible_conditions": [
+                    "Fungal Pneumonia"
+                ],
+                "treatment": "Antijamur, Terapi suportif"
+            },
+            "Gastric_Dilatation-Volvulus_Anjing": {
+                "related_symptoms": [
+                    "Perut buncit",
+                    "Muntah",
+                    "Lemas"
+                ],
+                "possible_conditions": [
+                    "Gastric Dilatation-Volvulus"
+                ],
+                "treatment": "Operasi darurat, Terapi cairan"
+            },
+            "Glaucomatous_Cataract_Anjing": {
+                "related_symptoms": [
+                    "Kabur penglihatan",
+                    "Mata berair"
+                ],
+                "possible_conditions": [
+                    "Glaucomatous Cataract"
+                ],
+                "treatment": "Obat tetes untuk menurunkan tekanan mata"
+            },
+            "Heart_Murmur_Anjing": {
+                "related_symptoms": [
+                    "Denyut jantung tidak normal",
+                    "Lemas"
+                ],
+                "possible_conditions": [
+                    "Heart Murmur"
+                ],
+                "treatment": "Obat jantung, Terapi suportif"
+            },
+            "Histiocytoma_Anjing": {
+                "related_symptoms": [
+                    "Benjolan kecil pada kulit",
+                    "Tidak nyeri"
+                ],
+                "possible_conditions": [
+                    "Histiocytoma"
+                ],
+                "treatment": "Operasi pengangkatan jika diperlukan"
+            },
+            "Hyperadrenocorticism_Anjing": {
+                "related_symptoms": [
+                    "Perut buncit",
+                    "Lemas",
+                    "Kebotakan"
+                ],
+                "possible_conditions": [
+                    "Hyperadrenocorticism"
+                ],
+                "treatment": "Penghambat produksi kortisol"
+            },
+            "Hyperkalemia_Anjing": {
+                "related_symptoms": [
+                    "Kelemahan otot",
+                    "Lemas",
+                    "Aritmia"
+                ],
+                "possible_conditions": [
+                    "Hyperkalemia"
+                ],
+                "treatment": "Terapi cairan, Obat pengatur elektrolit"
+            },
+            "Hyperthyroidism_Anjing": {
+                "related_symptoms": [
+                    "Penurunan berat badan",
+                    "Haus berlebihan",
+                    "Buang air kecil sering"
+                ],
+                "possible_conditions": [
+                    "Hyperthyroidism"
+                ],
+                "treatment": "Penghambat hormon tiroid"
+            },
+            "Hypocalcemia_Anjing": {
+                "related_symptoms": [
+                    "Kejang",
+                    "Kram otot",
+                    "Lemas"
+                ],
+                "possible_conditions": [
+                    "Hypocalcemia"
+                ],
+                "treatment": "Suplemen kalsium, Terapi suportif"
+            },
+            "Hypoglycemia_Anjing": {
+                "related_symptoms": [
+                    "Gemetar",
+                    "Kejang",
+                    "Lesu"
+                ],
+                "possible_conditions": [
+                    "Hypoglycemia"
+                ],
+                "treatment": "Pemberian glukosa, Diet tinggi karbohidrat"
+            },
+            "Hypokalemia_Anjing": {
+                "related_symptoms": [
+                    "Kelemahan otot",
+                    "Kehilangan refleks"
+                ],
+                "possible_conditions": [
+                    "Hypokalemia"
+                ],
+                "treatment": "Suplemen kalium, Terapi cairan"
+            },
+            "Hypoproteinemia_Anjing": {
+                "related_symptoms": [
+                    "Bengkak pada perut",
+                    "Lemas"
+                ],
+                "possible_conditions": [
+                    "Hypoproteinemia"
+                ],
+                "treatment": "Diet tinggi protein, Terapi cairan"
+            },
+            "Idiopathic_Epilepsy_Anjing": {
+                "related_symptoms": [
+                    "Kejang",
+                    "Kehilangan kesadaran"
+                ],
+                "possible_conditions": [
+                    "Idiopathic Epilepsy"
+                ],
+                "treatment": "Obat antikonvulsan"
+            },
+            "Intervertebral_Disc_Disease_Anjing": {
+                "related_symptoms": [
+                    "Nyeri punggung",
+                    "Kehilangan kontrol kaki"
+                ],
+                "possible_conditions": [
+                    "Intervertebral Disc Disease"
+                ],
+                "treatment": "Operasi, Terapi fisik"
+            },
+            "Iritis_Anjing": {
+                "related_symptoms": [
+                    "Nyeri mata",
+                    "Mata merah",
+                    "Kehilangan penglihatan"
+                ],
+                "possible_conditions": [
+                    "Iritis"
+                ],
+                "treatment": "Antibiotik, Obat antiinflamasi"
+            },
+            "Juvenile_Cellulitis_Anjing": {
+                "related_symptoms": [
+                    "Pembengkakan wajah",
+                    "Lesi kulit"
+                ],
+                "possible_conditions": [
+                    "Juvenile Cellulitis"
+                ],
+                "treatment": "Antibiotik, Kortikosteroid"
+            },
+            "Keratitis_Anjing": {
+                "related_symptoms": [
+                    "Mata berair",
+                    "Kemerahan",
+                    "Sensitivitas cahaya"
+                ],
+                "possible_conditions": [
+                    "Keratitis"
+                ],
+                "treatment": "Obat tetes antibiotik"
+            },
+            "Keratoconjunctivitis_Sicca_Anjing": {
+                "related_symptoms": [
+                    "Mata kering",
+                    "Gatal",
+                    "Perih"
+                ],
+                "possible_conditions": [
+                    "Keratoconjunctivitis Sicca"
+                ],
+                "treatment": "Obat tetes mata pelembap"
+            },
+            "Lactic_Acidosis_Anjing": {
+                "related_symptoms": [
+                    "Nafas cepat",
+                    "Lemas",
+                    "Muntah"
+                ],
+                "possible_conditions": [
+                    "Lactic Acidosis"
+                ],
+                "treatment": "Terapi cairan, Penanganan asidosis"
+            },
+            "Laryngeal_Paralysis_Anjing": {
+                "related_symptoms": [
+                    "Sesak napas",
+                    "Suara serak"
+                ],
+                "possible_conditions": [
+                    "Laryngeal Paralysis"
+                ],
+                "treatment": "Operasi, Terapi suportif"
+            },
+            "Legg-Calve-Perthes_Disease_Anjing": {
+                "related_symptoms": [
+                    "Kaki pincang",
+                    "Nyeri panggul"
+                ],
+                "possible_conditions": [
+                    "Legg-Calve-Perthes Disease"
+                ],
+                "treatment": "Operasi pengangkatan kepala tulang paha"
+            },
+            "Liver_Shunt_Anjing": {
+                "related_symptoms": [
+                    "Lemas",
+                    "Muntah",
+                    "Perut membesar"
+                ],
+                "possible_conditions": [
+                    "Liver Shunt"
+                ],
+                "treatment": "Operasi korektif, Diet rendah protein"
+            },
+            "Macadamia_Nut_Toxicity_Anjing": {
+                "related_symptoms": [
+                    "Muntah",
+                    "Lesu",
+                    "Demam"
+                ],
+                "possible_conditions": [
+                    "Macadamia Nut Toxicity"
+                ],
+                "treatment": "Terapi suportif, Observasi"
+            },
+            "Meningitis_Anjing": {
+                "related_symptoms": [
+                    "Demam",
+                    "Nyeri leher",
+                    "Kejang"
+                ],
+                "possible_conditions": [
+                    "Meningitis"
+                ],
+                "treatment": "Antibiotik, Kortikosteroid"
+            },
+            "Microphthalmia_Anjing": {
+                "related_symptoms": [
+                    "Ukuran mata lebih kecil",
+                    "Gangguan penglihatan"
+                ],
+                "possible_conditions": [
+                    "Microphthalmia"
+                ],
+                "treatment": "Terapi suportif"
+            },
+            "Mite_Infestation_Anjing": {
+                "related_symptoms": [
+                    "Gatal",
+                    "Kerontokan bulu",
+                    "Luka kulit"
+                ],
+                "possible_conditions": [
+                    "Mite Infestation"
+                ],
+                "treatment": "Antiparasit, Pembersihan lingkungan"
+            },
+            "Myositis_Anjing": {
+                "related_symptoms": [
+                    "Nyeri otot",
+                    "Pembengkakan",
+                    "Lemas"
+                ],
+                "possible_conditions": [
+                    "Myositis"
+                ],
+                "treatment": "Antibiotik, Kortikosteroid"
+            },
+            "Necrotizing_Fasciitis_Anjing": {
+                "related_symptoms": [
+                    "Luka terbuka pada kulit",
+                    "Nyeri hebat"
+                ],
+                "possible_conditions": [
+                    "Necrotizing Fasciitis"
+                ],
+                "treatment": "Antibiotik, Debridemen luka"
+            },
+            "Neurogenic_Bladder_Anjing": {
+                "related_symptoms": [
+                    "Kesulitan buang air kecil",
+                    "Pembengkakan perut"
+                ],
+                "possible_conditions": [
+                    "Neurogenic Bladder"
+                ],
+                "treatment": "Kateterisasi, Terapi suportif"
+            },
+            "Nictitating_Membrane_Prolapse_Anjing": {
+                "related_symptoms": [
+                    "Mata merah",
+                    "Pembengkakan di mata"
+                ],
+                "possible_conditions": [
+                    "Nictitating Membrane Prolapse"
+                ],
+                "treatment": "Operasi koreksi"
+            },
+            "Obstructive_Uropathy_Anjing": {
+                "related_symptoms": [
+                    "Sulit buang air kecil",
+                    "Perut membesar"
+                ],
+                "possible_conditions": [
+                    "Obstructive Uropathy"
+                ],
+                "treatment": "Drainase urine, Operasi jika diperlukan"
+            },
+            "Onychodystrophy_Anjing": {
+                "related_symptoms": [
+                    "Kuku rapuh",
+                    "Kuku lepas"
+                ],
+                "possible_conditions": [
+                    "Onychodystrophy"
+                ],
+                "treatment": "Suplemen biotin, Obat antiinflamasi"
+            },
+            "Orchitis_Anjing": {
+                "related_symptoms": [
+                    "Pembengkakan testis",
+                    "Nyeri",
+                    "Demam"
+                ],
+                "possible_conditions": [
+                    "Orchitis"
+                ],
+                "treatment": "Antibiotik, Kompres hangat"
+            },
+            "Otitis_Media_Anjing": {
+                "related_symptoms": [
+                    "Kepala miring",
+                    "Gatal di telinga",
+                    "Bau"
+                ],
+                "possible_conditions": [
+                    "Otitis Media"
+                ],
+                "treatment": "Antibiotik, Pembersihan telinga"
+            },
+            "Pancreatic_Insufficiency_Anjing": {
+                "related_symptoms": [
+                    "Penurunan berat badan",
+                    "Diare",
+                    "Nafsu makan meningkat"
+                ],
+                "possible_conditions": [
+                    "Pancreatic Insufficiency"
+                ],
+                "treatment": "Enzim pencernaan, Diet khusus"
+            }
+        }
+    },
+    {
+        "intent": "symptom_analysis_cat",
+        "entities": [
+            "animal",
+            "condition",
+            "symptom",
+            "severity",
+            "duration"
+        ],
+        "utterances": [],
+        "responses": [],
+        "disease_analysis": {
+            "Dermatophytosis_Kucing": {
+                "related_symptoms": [
+                    "Sulit berjalan",
+                    "bengkak pada kaki"
+                ],
+                "possible_conditions": [
+                    "Dermatophytosis"
+                ],
+                "treatment": "Antibiotik, pembersihan area infeksi"
+            },
+            "Scabies_Kucing": {
+                "related_symptoms": [
+                    "Lesi kulit",
+                    "gatal",
+                    "bulu rontok"
+                ],
+                "possible_conditions": [
+                    "Scabies"
+                ],
+                "treatment": "Antibiotik, pembersihan area infeksi"
+            },
+            "Pyoderma_Kucing": {
+                "related_symptoms": [
+                    "Kulit bernanah",
+                    "bengkak",
+                    "demam"
+                ],
+                "possible_conditions": [
+                    "Pyoderma"
+                ],
+                "treatment": "Obat tetes mata, antibiotik"
+            },
+            "Infestasi_Kutu_Kucing": {
+                "related_symptoms": [
+                    "Mata berair",
+                    "bersin",
+                    "batuk"
+                ],
+                "possible_conditions": [
+                    "Infestasi Kutu"
+                ],
+                "treatment": "Pelembap kulit khusus hewan, perawatan kulit"
+            },
+            "Feline_Acne_Kucing": {
+                "related_symptoms": [
+                    "Mata berair",
+                    "bersin",
+                    "batuk"
+                ],
+                "possible_conditions": [
+                    "Feline Acne"
+                ],
+                "treatment": "Salep penyembuhan luka, perban"
+            },
+            "Feline_Leukemia_Kucing": {
+                "related_symptoms": [
+                    "Lesi kulit",
+                    "gatal",
+                    "bulu rontok"
+                ],
+                "possible_conditions": [
+                    "Feline Leukemia"
+                ],
+                "treatment": "Pembersih wajah khusus hewan, antibiotik topikal"
+            },
+            "Calicivirus_Kucing": {
+                "related_symptoms": [
+                    "Lesi kulit",
+                    "gatal",
+                    "bulu rontok"
+                ],
+                "possible_conditions": [
+                    "Calicivirus"
+                ],
+                "treatment": "Fisioterapi, obat anti-nyeri"
+            },
+            "Panleukopenia_Kucing": {
+                "related_symptoms": [
+                    "Gatal intens",
+                    "kulit merah",
+                    "koreng"
+                ],
+                "possible_conditions": [
+                    "Panleukopenia"
+                ],
+                "treatment": "Penggunaan antiparasit, mandi rutin"
+            },
+            "Rhinotracheitis_Kucing": {
+                "related_symptoms": [
+                    "Bengkak pada perut",
+                    "muntah"
+                ],
+                "possible_conditions": [
+                    "Rhinotracheitis"
+                ],
+                "treatment": "Salep penyembuhan luka, perban"
+            },
+            "Cholangiohepatitis_Kucing": {
+                "related_symptoms": [
+                    "Kulit bernanah",
+                    "bengkak",
+                    "demam"
+                ],
+                "possible_conditions": [
+                    "Cholangiohepatitis"
+                ],
+                "treatment": "Salep penyembuhan luka, perban"
+            },
+            "Gingivitis_Kucing": {
+                "related_symptoms": [
+                    "Bulu rontok",
+                    "gatal",
+                    "kehadiran kutu"
+                ],
+                "possible_conditions": [
+                    "Gingivitis"
+                ],
+                "treatment": "Obat cacing, perawatan kebersihan"
+            },
+            "Diabetes_Melitus_Kucing": {
+                "related_symptoms": [
+                    "Kerontokan berlebihan",
+                    "kulit bersisik"
+                ],
+                "possible_conditions": [
+                    "Diabetes Melitus"
+                ],
+                "treatment": "Antibiotik, pembersihan area infeksi"
+            },
+            "Hyperthyroidism_Kucing": {
+                "related_symptoms": [
+                    "Kulit bernanah",
+                    "bengkak",
+                    "demam"
+                ],
+                "possible_conditions": [
+                    "Hyperthyroidism"
+                ],
+                "treatment": "Obat tetes mata, antibiotik"
+            },
+            "Hypothyroidism_Kucing": {
+                "related_symptoms": [
+                    "Kerontokan berlebihan",
+                    "kulit bersisik"
+                ],
+                "possible_conditions": [
+                    "Hypothyroidism"
+                ],
+                "treatment": "Salep penyembuhan luka, perban"
+            },
+            "Kidney_Disease_Kucing": {
+                "related_symptoms": [
+                    "Bulu rontok",
+                    "gatal",
+                    "kehadiran kutu"
+                ],
+                "possible_conditions": [
+                    "Kidney Disease"
+                ],
+                "treatment": "Obat tetes mata, antibiotik"
+            },
+            "Heartworm_Kucing": {
+                "related_symptoms": [
+                    "Lesi kulit",
+                    "gatal",
+                    "bulu rontok"
+                ],
+                "possible_conditions": [
+                    "Heartworm"
+                ],
+                "treatment": "Antijamur topikal atau oral, menjaga kebersihan"
+            },
+            "Feline_Immunodeficiency_Virus_Kucing": {
+                "related_symptoms": [
+                    "Gatal intens",
+                    "kulit merah",
+                    "koreng"
+                ],
+                "possible_conditions": [
+                    "Feline Immunodeficiency Virus"
+                ],
+                "treatment": "Obat cacing, perawatan kebersihan"
+            },
+            "Arthritis_Kucing": {
+                "related_symptoms": [
+                    "Bulu rontok",
+                    "gatal",
+                    "kehadiran kutu"
+                ],
+                "possible_conditions": [
+                    "Arthritis"
+                ],
+                "treatment": "Antibiotik, pembersihan area infeksi"
+            },
+            "Feline_Infectious_Peritonitis_Kucing": {
+                "related_symptoms": [
+                    "Luka terbuka",
+                    "kulit berdarah"
+                ],
+                "possible_conditions": [
+                    "Feline Infectious Peritonitis"
+                ],
+                "treatment": "Pelembap kulit khusus hewan, perawatan kulit"
+            },
+            "Obesity_Kucing": {
+                "related_symptoms": [
+                    "Bengkak pada perut",
+                    "muntah"
+                ],
+                "possible_conditions": [
+                    "Obesity"
+                ],
+                "treatment": "Salep penyembuhan luka, perban"
+            },
+            "Ear_Mites_Kucing": {
+                "related_symptoms": [
+                    "Mata berair",
+                    "bersin",
+                    "batuk"
+                ],
+                "possible_conditions": [
+                    "Ear Mites"
+                ],
+                "treatment": "Antijamur topikal atau oral, menjaga kebersihan"
+            },
+            "Conjunctivitis_Kucing": {
+                "related_symptoms": [
+                    "Bulu rontok",
+                    "gatal",
+                    "kehadiran kutu"
+                ],
+                "possible_conditions": [
+                    "Conjunctivitis"
+                ],
+                "treatment": "Penggunaan antiparasit, mandi rutin"
+            },
+            "Mange_Kucing": {
+                "related_symptoms": [
+                    "Lesi kulit",
+                    "gatal",
+                    "bulu rontok"
+                ],
+                "possible_conditions": [
+                    "Mange"
+                ],
+                "treatment": "Salep penyembuhan luka, perban"
+            },
+            "Ringworm_Kucing": {
+                "related_symptoms": [
+                    "Lesi kulit",
+                    "gatal",
+                    "bulu rontok"
+                ],
+                "possible_conditions": [
+                    "Ringworm"
+                ],
+                "treatment": "Antijamur topikal atau oral, menjaga kebersihan"
+            },
+            "Asthma_Kucing": {
+                "related_symptoms": [
+                    "Lesi kulit",
+                    "gatal",
+                    "bulu rontok"
+                ],
+                "possible_conditions": [
+                    "Asthma"
+                ],
+                "treatment": "Obat cacing, perawatan kebersihan"
+            },
+            "Allergy_Dermatitis_Kucing": {
+                "related_symptoms": [
+                    "Bulu rontok",
+                    "gatal",
+                    "kehadiran kutu"
+                ],
+                "possible_conditions": [
+                    "Allergy Dermatitis"
+                ],
+                "treatment": "Pembersih wajah khusus hewan, antibiotik topikal"
+            },
+            "Urinary_Tract_Infection_Kucing": {
+                "related_symptoms": [
+                    "Mata berair",
+                    "bersin",
+                    "batuk"
+                ],
+                "possible_conditions": [
+                    "Urinary Tract Infection"
+                ],
+                "treatment": "Fisioterapi, obat anti-nyeri"
+            },
+            "Hepatic_Lipidosis_Kucing": {
+                "related_symptoms": [
+                    "Sulit berjalan",
+                    "bengkak pada kaki"
+                ],
+                "possible_conditions": [
+                    "Hepatic Lipidosis"
+                ],
+                "treatment": "Obat tetes mata, antibiotik"
+            },
+            "Lymphoma_Kucing": {
+                "related_symptoms": [
+                    "Sulit berjalan",
+                    "bengkak pada kaki"
+                ],
+                "possible_conditions": [
+                    "Lymphoma"
+                ],
+                "treatment": "Pembersih wajah khusus hewan, antibiotik topikal"
+            },
+            "Cancer_Kucing": {
+                "related_symptoms": [
+                    "Bulu rontok",
+                    "gatal",
+                    "kehadiran kutu"
+                ],
+                "possible_conditions": [
+                    "Cancer"
+                ],
+                "treatment": "Pelembap kulit khusus hewan, perawatan kulit"
+            },
+            "Parasite_Infestation_Kucing": {
+                "related_symptoms": [
+                    "Mata berair",
+                    "bersin",
+                    "batuk"
+                ],
+                "possible_conditions": [
+                    "Parasite Infestation"
+                ],
+                "treatment": "Penggunaan antiparasit, salep anti-gatal"
+            },
+            "Anemia_Kucing": {
+                "related_symptoms": [
+                    "Kerontokan berlebihan",
+                    "kulit bersisik"
+                ],
+                "possible_conditions": [
+                    "Anemia"
+                ],
+                "treatment": "Fisioterapi, obat anti-nyeri"
+            },
+            "Sepsis_Kucing": {
+                "related_symptoms": [
+                    "Mata berair",
+                    "bersin",
+                    "batuk"
+                ],
+                "possible_conditions": [
+                    "Sepsis"
+                ],
+                "treatment": "Pembersih wajah khusus hewan, antibiotik topikal"
+            },
+            "Parvovirus_Kucing": {
+                "related_symptoms": [
+                    "Bengkak pada perut",
+                    "muntah"
+                ],
+                "possible_conditions": [
+                    "Parvovirus"
+                ],
+                "treatment": "Penggunaan antiparasit, mandi rutin"
+            },
+            "Leptospirosis_Kucing": {
+                "related_symptoms": [
+                    "Lesi kulit",
+                    "gatal",
+                    "bulu rontok"
+                ],
+                "possible_conditions": [
+                    "Leptospirosis"
+                ],
+                "treatment": "Obat tetes mata, antibiotik"
+            },
+            "Rabies_Kucing": {
+                "related_symptoms": [
+                    "Sulit berjalan",
+                    "bengkak pada kaki"
+                ],
+                "possible_conditions": [
+                    "Rabies"
+                ],
+                "treatment": "Fisioterapi, obat anti-nyeri"
+            },
+            "Fungal_Infection_Kucing": {
+                "related_symptoms": [
+                    "Sulit berjalan",
+                    "bengkak pada kaki"
+                ],
+                "possible_conditions": [
+                    "Fungal Infection"
+                ],
+                "treatment": "Antibiotik, pembersihan area infeksi"
+            },
+            "Scalp_Infection_Kucing": {
+                "related_symptoms": [
+                    "Bengkak pada perut",
+                    "muntah"
+                ],
+                "possible_conditions": [
+                    "Scalp Infection"
+                ],
+                "treatment": "Obat tetes mata, antibiotik"
+            },
+            "Footpad_Disease_Kucing": {
+                "related_symptoms": [
+                    "Bengkak pada perut",
+                    "muntah"
+                ],
+                "possible_conditions": [
+                    "Footpad Disease"
+                ],
+                "treatment": "Obat tetes mata, antibiotik"
+            },
+            "Food_Poisoning_Kucing": {
+                "related_symptoms": [
+                    "Kulit bernanah",
+                    "bengkak",
+                    "demam"
+                ],
+                "possible_conditions": [
+                    "Food Poisoning"
+                ],
+                "treatment": "Pembersih wajah khusus hewan, antibiotik topikal"
+            },
+            "Toxoplasmosis_Kucing": {
+                "related_symptoms": [
+                    "Bengkak pada perut",
+                    "muntah"
+                ],
+                "possible_conditions": [
+                    "Toxoplasmosis"
+                ],
+                "treatment": "Pembersih wajah khusus hewan, antibiotik topikal"
+            },
+            "Bronchitis_Kucing": {
+                "related_symptoms": [
+                    "Gatal intens",
+                    "kulit merah",
+                    "koreng"
+                ],
+                "possible_conditions": [
+                    "Bronchitis"
+                ],
+                "treatment": "Antibiotik, pembersihan area infeksi"
+            },
+            "Bladder_Stones_Kucing": {
+                "related_symptoms": [
+                    "Kulit bernanah",
+                    "bengkak",
+                    "demam"
+                ],
+                "possible_conditions": [
+                    "Bladder Stones"
+                ],
+                "treatment": "Penggunaan antiparasit, mandi rutin"
+            },
+            "Liver_Disease_Kucing": {
+                "related_symptoms": [
+                    "Lesi kulit",
+                    "gatal",
+                    "bulu rontok"
+                ],
+                "possible_conditions": [
+                    "Liver Disease"
+                ],
+                "treatment": "Antibiotik, pembersihan area infeksi"
+            },
+            "Hypertension_Kucing": {
+                "related_symptoms": [
+                    "Komedo hitam di dagu",
+                    "kulit berminyak"
+                ],
+                "possible_conditions": [
+                    "Hypertension"
+                ],
+                "treatment": "Penggunaan antiparasit, salep anti-gatal"
+            },
+            "Anorexia_Kucing": {
+                "related_symptoms": [
+                    "Kulit bernanah",
+                    "bengkak",
+                    "demam"
+                ],
+                "possible_conditions": [
+                    "Anorexia"
+                ],
+                "treatment": "Salep penyembuhan luka, perban"
+            },
+            "Cystitis_Kucing": {
+                "related_symptoms": [
+                    "Bulu rontok",
+                    "gatal",
+                    "kehadiran kutu"
+                ],
+                "possible_conditions": [
+                    "Cystitis"
+                ],
+                "treatment": "Penggunaan antiparasit, mandi rutin"
+            },
+            "Hyperlipidemia_Kucing": {
+                "related_symptoms": [
+                    "Kulit bernanah",
+                    "bengkak",
+                    "demam"
+                ],
+                "possible_conditions": [
+                    "Hyperlipidemia"
+                ],
+                "treatment": "Obat tetes mata, antibiotik"
+            },
+            "Constipation_Kucing": {
+                "related_symptoms": [
+                    "Kerontokan berlebihan",
+                    "kulit bersisik"
+                ],
+                "possible_conditions": [
+                    "Constipation"
+                ],
+                "treatment": "Salep penyembuhan luka, perban"
+            },
+            "Hypokalemia_Kucing": {
+                "related_symptoms": [
+                    "Mata berair",
+                    "bersin",
+                    "batuk"
+                ],
+                "possible_conditions": [
+                    "Hypokalemia"
+                ],
+                "treatment": "Fisioterapi, obat anti-nyeri"
+            },
+            "Feline_Panleukopenia_Virus_Kucing": {
+                "related_symptoms": [
+                    "Diare",
+                    "penurunan nafsu makan",
+                    "dehidrasi",
+                    "tubuh lelah",
+                    "demam"
+                ],
+                "possible_conditions": [
+                    "Feline Panleukopenia Virus"
+                ],
+                "treatment": "Obat antivirus dan perawatan hidrasi"
+            },
+            "Feline_Calici_Virus_Kucing": {
+                "related_symptoms": [
+                    "Sariawan",
+                    "pilek",
+                    "bersin",
+                    "demam",
+                    "hipersalivasi",
+                    "discharge hidung"
+                ],
+                "possible_conditions": [
+                    "Feline Calici Virus"
+                ],
+                "treatment": "Obat antivirus, pemberian cairan"
+            },
+            "Feline_Viral_Rhinotracheitis_Kucing": {
+                "related_symptoms": [
+                    "Batuk",
+                    "sesak napas",
+                    "radang tenggorokan",
+                    "discharge hidung dan mata"
+                ],
+                "possible_conditions": [
+                    "Feline Viral Rhinotracheitis"
+                ],
+                "treatment": "Obat antivirus, antibiotik"
+            },
+            "Infeksi_Bakteri_Kucing": {
+                "related_symptoms": [
+                    "Menggaruk",
+                    "bulu rontok",
+                    "kulit berkerak",
+                    "kulit mengelupas"
+                ],
+                "possible_conditions": [
+                    "Infeksi Bakteri"
+                ],
+                "treatment": "Antibiotik topikal atau oral"
+            },
+            "Infeksi_Jamur_Kucing": {
+                "related_symptoms": [
+                    "Menggaruk",
+                    "bulu rontok",
+                    "kulit berkerak",
+                    "iritasi pada kulit"
+                ],
+                "possible_conditions": [
+                    "Infeksi Jamur"
+                ],
+                "treatment": "Antijamur topikal atau oral"
+            },
+            "Ringworm_(Kurap)_Kucing": {
+                "related_symptoms": [
+                    "Kebotakan pola melingkar",
+                    "hilang nafsu makan",
+                    "mata berair"
+                ],
+                "possible_conditions": [
+                    "Ringworm (Kurap)"
+                ],
+                "treatment": "Obat antijamur, salep kulit"
+            },
+            "Kutu_Kucing": {
+                "related_symptoms": [
+                    "Bulu menipis di ujung ekor",
+                    "peradangan akibat gigitan"
+                ],
+                "possible_conditions": [
+                    "Kutu"
+                ],
+                "treatment": "Penggunaan antiparasit"
+            },
+            "Tungau_Telinga_Kucing": {
+                "related_symptoms": [
+                    "Bau menyengat dari telinga",
+                    "cairan gelap dari telinga"
+                ],
+                "possible_conditions": [
+                    "Tungau Telinga"
+                ],
+                "treatment": "Obat antiparasit, pembersihan telinga"
+            }
+        }
+    },
+    {
+        "intent": "greeting",
+        "entities": [],
+        "utterances": [],
+        "responses": []
+    },
+    {
+        "intent": "farewell",
+        "entities": [],
+        "utterances": [],
+        "responses": []
+    },
+    {
+        "intent": "general_conversation",
+        "entities": [],
+        "utterances": [],
+        "responses": []
+    }
+]
+>>>>>>> b9d8d40 (upload model by tensorflow)
