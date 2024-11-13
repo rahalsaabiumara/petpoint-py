@@ -7,5 +7,5 @@ scikit-learn
 matplotlib
 imbalanced-learn
 tf2crf
-protobuf==3.19.6
+protobuf
 ijson
