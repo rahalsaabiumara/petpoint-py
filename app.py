@@ -14,6 +14,9 @@ os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
 nltk_path = os.path.join(os.getcwd(), 'nltk_data')
 nltk.data.path.append(nltk_path)
 
+nltk.download('punkt', download_dir=nltk_path)
+nltk.download('stopwords', download_dir=nltk_path)
+nltk.download('punkt_tab', download_dir=nltk_path)
 
 # Import fungsi dari utils
 from utils import preprocess_text, predict_intent, predict_entities
