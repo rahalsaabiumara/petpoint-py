@@ -22,7 +22,7 @@ def load_slang_dict(filepath):
     return slang_dict
 
 # Memuat kamus slang dari file teks
-slang_dict = load_slang_dict('models/combined_slang_words.txt')
+slang_dict = load_slang_dict('dataset/combined_slang_words.txt')
 
 # Inisialisasi Stemmer
 factory = StemmerFactory()
