@@ -1,6 +1,6 @@
 pandas==2.2.3
 fuzzywuzzy==0.18.0
-streamlit==1.40.1
+streamlit==1.22.0
 tensorflow==2.11.0
 tensorflow-addons==0.23.0
 tf2crf==0.1.33
@@ -10,4 +10,4 @@ scikit-learn==1.5.2
 matplotlib==3.9.2
 imbalanced-learn==0.12.4
 ijson==3.3.0
-numpy<2
+numpy==1.26.0
