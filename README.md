@@ -2,16 +2,16 @@
 PetPoint Chatbot API adalah aplikasi chatbot yang dikembangkan menggunakan Flask dan TensorFlow. Chatbot ini dirancang untuk membantu pengguna dalam mengidentifikasi gejala penyakit pada hewan peliharaan, terutama anjing dan kucing, melalui analisis teks.
 
 # Fitur Utama
-1.**Prediksi Intent: Mengidentifikasi maksud dari input pengguna, seperti deteksi gejala.**
-2.**Named Entity Recognition (NER): Mengenali entitas penting dalam teks, seperti jenis hewan dan gejala.**
-3.**Konteks Percakapan: Mempertahankan konteks percakapan menggunakan session Flask.**
-4.**RESTful API: Endpoint yang mudah digunakan dan diintegrasikan dengan aplikasi web atau mobile.**
+1. **Prediksi Intent: Mengidentifikasi maksud dari input pengguna, seperti deteksi gejala.**
+2. **Named Entity Recognition (NER): Mengenali entitas penting dalam teks, seperti jenis hewan dan gejala.**
+3. **Konteks Percakapan: Mempertahankan konteks percakapan menggunakan session Flask.**
+4. **RESTful API: Endpoint yang mudah digunakan dan diintegrasikan dengan aplikasi web atau mobile.**
 
 # Teknologi yang Digunakan
-1.**Flask: Framework web untuk API.**
-2.**TensorFlow: Framework deep learning untuk model intent dan NER.**
-3.**NLTK: Library NLP untuk preprocessing teks.**
-4.**Sastrawi: Library untuk stemming bahasa Indonesia.**
+1. **Flask: Framework web untuk API.**
+2. **TensorFlow: Framework deep learning untuk model intent dan NER.**
+3. **NLTK: Library NLP untuk preprocessing teks.**
+4. **Sastrawi: Library untuk stemming bahasa Indonesia.**
 
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
 ![API Status](https://img.shields.io/badge/API-available-blue)
