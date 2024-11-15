@@ -7,7 +7,7 @@ PetPoint Chatbot API adalah aplikasi chatbot yang dikembangkan menggunakan Flask
 3.**Konteks Percakapan: Mempertahankan konteks percakapan menggunakan session Flask.**
 4.**RESTful API: Endpoint yang mudah digunakan dan diintegrasikan dengan aplikasi web atau mobile.**
 
-#Teknologi yang Digunakan
+# Teknologi yang Digunakan
 1.**Flask: Framework web untuk API.**
 2.**TensorFlow: Framework deep learning untuk model intent dan NER.**
 3.**NLTK: Library NLP untuk preprocessing teks.**
@@ -18,7 +18,7 @@ PetPoint Chatbot API adalah aplikasi chatbot yang dikembangkan menggunakan Flask
 ![Python Version](https://img.shields.io/badge/python-3.9%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
-#Struktur Proyek
+# Struktur Proyek
 ```bash
 petpoint-py/
 ├── app.py                     # Logika utama chatbot dan fungsi Flask
@@ -35,7 +35,7 @@ petpoint-py/
 │   └── tag2idx.json           # Mapping tag NER ke indeks
 ├── requirements.txt           # Daftar dependensi Python
 ```
-#Instalasi
+# Instalasi
 1. **Clone Repository**
 ```bash
 git clone https://github.com/username/petpoint-py.git
@@ -48,7 +48,7 @@ source env/bin/activate
 pip install -r requirements.txt
 ```
 
-#Cara Menjalankan API
+# Cara Menjalankan API
 Jalankan perintah berikut untuk memulai API Flask:
 
 ```bash
@@ -56,7 +56,7 @@ python api.py
 ```
 API akan tersedia di http://127.0.0.1:5000.
 
-#Penggunaan API
+# Penggunaan API
 1. Health Check
 Endpoint: /health
 Method: GET
@@ -101,5 +101,5 @@ Respons:
   "response": "Anjing Anda mengalami penyakit Gastroenteritis. Terapi cairan, Antiemetik, Antibiotik"
 }
 ```
-#Tips Penggunaan
+# Tips Penggunaan
 Gunakan endpoint /reset sebelum memulai percakapan baru untuk menghapus konteks yang tersimpan.
