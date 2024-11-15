@@ -1,13 +1,11 @@
-pip==24.3.1
-pandas==2.2.3
-fuzzywuzzy==0.18.0
-streamlit
-tensorflow==2.11.0
+tensorflow==2.13.0
 tensorflow-addons
-tf2crf
+seqeval
 sastrawi
 nltk
 scikit-learn
 matplotlib
 imbalanced-learn
+tf2crf
+protobuf
 ijson
