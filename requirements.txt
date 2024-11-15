@@ -9,3 +9,9 @@ imbalanced-learn
 tf2crf
 protobuf
 ijson
+flask
+Flask-CORS
+Pillow
+numpy
+requests
+Werkzeug
