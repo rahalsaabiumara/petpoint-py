@@ -1,4 +1,3 @@
-
 # 🐾 Panduan Menjalankan Chatbot Hewan dengan Docker Compose
 
 ## 📋 Daftar Isi
