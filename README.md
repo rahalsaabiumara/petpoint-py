@@ -9,7 +9,7 @@
 - [🧹 Menghentikan dan Menghapus Kontainer](#menghentikan-dan-menghapus-kontainer)
 - [📂 Struktur Proyek](#struktur-proyek)
 
-## 🔧 Prasyarat {#prasyarat}
+## Prasyarat
 
 Sebelum memulai, pastikan Anda telah menginstal hal-hal berikut di sistem Anda:
 
