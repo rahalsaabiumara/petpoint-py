@@ -207,9 +207,9 @@ def get_response(user_input, intent=None, entities=None):
     else:
         # Jika intent dikenali
         if intent == "Mendiagnosis Gejala":
-            return "Berdasarkan gejalanya, kemungkinan ada masalah kesehatan. Saya sarankan segera periksakan ke dokter hewan."
+            return "Berdasarkan gejalanya, kemungkinan ada masalah kesehatan. Saya sarankan anda menggunakan fitur emergency untuk menemukan komunitas terdekat."
         elif intent == "Rekomendasi Penanganan Awal":
-            return "Cobalah langkah penanganan awal seperti menjaga kebersihan, memberikan makanan ringan, dan konsultasikan ke dokter hewan jika berlanjut."
+            return "Sebaiknya Anda menggunakan fitur emergency agar menemukan komunitas terdekat untuk membantu Anda menangani ini."
         else:
             # Intent dikenal tapi bukan dua intent khusus di atas.
             # Gunakan retrieval sebagai fallback.
