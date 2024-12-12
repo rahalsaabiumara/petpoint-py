@@ -9,14 +9,14 @@
 - [🧹 Menghentikan dan Menghapus Kontainer](#menghentikan-dan-menghapus-kontainer)
 - [📂 Struktur Proyek](#struktur-proyek)
 
-## 🔧 Prasyarat
+## 🔧 Prasyarat {#prasyarat}
 
 Sebelum memulai, pastikan Anda telah menginstal hal-hal berikut di sistem Anda:
 
 - **Docker**: Platform untuk menjalankan aplikasi dalam kontainer. Panduan instalasi dapat ditemukan di [dokumentasi resmi Docker](https://docs.docker.com/get-docker/).
 - **Docker Compose**: Alat untuk menjalankan aplikasi multi-kontainer. Panduan instalasi dapat ditemukan di [dokumentasi resmi Docker Compose](https://docs.docker.com/compose/install/).
 
-## 📥 Mengkloning Repository
+## 📥 Mengkloning Repository {#mengkloning-repository}
 
 1. **Kloning Repository**:
 
@@ -32,7 +32,7 @@ Sebelum memulai, pastikan Anda telah menginstal hal-hal berikut di sistem Anda:
    cd petpoint-py
    ```
 
-## 🚀 Menjalankan Aplikasi dengan Docker Compose
+## 🚀 Menjalankan Aplikasi dengan Docker Compose {#menjalankan-aplikasi-dengan-docker-compose}
 
 1. **Membangun dan Menjalankan Kontainer**:
 
@@ -59,7 +59,7 @@ Sebelum memulai, pastikan Anda telah menginstal hal-hal berikut di sistem Anda:
    docker-compose ps
    ```
 
-## 🔍 Memeriksa Status Kontainer
+## 🔍 Memeriksa Status Kontainer {#memeriksa-status-kontainer}
 
 1. **Melihat Log Kontainer Chatbot**:
 
@@ -79,7 +79,7 @@ Sebelum memulai, pastikan Anda telah menginstal hal-hal berikut di sistem Anda:
 
    Catatan: Tekan `Ctrl + C` untuk menghentikan tampilan log real-time.
 
-## 📡 Mengakses API
+## 📡 Mengakses API {#mengakses-api}
 
 Aplikasi chatbot Anda sekarang berjalan pada port 5000. Berikut adalah cara mengakses endpoint yang tersedia:
 
@@ -113,7 +113,7 @@ Aplikasi chatbot Anda sekarang berjalan pada port 5000. Berikut adalah cara meng
    Contoh Request menggunakan curl:
 
    ```bash
-   curl -X POST http://localhost:5000/chat/        -H "Content-Type: application/json"        -d '{"text": "Halo, saya melihat seekor kucing sakit di depan rumah.", "session_id": "12345"}'
+   curl -X POST http://localhost:5000/chat/      -H "Content-Type: application/json"      -d '{"text": "Halo, saya melihat seekor kucing sakit di depan rumah.", "session_id": "12345"}'
    ```
 
    Contoh Response:
@@ -124,7 +124,7 @@ Aplikasi chatbot Anda sekarang berjalan pada port 5000. Berikut adalah cara meng
    }
    ```
 
-## 🧹 Menghentikan dan Menghapus Kontainer
+## 🧹 Menghentikan dan Menghapus Kontainer {#menghentikan-dan-menghapus-kontainer}
 
 1. **Menghentikan Kontainer**:
 
@@ -144,7 +144,7 @@ Aplikasi chatbot Anda sekarang berjalan pada port 5000. Berikut adalah cara meng
 
    Peringatan: Flag `-v` akan menghapus volume yang terkait, yang dapat mengakibatkan kehilangan data yang disimpan di volume tersebut.
 
-## 📂 Struktur Proyek
+## 📂 Struktur Proyek {#struktur-proyek}
 
 ```
 ├── Dockerfile
