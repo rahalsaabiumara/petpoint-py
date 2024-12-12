@@ -1,4 +1,4 @@
-# Panduan Menjalankan Chatbot Hewan dengan Docker Compose
+# Panduan Menjalankan Chatbot dengan Docker Compose
 
 ## Daftar Isi
 - [🔧 Prasyarat](#prasyarat)
