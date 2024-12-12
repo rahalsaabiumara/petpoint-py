@@ -173,6 +173,6 @@ Aplikasi chatbot Anda sekarang berjalan pada port 5000. Berikut adalah cara meng
 
 ---
 
-🎉 **Selesai!**
+**Selesai!**
 
 Dengan mengikuti langkah-langkah di atas, Anda sekarang telah berhasil menjalankan aplikasi Chatbot Hewan menggunakan Docker Compose. Jika Anda mengalami masalah atau memiliki pertanyaan, silakan merujuk ke [dokumentasi resmi Docker](https://docs.docker.com/).
