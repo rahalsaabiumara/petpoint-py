@@ -1,9 +1,0 @@
-{
-    "O": 0,
-    "B-animal": 1,
-    "I-animal": 2,
-    "B-condition": 3,
-    "I-condition": 4,
-    "B-symptom": 5,
-    "I-symptom": 6
-}

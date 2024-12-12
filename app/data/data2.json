@@ -1,0 +1,4041 @@
+[
+    {
+        "conversation_id": "conv_001",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Saya melihat seekor kucing sakit di depan toko.",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "kucing",
+                        "start": 15,
+                        "end": 21
+                    },
+                    {
+                        "entity": "location",
+                        "value": "depan toko",
+                        "start": 29,
+                        "end": 39
+                    }
+                ],
+                "intent": "Melaporkan Hewan Terlantar"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Terima kasih atas laporannya. Apakah kucing tersebut menunjukkan gejala seperti demam atau muntah?",
+                "entities": [],
+                "intent": "Mendiagnosis Gejala"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Kucing terlihat demam dan bersin-bersin.",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "kucing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "demam",
+                        "start": 15,
+                        "end": 20
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "bersin-bersin",
+                        "start": 25,
+                        "end": 39
+                    }
+                ],
+                "intent": "Mendiagnosis Gejala"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Kucing tersebut mungkin terkena Feline Calicivirus. Sebaiknya segera hubungi komunitas terdekat melalui fitur emergency.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_002",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Ada anjing terluka di jalan raya.",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "anjing",
+                        "start": 4,
+                        "end": 10
+                    },
+                    {
+                        "entity": "location",
+                        "value": "jalan raya",
+                        "start": 23,
+                        "end": 33
+                    }
+                ],
+                "intent": "Melaporkan Hewan Terlantar"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Terima kasih atas informasinya. Apakah anjing tersebut mengalami muntah atau diare?",
+                "entities": [],
+                "intent": "Mendiagnosis Gejala"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Ya, anjing muntah dan terlihat lemas.",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "anjing",
+                        "start": 4,
+                        "end": 10
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "muntah",
+                        "start": 11,
+                        "end": 17
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "lemas",
+                        "start": 30,
+                        "end": 35
+                    }
+                ],
+                "intent": "Mendiagnosis Gejala"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Gejala ini dapat mengindikasikan Distemper. Gunakan fitur emergency untuk melaporkan anjing tersebut agar segera mendapatkan bantuan.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_003",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Saya menemukan seekor kucing dengan luka di kaki di taman.",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "kucing",
+                        "start": 15,
+                        "end": 21
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "luka di kaki",
+                        "start": 28,
+                        "end": 39
+                    },
+                    {
+                        "entity": "location",
+                        "value": "taman",
+                        "start": 43,
+                        "end": 48
+                    }
+                ],
+                "intent": "Melaporkan Hewan Terlantar"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Terima kasih atas laporannya. Apakah Anda ingin melaporkan kucing ini melalui fitur emergency?",
+                "entities": [],
+                "intent": "Konfirmasi Laporan"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Ya, tolong bantu hubungkan dengan komunitas terdekat.",
+                "entities": [],
+                "intent": "Melaporkan Hewan Terlantar"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Laporan telah dikirim. Komunitas terdekat akan segera menghubungi Anda.",
+                "entities": [],
+                "intent": "Tindak Lanjut Laporan"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_004",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Ada anjing dengan kulit merah dan gatal di depan sekolah.",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "anjing",
+                        "start": 4,
+                        "end": 10
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "kulit merah",
+                        "start": 17,
+                        "end": 28
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "gatal",
+                        "start": 33,
+                        "end": 38
+                    },
+                    {
+                        "entity": "location",
+                        "value": "depan sekolah",
+                        "start": 42,
+                        "end": 55
+                    }
+                ],
+                "intent": "Melaporkan Hewan Terlantar"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Anjing tersebut mungkin mengalami masalah kulit seperti kudis. Laporkan melalui fitur emergency untuk mendapatkan bantuan.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_005",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Saya menemukan kucing dengan rambut rontok di halaman rumah.",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "kucing",
+                        "start": 15,
+                        "end": 21
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "rambut rontok",
+                        "start": 28,
+                        "end": 41
+                    },
+                    {
+                        "entity": "location",
+                        "value": "halaman rumah",
+                        "start": 45,
+                        "end": 59
+                    }
+                ],
+                "intent": "Melaporkan Hewan Terlantar"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Gejala ini menunjukkan kemungkinan penyakit kulit. Sebaiknya gunakan fitur emergency untuk melaporkan kucing ini.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_006",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Ada kucing muntah dan diare berdarah di pasar.",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "kucing",
+                        "start": 4,
+                        "end": 10
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "muntah",
+                        "start": 11,
+                        "end": 17
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "diare berdarah",
+                        "start": 22,
+                        "end": 37
+                    },
+                    {
+                        "entity": "location",
+                        "value": "pasar",
+                        "start": 41,
+                        "end": 46
+                    }
+                ],
+                "intent": "Melaporkan Hewan Terlantar"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Gejala ini menunjukkan kemungkinan Feline Panleukopenia. Segera gunakan fitur emergency untuk mendapatkan bantuan.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_007",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Saya melihat seekor anjing dengan demam dan nafsu makan hilang di parkiran.",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "anjing",
+                        "start": 15,
+                        "end": 21
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "demam",
+                        "start": 34,
+                        "end": 39
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "nafsu makan hilang",
+                        "start": 44,
+                        "end": 63
+                    },
+                    {
+                        "entity": "location",
+                        "value": "parkiran",
+                        "start": 67,
+                        "end": 75
+                    }
+                ],
+                "intent": "Melaporkan Hewan Terlantar"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Gejala ini dapat menunjukkan Leptospirosis. Laporkan melalui fitur emergency agar anjing ini segera ditangani.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_008",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Saya menemukan seekor anjing batuk kering di dekat taman.",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "anjing",
+                        "start": 15,
+                        "end": 21
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "batuk kering",
+                        "start": 22,
+                        "end": 34
+                    },
+                    {
+                        "entity": "location",
+                        "value": "dekat taman",
+                        "start": 38,
+                        "end": 49
+                    }
+                ],
+                "intent": "Melaporkan Hewan Terlantar"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Batuk kering dapat menjadi gejala Kennel Cough. Gunakan fitur emergency untuk melaporkan kondisi ini.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_009",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Ada kucing kesulitan buang air kecil di dekat rumah saya.",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "kucing",
+                        "start": 4,
+                        "end": 10
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "kesulitan buang air kecil",
+                        "start": 11,
+                        "end": 38
+                    },
+                    {
+                        "entity": "location",
+                        "value": "dekat rumah saya",
+                        "start": 42,
+                        "end": 59
+                    }
+                ],
+                "intent": "Melaporkan Hewan Terlantar"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Kesulitan buang air kecil bisa menjadi gejala FLUTD. Laporkan melalui fitur emergency agar kucing ini segera mendapatkan pertolongan.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_010",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Saya melihat seekor kucing menggaruk telinganya terus-menerus di warung.",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "kucing",
+                        "start": 15,
+                        "end": 21
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "menggaruk telinga terus-menerus",
+                        "start": 22,
+                        "end": 53
+                    },
+                    {
+                        "entity": "location",
+                        "value": "warung",
+                        "start": 57,
+                        "end": 63
+                    }
+                ],
+                "intent": "Melaporkan Hewan Terlantar"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Gejala ini menunjukkan kemungkinan infeksi telinga. Gunakan fitur emergency untuk melaporkan kucing ini.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_011",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Saya menemukan seekor anjing dengan perut membesar di pinggir jalan.",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "anjing",
+                        "start": 15,
+                        "end": 21
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "perut membesar",
+                        "start": 28,
+                        "end": 43
+                    },
+                    {
+                        "entity": "location",
+                        "value": "pinggir jalan",
+                        "start": 47,
+                        "end": 60
+                    }
+                ],
+                "intent": "Melaporkan Hewan Terlantar"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Perut membesar dapat menjadi gejala Penyakit Cushing. Sebaiknya gunakan fitur emergency untuk melaporkan anjing ini.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_012",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Saya melihat seekor kucing dengan batuk dan kesulitan bernapas di garasi rumah.",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "kucing",
+                        "start": 15,
+                        "end": 21
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "batuk",
+                        "start": 28,
+                        "end": 33
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "kesulitan bernapas",
+                        "start": 38,
+                        "end": 58
+                    },
+                    {
+                        "entity": "location",
+                        "value": "garasi rumah",
+                        "start": 62,
+                        "end": 75
+                    }
+                ],
+                "intent": "Melaporkan Hewan Terlantar"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Batuk dan kesulitan bernapas dapat menjadi gejala Feline Asthma. Laporkan melalui fitur emergency agar kucing ini segera mendapatkan bantuan.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_013",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Ada kucing yang muntah dan terlihat penyakit kuning di sekitar taman.",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "kucing",
+                        "start": 4,
+                        "end": 10
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "muntah",
+                        "start": 16,
+                        "end": 22
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "penyakit kuning",
+                        "start": 35,
+                        "end": 51
+                    },
+                    {
+                        "entity": "location",
+                        "value": "sekitar taman",
+                        "start": 55,
+                        "end": 69
+                    }
+                ],
+                "intent": "Melaporkan Hewan Terlantar"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Gejala ini dapat mengindikasikan Hepatic Lipidosis. Segera gunakan fitur emergency untuk melaporkan kondisi kucing ini.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_014",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Saya melihat anjing yang sering buang air kecil dan terlihat kelelahan di lapangan.",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "anjing",
+                        "start": 15,
+                        "end": 21
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "sering buang air kecil",
+                        "start": 28,
+                        "end": 51
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "kelelahan",
+                        "start": 61,
+                        "end": 70
+                    },
+                    {
+                        "entity": "location",
+                        "value": "lapangan",
+                        "start": 74,
+                        "end": 82
+                    }
+                ],
+                "intent": "Melaporkan Hewan Terlantar"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Gejala ini dapat menunjukkan Hipotiroidisme. Sebaiknya laporkan melalui fitur emergency agar anjing ini segera mendapatkan bantuan.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_015",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Ada kucing yang terus bersin dan mengeluarkan cairan dari hidung di tempat parkir.",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "kucing",
+                        "start": 4,
+                        "end": 10
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "bersin",
+                        "start": 16,
+                        "end": 22
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "mengeluarkan cairan dari hidung",
+                        "start": 27,
+                        "end": 59
+                    },
+                    {
+                        "entity": "location",
+                        "value": "tempat parkir",
+                        "start": 63,
+                        "end": 76
+                    }
+                ],
+                "intent": "Melaporkan Hewan Terlantar"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Bersin dan keluarnya cairan dari hidung dapat menjadi gejala Infeksi Saluran Pernapasan Atas. Gunakan fitur emergency untuk melaporkan kondisi ini.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_016",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Saya menemukan seekor kucing dengan nafsu makan meningkat dan sering buang air kecil di pasar.",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "kucing",
+                        "start": 15,
+                        "end": 21
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "nafsu makan meningkat",
+                        "start": 28,
+                        "end": 51
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "sering buang air kecil",
+                        "start": 56,
+                        "end": 79
+                    },
+                    {
+                        "entity": "location",
+                        "value": "pasar",
+                        "start": 83,
+                        "end": 88
+                    }
+                ],
+                "intent": "Melaporkan Hewan Terlantar"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Gejala ini dapat menunjukkan Diabetes Mellitus. Sebaiknya gunakan fitur emergency untuk melaporkan kucing ini agar segera ditangani.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_017",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Saya menemukan seekor anjing yang terlihat gatal dan kulitnya kemerahan di taman bermain.",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "anjing",
+                        "start": 15,
+                        "end": 21
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "gatal",
+                        "start": 34,
+                        "end": 39
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "kulitnya kemerahan",
+                        "start": 44,
+                        "end": 63
+                    },
+                    {
+                        "entity": "location",
+                        "value": "taman bermain",
+                        "start": 67,
+                        "end": 81
+                    }
+                ],
+                "intent": "Melaporkan Hewan Terlantar"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Gejala ini dapat mengindikasikan Kudis. Gunakan fitur emergency untuk melaporkan anjing ini agar segera ditangani.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_018",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Saya menemukan seekor kucing yang terlihat lesu dan mengalami penurunan berat badan di tempat sampah.",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "kucing",
+                        "start": 15,
+                        "end": 21
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "lesu",
+                        "start": 34,
+                        "end": 38
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "penurunan berat badan",
+                        "start": 48,
+                        "end": 71
+                    },
+                    {
+                        "entity": "location",
+                        "value": "tempat sampah",
+                        "start": 75,
+                        "end": 89
+                    }
+                ],
+                "intent": "Melaporkan Hewan Terlantar"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Lesu dan penurunan berat badan dapat menjadi gejala Feline Leukemia Virus. Gunakan fitur emergency untuk melaporkan kucing ini agar mendapatkan penanganan.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_019",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Ada seekor anjing yang terlihat agresif dan hiperaktif di pinggir jalan raya.",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "anjing",
+                        "start": 14,
+                        "end": 20
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "agresif",
+                        "start": 33,
+                        "end": 40
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "hiperaktif",
+                        "start": 45,
+                        "end": 55
+                    },
+                    {
+                        "entity": "location",
+                        "value": "pinggir jalan raya",
+                        "start": 59,
+                        "end": 77
+                    }
+                ],
+                "intent": "Melaporkan Hewan Terlantar"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Agresif dan hiperaktif dapat menjadi gejala Rabies. Laporkan melalui fitur emergency agar anjing ini mendapatkan penanganan segera.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_020",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Saya melihat seekor anjing yang pincang dan kesulitan bergerak di lapangan olahraga.",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "anjing",
+                        "start": 15,
+                        "end": 21
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "pincang",
+                        "start": 28,
+                        "end": 35
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "kesulitan bergerak",
+                        "start": 40,
+                        "end": 59
+                    },
+                    {
+                        "entity": "location",
+                        "value": "lapangan olahraga",
+                        "start": 63,
+                        "end": 80
+                    }
+                ],
+                "intent": "Melaporkan Hewan Terlantar"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Gejala ini menunjukkan kemungkinan Artritis. Laporkan melalui fitur emergency untuk memastikan anjing ini mendapatkan bantuan.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_021",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Saya melihat seekor anjing di taman yang tampak sehat, mungkin dia tersesat.",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "anjing",
+                        "start": 15,
+                        "end": 21
+                    },
+                    {
+                        "entity": "location",
+                        "value": "taman",
+                        "start": 25,
+                        "end": 30
+                    },
+                    {
+                        "entity": "condition",
+                        "value": "sehat",
+                        "start": 45,
+                        "end": 50
+                    },
+                    {
+                        "entity": "status",
+                        "value": "tersesat",
+                        "start": 60,
+                        "end": 68
+                    }
+                ],
+                "intent": "Melaporkan Hewan Terlantar"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Terima kasih atas laporannya. Apakah Anda ingin melaporkan anjing ini melalui fitur emergency agar pemiliknya bisa ditemukan?",
+                "entities": [],
+                "intent": "Konfirmasi Laporan"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Ya, saya ingin melaporkannya.",
+                "entities": [],
+                "intent": "Melaporkan Hewan Terlantar"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Laporan telah dikirim. Komunitas atau pemilik yang terkait akan segera dihubungi.",
+                "entities": [],
+                "intent": "Tindak Lanjut Laporan"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_022",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Saya melihat seekor kucing sehat di sekitar sekolah, mungkin dia hilang.",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "kucing",
+                        "start": 15,
+                        "end": 21
+                    },
+                    {
+                        "entity": "location",
+                        "value": "sekolah",
+                        "start": 35,
+                        "end": 42
+                    },
+                    {
+                        "entity": "condition",
+                        "value": "sehat",
+                        "start": 22,
+                        "end": 27
+                    },
+                    {
+                        "entity": "status",
+                        "value": "hilang",
+                        "start": 51,
+                        "end": 57
+                    }
+                ],
+                "intent": "Melaporkan Hewan Terlantar"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Terima kasih atas informasinya. Apakah Anda ingin menggunakan fitur emergency untuk membantu menemukan pemiliknya?",
+                "entities": [],
+                "intent": "Konfirmasi Laporan"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Ya, saya akan melaporkannya.",
+                "entities": [],
+                "intent": "Melaporkan Hewan Terlantar"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Laporan telah dibuat. Kami akan mencoba menghubungkan dengan komunitas atau pemilik terkait.",
+                "entities": [],
+                "intent": "Tindak Lanjut Laporan"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_023",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Saya menemukan anjing tanpa kalung di depan rumah, kondisinya sehat.",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "anjing",
+                        "start": 14,
+                        "end": 20
+                    },
+                    {
+                        "entity": "location",
+                        "value": "depan rumah",
+                        "start": 35,
+                        "end": 47
+                    },
+                    {
+                        "entity": "condition",
+                        "value": "sehat",
+                        "start": 60,
+                        "end": 65
+                    }
+                ],
+                "intent": "Melaporkan Hewan Terlantar"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Anjing tanpa kalung kemungkinan tersesat. Gunakan fitur emergency untuk melaporkan anjing ini agar pemiliknya bisa dihubungi.",
+                "entities": [],
+                "intent": "Rekomendasi Tindakan"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_024",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Ada seekor kucing sehat yang sering mondar-mandir di jalan, mungkin dia kehilangan rumah.",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "kucing",
+                        "start": 10,
+                        "end": 16
+                    },
+                    {
+                        "entity": "condition",
+                        "value": "sehat",
+                        "start": 17,
+                        "end": 22
+                    },
+                    {
+                        "entity": "location",
+                        "value": "jalan",
+                        "start": 45,
+                        "end": 50
+                    },
+                    {
+                        "entity": "status",
+                        "value": "kehilangan rumah",
+                        "start": 59,
+                        "end": 74
+                    }
+                ],
+                "intent": "Melaporkan Hewan Terlantar"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Kucing ini mungkin kehilangan rumah. Anda dapat menggunakan fitur emergency untuk membantu mencarikan pemiliknya.",
+                "entities": [],
+                "intent": "Rekomendasi Tindakan"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_025",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Saya melihat seekor anjing sehat di area parkir mall, mungkin dia hilang.",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "anjing",
+                        "start": 15,
+                        "end": 21
+                    },
+                    {
+                        "entity": "condition",
+                        "value": "sehat",
+                        "start": 22,
+                        "end": 27
+                    },
+                    {
+                        "entity": "location",
+                        "value": "area parkir mall",
+                        "start": 31,
+                        "end": 48
+                    },
+                    {
+                        "entity": "status",
+                        "value": "hilang",
+                        "start": 58,
+                        "end": 64
+                    }
+                ],
+                "intent": "Melaporkan Hewan Terlantar"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Terima kasih atas informasinya. Gunakan fitur emergency untuk membantu menemukan pemilik anjing ini.",
+                "entities": [],
+                "intent": "Rekomendasi Tindakan"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_026",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Ada kucing sehat yang tampak bingung di halte bus.",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "kucing",
+                        "start": 4,
+                        "end": 10
+                    },
+                    {
+                        "entity": "condition",
+                        "value": "sehat",
+                        "start": 11,
+                        "end": 16
+                    },
+                    {
+                        "entity": "status",
+                        "value": "bingung",
+                        "start": 26,
+                        "end": 32
+                    },
+                    {
+                        "entity": "location",
+                        "value": "halte bus",
+                        "start": 36,
+                        "end": 45
+                    }
+                ],
+                "intent": "Melaporkan Hewan Terlantar"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Kucing tersebut mungkin tersesat. Anda bisa menggunakan fitur emergency untuk membantu mencari pemiliknya.",
+                "entities": [],
+                "intent": "Rekomendasi Tindakan"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_027",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Saya melihat seekor anjing sehat sedang duduk di dekat stasiun kereta, mungkin dia hilang.",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "anjing",
+                        "start": 15,
+                        "end": 21
+                    },
+                    {
+                        "entity": "condition",
+                        "value": "sehat",
+                        "start": 22,
+                        "end": 27
+                    },
+                    {
+                        "entity": "location",
+                        "value": "dekat stasiun kereta",
+                        "start": 41,
+                        "end": 62
+                    },
+                    {
+                        "entity": "status",
+                        "value": "hilang",
+                        "start": 71,
+                        "end": 77
+                    }
+                ],
+                "intent": "Melaporkan Hewan Terlantar"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Terima kasih atas informasinya. Apakah Anda ingin menggunakan fitur emergency untuk melaporkan anjing ini?",
+                "entities": [],
+                "intent": "Konfirmasi Laporan"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Ya, saya ingin melaporkannya.",
+                "entities": [],
+                "intent": "Melaporkan Hewan Terlantar"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Laporan Anda telah dikirim. Kami akan mencoba membantu menemukan pemilik anjing ini.",
+                "entities": [],
+                "intent": "Tindak Lanjut Laporan"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_028",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Ada seekor kucing dengan bulu terawat dan terlihat sehat di depan supermarket.",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "kucing",
+                        "start": 10,
+                        "end": 16
+                    },
+                    {
+                        "entity": "condition",
+                        "value": "bulu terawat",
+                        "start": 22,
+                        "end": 34
+                    },
+                    {
+                        "entity": "condition",
+                        "value": "sehat",
+                        "start": 46,
+                        "end": 51
+                    },
+                    {
+                        "entity": "location",
+                        "value": "depan supermarket",
+                        "start": 55,
+                        "end": 73
+                    }
+                ],
+                "intent": "Melaporkan Hewan Terlantar"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Kucing ini tampaknya memiliki pemilik. Anda dapat menggunakan fitur emergency untuk membantu menemukan pemiliknya.",
+                "entities": [],
+                "intent": "Rekomendasi Tindakan"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_029",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Saya menemukan anjing yang tampak bersih dan sehat di kompleks perumahan.",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "anjing",
+                        "start": 15,
+                        "end": 21
+                    },
+                    {
+                        "entity": "condition",
+                        "value": "bersih",
+                        "start": 33,
+                        "end": 39
+                    },
+                    {
+                        "entity": "condition",
+                        "value": "sehat",
+                        "start": 44,
+                        "end": 49
+                    },
+                    {
+                        "entity": "location",
+                        "value": "kompleks perumahan",
+                        "start": 53,
+                        "end": 71
+                    }
+                ],
+                "intent": "Melaporkan Hewan Terlantar"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Anjing ini tampaknya dalam kondisi baik dan mungkin tersesat. Gunakan fitur emergency untuk membantu menemukan pemiliknya.",
+                "entities": [],
+                "intent": "Rekomendasi Tindakan"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_030",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Saya melihat seekor kucing sehat duduk di halte, sepertinya dia tersesat.",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "kucing",
+                        "start": 15,
+                        "end": 21
+                    },
+                    {
+                        "entity": "condition",
+                        "value": "sehat",
+                        "start": 22,
+                        "end": 27
+                    },
+                    {
+                        "entity": "location",
+                        "value": "halte",
+                        "start": 36,
+                        "end": 41
+                    },
+                    {
+                        "entity": "status",
+                        "value": "tersesat",
+                        "start": 53,
+                        "end": 61
+                    }
+                ],
+                "intent": "Melaporkan Hewan Terlantar"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Terima kasih atas laporannya. Anda dapat menggunakan fitur emergency untuk melaporkan kucing ini agar pemiliknya dapat ditemukan.",
+                "entities": [],
+                "intent": "Rekomendasi Tindakan"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_031",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Kucing saya muntah dan lesu, kenapa ya?",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "kucing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "muntah",
+                        "start": 12,
+                        "end": 18
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "lesu",
+                        "start": 23,
+                        "end": 27
+                    }
+                ],
+                "intent": "Mendiagnosis Gejala"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Kucing Anda mungkin mengalami Hepatic Lipidosis. Apakah Anda sudah mencoba memberikan makanan ringan atau konsultasi ke dokter hewan?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Belum, saya baru menyadari gejalanya hari ini.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Segera konsultasikan ke dokter hewan dan berikan makanan yang mudah dicerna sementara waktu.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_032",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Anjing saya sering menggaruk telinga dan ada bau tidak sedap. Apa penyebabnya?",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "anjing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "menggaruk telinga",
+                        "start": 12,
+                        "end": 29
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "bau tidak sedap",
+                        "start": 38,
+                        "end": 54
+                    }
+                ],
+                "intent": "Mendiagnosis Gejala"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Gejala ini menunjukkan kemungkinan Infeksi Telinga. Sebaiknya bersihkan telinga anjing dengan produk yang direkomendasikan dan segera konsultasikan ke dokter hewan.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Bagaimana cara membersihkan telinganya dengan aman?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Gunakan kapas lembut dan cairan pembersih telinga khusus anjing. Hindari memasukkan alat ke dalam telinga terlalu dalam.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_033",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Kucing saya sering buang air kecil dan minum air lebih banyak dari biasanya. Apa yang terjadi?",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "kucing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "sering buang air kecil",
+                        "start": 12,
+                        "end": 37
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "minum air lebih banyak",
+                        "start": 42,
+                        "end": 66
+                    }
+                ],
+                "intent": "Mendiagnosis Gejala"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Kucing Anda mungkin mengalami Diabetes Mellitus atau masalah ginjal. Apakah sudah dilakukan pemeriksaan oleh dokter hewan?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Belum, apa yang sebaiknya saya lakukan sekarang?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Pastikan kucing tetap terhidrasi dan segera jadwalkan kunjungan ke dokter hewan untuk pemeriksaan lebih lanjut.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_034",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Anjing saya terlihat pincang dan kesulitan berdiri setelah bermain. Apa yang salah?",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "anjing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "pincang",
+                        "start": 21,
+                        "end": 28
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "kesulitan berdiri",
+                        "start": 33,
+                        "end": 51
+                    }
+                ],
+                "intent": "Mendiagnosis Gejala"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Anjing Anda mungkin mengalami Artritis atau cedera. Apakah ada pembengkakan di kakinya?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Ya, ada pembengkakan di kaki kanannya.",
+                "entities": [
+                    {
+                        "entity": "symptom",
+                        "value": "pembengkakan di kaki kanan",
+                        "start": 8,
+                        "end": 36
+                    }
+                ],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Coba kompres area yang bengkak dengan kain dingin untuk mengurangi pembengkakan, dan segera bawa ke dokter hewan.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_035",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Kucing saya sulit buang air kecil dan tampak gelisah. Kenapa ya?",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "kucing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "sulit buang air kecil",
+                        "start": 12,
+                        "end": 34
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "gelisah",
+                        "start": 44,
+                        "end": 51
+                    }
+                ],
+                "intent": "Mendiagnosis Gejala"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Kucing Anda mungkin mengalami FLUTD (Feline Lower Urinary Tract Disease). Apakah ada tanda-tanda lain seperti darah di urin?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Ya, ada sedikit darah di urinnya.",
+                "entities": [
+                    {
+                        "entity": "symptom",
+                        "value": "darah di urin",
+                        "start": 12,
+                        "end": 25
+                    }
+                ],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Gejala ini cukup serius. Segera bawa kucing Anda ke dokter hewan untuk perawatan intensif.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_036",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Anjing saya batuk dan sulit bernapas, apa yang salah?",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "anjing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "batuk",
+                        "start": 12,
+                        "end": 17
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "sulit bernapas",
+                        "start": 22,
+                        "end": 37
+                    }
+                ],
+                "intent": "Mendiagnosis Gejala"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Gejala ini menunjukkan kemungkinan Kennel Cough atau infeksi saluran pernapasan. Apakah anjing Anda sering bersentuhan dengan anjing lain?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Ya, dia sering bermain di taman bersama anjing lain.",
+                "entities": [
+                    {
+                        "entity": "location",
+                        "value": "taman",
+                        "start": 34,
+                        "end": 39
+                    },
+                    {
+                        "entity": "animal",
+                        "value": "anjing lain",
+                        "start": 49,
+                        "end": 59
+                    }
+                ],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Coba isolasi anjing Anda sementara dan jaga kebersihan lingkungan. Segera konsultasikan ke dokter hewan untuk pengobatan.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_037",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Kucing saya kehilangan nafsu makan dan berat badannya turun drastis.",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "kucing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "kehilangan nafsu makan",
+                        "start": 12,
+                        "end": 36
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "berat badan turun drastis",
+                        "start": 41,
+                        "end": 68
+                    }
+                ],
+                "intent": "Mendiagnosis Gejala"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Gejala ini dapat mengindikasikan Feline Immunodeficiency Virus (FIV) atau masalah kesehatan lain. Apakah ada tanda-tanda seperti demam atau pembengkakan kelenjar?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Ya, ada demam tetapi tidak ada pembengkakan kelenjar.",
+                "entities": [
+                    {
+                        "entity": "symptom",
+                        "value": "demam",
+                        "start": 9,
+                        "end": 15
+                    }
+                ],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Segera bawa kucing Anda ke dokter hewan untuk pemeriksaan dan tes laboratorium guna memastikan diagnosa.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_038",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Anjing saya terlihat lelah dan tidak mau makan. Apa yang terjadi?",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "anjing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "lelah",
+                        "start": 14,
+                        "end": 19
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "tidak mau makan",
+                        "start": 24,
+                        "end": 41
+                    }
+                ],
+                "intent": "Mendiagnosis Gejala"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Gejala ini dapat menunjukkan Cacing Hati atau penyakit parasit lainnya. Apakah anjing Anda sering berada di area basah atau rawa?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Ya, dia sering bermain di area basah dekat rumah.",
+                "entities": [
+                    {
+                        "entity": "location",
+                        "value": "area basah",
+                        "start": 21,
+                        "end": 31
+                    }
+                ],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Segera bawa anjing Anda ke dokter hewan untuk pemeriksaan dan pengobatan antiparasit.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_039",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Kucing saya batuk dan sering mengi, kenapa ya?",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "kucing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "batuk",
+                        "start": 12,
+                        "end": 17
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "mengi",
+                        "start": 28,
+                        "end": 33
+                    }
+                ],
+                "intent": "Mendiagnosis Gejala"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Gejala ini dapat menunjukkan Feline Asthma. Apakah kucing Anda sering terpapar debu atau asap?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Ya, ada banyak debu di rumah saya saat ini.",
+                "entities": [
+                    {
+                        "entity": "condition",
+                        "value": "debu",
+                        "start": 15,
+                        "end": 19
+                    }
+                ],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Coba kurangi debu di lingkungan rumah dan jaga agar kucing Anda tetap berada di area bebas alergen. Konsultasikan ke dokter hewan untuk pengobatan.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_040",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Anjing saya sering muntah dan nafsu makannya menurun. Apa penyebabnya?",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "anjing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "muntah",
+                        "start": 12,
+                        "end": 18
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "nafsu makan menurun",
+                        "start": 23,
+                        "end": 45
+                    }
+                ],
+                "intent": "Mendiagnosis Gejala"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Gejala ini dapat mengindikasikan masalah pencernaan seperti Gastritis atau Parvovirus. Apakah ada tanda-tanda seperti diare berdarah?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Tidak ada diare, hanya muntah saja.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Pastikan anjing Anda tidak makan makanan berat atau berminyak. Berikan air putih dan makanan ringan seperti nasi putih atau ayam rebus tanpa bumbu. Segera konsultasikan ke dokter hewan.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_041",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Kucing saya terus menggaruk tubuhnya dan bulunya rontok.",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "kucing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "menggaruk tubuh",
+                        "start": 12,
+                        "end": 28
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "bulu rontok",
+                        "start": 33,
+                        "end": 45
+                    }
+                ],
+                "intent": "Mendiagnosis Gejala"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Kucing Anda mungkin mengalami masalah kulit seperti alergi atau infestasi kutu. Apakah Anda sudah memeriksa apakah ada kutu di tubuh kucing Anda?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Ya, saya melihat beberapa kutu di bulunya.",
+                "entities": [
+                    {
+                        "entity": "symptom",
+                        "value": "kutu",
+                        "start": 29,
+                        "end": 33
+                    }
+                ],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Gunakan produk antiparasit yang direkomendasikan dokter hewan dan jaga kebersihan lingkungan kucing Anda. Segera konsultasikan untuk perawatan lanjutan.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_042",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Anjing saya tampak lelah dan perutnya terlihat membesar.",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "anjing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "lelah",
+                        "start": 18,
+                        "end": 23
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "perut membesar",
+                        "start": 32,
+                        "end": 47
+                    }
+                ],
+                "intent": "Mendiagnosis Gejala"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Gejala ini dapat mengindikasikan Penyakit Cushing atau kondisi kesehatan lain. Apakah anjing Anda menunjukkan tanda-tanda lain seperti kerontokan bulu?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Tidak ada tanda-tanda kerontokan bulu, hanya perutnya saja yang membesar.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Segera bawa anjing Anda ke dokter hewan untuk pemeriksaan menyeluruh dan pengobatan lebih lanjut.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_043",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Kucing saya sering batuk dan hidungnya berair. Apa yang salah?",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "kucing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "batuk",
+                        "start": 12,
+                        "end": 17
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "hidung berair",
+                        "start": 22,
+                        "end": 36
+                    }
+                ],
+                "intent": "Mendiagnosis Gejala"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Gejala ini dapat menunjukkan Infeksi Saluran Pernapasan Atas. Apakah kucing Anda sering terpapar udara dingin atau debu?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Ya, rumah saya cukup dingin dan banyak debu akhir-akhir ini.",
+                "entities": [
+                    {
+                        "entity": "condition",
+                        "value": "dingin",
+                        "start": 19,
+                        "end": 25
+                    },
+                    {
+                        "entity": "condition",
+                        "value": "debu",
+                        "start": 35,
+                        "end": 39
+                    }
+                ],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Coba pastikan kucing Anda tetap hangat dan jaga kebersihan udara di rumah. Segera konsultasikan ke dokter hewan jika gejala berlanjut.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_044",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Anjing saya tidak nafsu makan dan sering diare. Apa yang terjadi?",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "anjing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "tidak nafsu makan",
+                        "start": 12,
+                        "end": 31
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "diare",
+                        "start": 41,
+                        "end": 46
+                    }
+                ],
+                "intent": "Mendiagnosis Gejala"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Gejala ini mungkin mengindikasikan Parvovirus atau masalah pencernaan lainnya. Apakah anjing Anda muntah juga?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Tidak, hanya diare saja.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Coba berikan air minum yang bersih dan hindari makanan berat. Namun, segera bawa anjing Anda ke dokter hewan untuk pemeriksaan lebih lanjut.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_045",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Kucing saya sering mengeluarkan air mata dan matanya terlihat merah.",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "kucing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "air mata",
+                        "start": 18,
+                        "end": 26
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "mata merah",
+                        "start": 39,
+                        "end": 49
+                    }
+                ],
+                "intent": "Mendiagnosis Gejala"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Kucing Anda mungkin mengalami konjungtivitis atau iritasi mata. Apakah kucing Anda sering terpapar debu atau bahan kimia?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Ya, ada renovasi rumah dengan banyak debu.",
+                "entities": [
+                    {
+                        "entity": "condition",
+                        "value": "debu",
+                        "start": 35,
+                        "end": 39
+                    }
+                ],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Coba bersihkan matanya dengan kapas yang dibasahi air hangat. Jika gejala berlanjut, segera konsultasikan ke dokter hewan.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_046",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Anjing saya terlihat pincang dan enggan berjalan. Apa yang salah?",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "anjing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "pincang",
+                        "start": 18,
+                        "end": 25
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "enggan berjalan",
+                        "start": 30,
+                        "end": 45
+                    }
+                ],
+                "intent": "Mendiagnosis Gejala"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Anjing Anda mungkin mengalami cedera atau Artritis. Apakah ada pembengkakan atau tanda lain di kakinya?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Tidak ada pembengkakan, hanya terlihat lemah.",
+                "entities": [
+                    {
+                        "entity": "symptom",
+                        "value": "lemah",
+                        "start": 39,
+                        "end": 44
+                    }
+                ],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Pastikan anjing Anda tidak terlalu banyak bergerak sementara waktu. Segera konsultasikan ke dokter hewan untuk pemeriksaan lebih lanjut.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_047",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Kucing saya sering muntah dan tidak mau makan. Apa penyebabnya?",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "kucing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "muntah",
+                        "start": 12,
+                        "end": 18
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "tidak mau makan",
+                        "start": 23,
+                        "end": 40
+                    }
+                ],
+                "intent": "Mendiagnosis Gejala"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Kucing Anda mungkin mengalami masalah pencernaan atau Feline Panleukopenia. Apakah ada tanda-tanda lain seperti diare atau demam?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Ya, dia juga demam.",
+                "entities": [
+                    {
+                        "entity": "symptom",
+                        "value": "demam",
+                        "start": 11,
+                        "end": 16
+                    }
+                ],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Gejala ini cukup serius. Segera bawa kucing Anda ke dokter hewan untuk pemeriksaan dan perawatan intensif.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_048",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Anjing saya terlihat menggaruk tubuhnya terus-menerus. Apa penyebabnya?",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "anjing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "menggaruk tubuh terus-menerus",
+                        "start": 14,
+                        "end": 43
+                    }
+                ],
+                "intent": "Mendiagnosis Gejala"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Anjing Anda mungkin mengalami alergi atau infeksi kulit. Apakah ada tanda-tanda lain seperti kemerahan atau rambut rontok?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Ya, ada kemerahan di beberapa bagian tubuhnya.",
+                "entities": [
+                    {
+                        "entity": "symptom",
+                        "value": "kemerahan",
+                        "start": 8,
+                        "end": 17
+                    }
+                ],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Gunakan produk pembersih atau obat topikal yang direkomendasikan dokter hewan dan segera bawa anjing Anda untuk pemeriksaan.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_049",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Kucing saya terlihat lesu dan sering tidur. Apa yang mungkin terjadi?",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "kucing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "lesu",
+                        "start": 14,
+                        "end": 18
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "sering tidur",
+                        "start": 23,
+                        "end": 35
+                    }
+                ],
+                "intent": "Mendiagnosis Gejala"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Gejala ini dapat menunjukkan Feline Leukemia Virus (FeLV) atau kondisi lain. Apakah ada tanda-tanda lain seperti nafsu makan berkurang?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Ya, nafsu makannya juga berkurang.",
+                "entities": [
+                    {
+                        "entity": "symptom",
+                        "value": "nafsu makan berkurang",
+                        "start": 4,
+                        "end": 26
+                    }
+                ],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Segera bawa kucing Anda ke dokter hewan untuk pemeriksaan menyeluruh dan tes laboratorium.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_050",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Anjing saya terlihat gemuk tapi jarang makan. Apa yang salah?",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "anjing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "gemuk",
+                        "start": 14,
+                        "end": 19
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "jarang makan",
+                        "start": 25,
+                        "end": 37
+                    }
+                ],
+                "intent": "Mendiagnosis Gejala"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Anjing Anda mungkin mengalami Hipotiroidisme. Apakah anjing Anda menunjukkan tanda-tanda lain seperti kurang aktif atau mudah lelah?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Ya, dia juga terlihat kurang aktif.",
+                "entities": [
+                    {
+                        "entity": "symptom",
+                        "value": "kurang aktif",
+                        "start": 16,
+                        "end": 29
+                    }
+                ],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Segera konsultasikan ke dokter hewan untuk tes darah dan pengobatan yang sesuai.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_051",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Kucing saya terlihat sering buang air kecil dan ada darah di urin. Apa yang salah?",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "kucing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "sering buang air kecil",
+                        "start": 19,
+                        "end": 44
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "darah di urin",
+                        "start": 53,
+                        "end": 67
+                    }
+                ],
+                "intent": "Mendiagnosis Gejala"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Gejala ini mungkin menunjukkan FLUTD atau infeksi saluran kemih. Apakah kucing Anda tampak kesulitan saat buang air kecil?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Ya, dia tampak kesakitan saat buang air kecil.",
+                "entities": [
+                    {
+                        "entity": "symptom",
+                        "value": "kesakitan saat buang air kecil",
+                        "start": 8,
+                        "end": 42
+                    }
+                ],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Segera bawa kucing Anda ke dokter hewan untuk pemeriksaan dan pengobatan. Pastikan kucing Anda tetap terhidrasi.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_052",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Anjing saya terlihat agresif dan hiperaktif. Apa penyebabnya?",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "anjing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "agresif",
+                        "start": 14,
+                        "end": 22
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "hiperaktif",
+                        "start": 27,
+                        "end": 37
+                    }
+                ],
+                "intent": "Mendiagnosis Gejala"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Gejala ini dapat mengindikasikan Rabies atau gangguan perilaku. Apakah anjing Anda baru-baru ini digigit hewan lain?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Tidak, dia tidak digigit hewan lain.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Tetap waspada dan hindari kontak langsung. Jika gejala berlanjut, segera bawa anjing Anda ke dokter hewan untuk pemeriksaan lanjutan.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_053",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Kucing saya sering terengah-engah dan terlihat kelelahan. Apa yang salah?",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "kucing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "terengah-engah",
+                        "start": 12,
+                        "end": 27
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "kelelahan",
+                        "start": 39,
+                        "end": 48
+                    }
+                ],
+                "intent": "Mendiagnosis Gejala"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Gejala ini dapat menunjukkan masalah pernapasan seperti Feline Asthma atau stres. Apakah kucing Anda baru saja melakukan aktivitas berat?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Tidak, dia hanya beristirahat di rumah.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Coba jauhkan kucing dari debu atau bahan iritan lainnya. Jika gejala terus berlanjut, segera konsultasikan ke dokter hewan.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_054",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Anjing saya sering batuk kering dan muntah. Apa yang salah?",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "anjing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "batuk kering",
+                        "start": 12,
+                        "end": 24
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "muntah",
+                        "start": 29,
+                        "end": 35
+                    }
+                ],
+                "intent": "Mendiagnosis Gejala"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Gejala ini dapat mengindikasikan Kennel Cough atau masalah pencernaan. Apakah anjing Anda baru-baru ini bersentuhan dengan anjing lain?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Ya, dia bermain dengan anjing lain di taman.",
+                "entities": [
+                    {
+                        "entity": "location",
+                        "value": "taman",
+                        "start": 38,
+                        "end": 43
+                    }
+                ],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Batasi interaksi dengan anjing lain sementara waktu dan jaga kebersihan lingkungan. Segera bawa anjing Anda ke dokter hewan untuk pemeriksaan.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_055",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Kucing saya terlihat kehilangan berat badan dan nafsu makannya menurun. Apa yang salah?",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "kucing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "kehilangan berat badan",
+                        "start": 19,
+                        "end": 43
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "nafsu makan menurun",
+                        "start": 48,
+                        "end": 70
+                    }
+                ],
+                "intent": "Mendiagnosis Gejala"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Gejala ini dapat mengindikasikan Feline Immunodeficiency Virus (FIV) atau Hepatic Lipidosis. Apakah kucing Anda terlihat lesu?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Ya, dia juga terlihat sangat lesu.",
+                "entities": [
+                    {
+                        "entity": "symptom",
+                        "value": "lesu",
+                        "start": 26,
+                        "end": 30
+                    }
+                ],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Segera konsultasikan ke dokter hewan untuk pemeriksaan mendetail. Sementara itu, pastikan kucing tetap terhidrasi.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_056",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Anjing saya sering menggaruk bagian leher dan kulitnya terlihat merah. Apa yang salah?",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "anjing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "menggaruk bagian leher",
+                        "start": 12,
+                        "end": 35
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "kulit merah",
+                        "start": 40,
+                        "end": 51
+                    }
+                ],
+                "intent": "Mendiagnosis Gejala"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Gejala ini dapat mengindikasikan alergi atau kudis. Apakah Anda sudah memeriksa apakah ada kutu atau parasit lainnya?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Ya, ada beberapa kutu di lehernya.",
+                "entities": [
+                    {
+                        "entity": "symptom",
+                        "value": "kutu",
+                        "start": 12,
+                        "end": 16
+                    }
+                ],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Gunakan obat antiparasit yang direkomendasikan dokter hewan. Bersihkan lingkungan anjing secara rutin untuk mencegah infestasi ulang.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_057",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Kucing saya sering bersin dan matanya terlihat bengkak. Apa yang terjadi?",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "kucing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "bersin",
+                        "start": 12,
+                        "end": 18
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "mata bengkak",
+                        "start": 29,
+                        "end": 41
+                    }
+                ],
+                "intent": "Mendiagnosis Gejala"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Gejala ini dapat menunjukkan Infeksi Saluran Pernapasan Atas atau konjungtivitis. Apakah kucing Anda terlihat lesu?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Ya, dia terlihat sangat lesu.",
+                "entities": [
+                    {
+                        "entity": "symptom",
+                        "value": "lesu",
+                        "start": 17,
+                        "end": 21
+                    }
+                ],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Segera bawa kucing Anda ke dokter hewan untuk pemeriksaan dan pengobatan lebih lanjut.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_058",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Anjing saya sering batuk dan terlihat lemas. Apa yang salah?",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "anjing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "batuk",
+                        "start": 12,
+                        "end": 17
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "lemas",
+                        "start": 31,
+                        "end": 36
+                    }
+                ],
+                "intent": "Mendiagnosis Gejala"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Gejala ini dapat menunjukkan Distemper atau infeksi saluran pernapasan. Apakah ada gejala lain seperti demam atau muntah?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Tidak, hanya batuk saja.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Coba jaga agar anjing Anda tetap hangat dan berikan cairan yang cukup. Jika gejala berlanjut, segera konsultasikan ke dokter hewan.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_059",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Kucing saya sering menggaruk telinganya dan terlihat ada cairan. Apa yang terjadi?",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "kucing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "menggaruk telinga",
+                        "start": 12,
+                        "end": 30
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "cairan di telinga",
+                        "start": 44,
+                        "end": 61
+                    }
+                ],
+                "intent": "Mendiagnosis Gejala"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Gejala ini dapat mengindikasikan infeksi telinga atau tungau telinga. Apakah kucing Anda sering menggelengkan kepalanya?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Ya, dia sering menggelengkan kepalanya.",
+                "entities": [
+                    {
+                        "entity": "symptom",
+                        "value": "menggelengkan kepala",
+                        "start": 8,
+                        "end": 30
+                    }
+                ],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Segera konsultasikan ke dokter hewan. Sementara itu, hindari membersihkan telinga secara mendalam tanpa panduan dokter.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_060",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Anjing saya tampak lesu dan tidak mau bergerak. Apa penyebabnya?",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "anjing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "lesu",
+                        "start": 12,
+                        "end": 16
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "tidak mau bergerak",
+                        "start": 21,
+                        "end": 39
+                    }
+                ],
+                "intent": "Mendiagnosis Gejala"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Gejala ini dapat menunjukkan cedera atau masalah kesehatan seperti Artritis. Apakah ada tanda lain seperti pembengkakan di kakinya?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Tidak ada pembengkakan, hanya terlihat lemah.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Batasi pergerakannya dan segera bawa ke dokter hewan untuk pemeriksaan lanjutan.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_061",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Kucing saya muntah dan lesu. Apa yang harus saya lakukan?",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "kucing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "muntah",
+                        "start": 12,
+                        "end": 18
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "lesu",
+                        "start": 23,
+                        "end": 27
+                    }
+                ],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Muntah dan lesu dapat menunjukkan Hepatic Lipidosis. Berikan makanan yang mudah dicerna dan hindari memberikan makanan berminyak.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Bagaimana memastikan kucing tetap makan?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Cobalah berikan makanan basah beraroma kuat untuk merangsang nafsu makannya. Jika tidak mau makan, segera konsultasikan ke dokter hewan.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_062",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Anjing saya batuk kering dan sulit bernapas. Apa langkah pertama yang harus diambil?",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "anjing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "batuk kering",
+                        "start": 12,
+                        "end": 24
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "sulit bernapas",
+                        "start": 29,
+                        "end": 44
+                    }
+                ],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Batuk kering dapat menjadi tanda Kennel Cough. Pastikan anjing Anda berada di tempat hangat dan bebas debu.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Apa saya perlu memberinya obat batuk khusus?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Hanya gunakan obat yang direkomendasikan dokter hewan. Hindari pemberian obat manusia karena dapat berbahaya untuk anjing.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_063",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Kucing saya terlihat lesu dan kehilangan nafsu makan. Apa yang harus saya lakukan?",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "kucing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "lesu",
+                        "start": 12,
+                        "end": 16
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "kehilangan nafsu makan",
+                        "start": 21,
+                        "end": 45
+                    }
+                ],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Lesu dan kehilangan nafsu makan dapat menjadi tanda Feline Leukemia Virus (FeLV). Pastikan kucing tetap terhidrasi.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Bagaimana cara memastikan kucing minum air?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Gunakan air bersih dan segar. Anda juga bisa mencoba memberikan air melalui spuit dengan hati-hati jika kucing tidak mau minum sendiri.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_064",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Anjing saya terlihat pincang setelah bermain. Apa langkah awal yang harus dilakukan?",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "anjing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "pincang",
+                        "start": 19,
+                        "end": 26
+                    }
+                ],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Pincang dapat disebabkan oleh cedera ringan. Kompres area yang terlihat sakit dengan kain dingin selama 10-15 menit.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Kapan saya perlu membawa anjing ke dokter?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Jika pincang tidak membaik dalam 1-2 hari atau ada pembengkakan, segera konsultasikan ke dokter hewan.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_065",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Kucing saya sering bersin dan hidungnya berair. Apa yang harus saya lakukan?",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "kucing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "bersin",
+                        "start": 12,
+                        "end": 18
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "hidung berair",
+                        "start": 23,
+                        "end": 37
+                    }
+                ],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Bersin dan hidung berair bisa menjadi tanda infeksi saluran pernapasan. Pastikan lingkungan kucing tetap hangat dan bebas dari debu.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Apakah perlu memberikan obat tertentu?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Hindari memberikan obat tanpa rekomendasi dokter hewan. Jika gejala berlanjut lebih dari 2 hari, segera konsultasikan.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_066",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Anjing saya muntah setelah makan. Apa langkah awal yang harus dilakukan?",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "anjing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "muntah",
+                        "start": 12,
+                        "end": 18
+                    }
+                ],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Muntah setelah makan dapat disebabkan oleh gangguan pencernaan. Hindari memberi makanan berat selama 12 jam dan pastikan anjing tetap terhidrasi.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Kapan saya perlu khawatir?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Jika muntah terus berlanjut atau disertai diare, segera bawa anjing Anda ke dokter hewan untuk pemeriksaan lebih lanjut.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_067",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Kucing saya terlihat gelisah dan tidak mau buang air kecil. Apa yang harus saya lakukan?",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "kucing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "gelisah",
+                        "start": 12,
+                        "end": 19
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "tidak mau buang air kecil",
+                        "start": 24,
+                        "end": 50
+                    }
+                ],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Gejala ini dapat menunjukkan FLUTD. Pastikan kucing tetap tenang dan jauhkan dari stres. Segera konsultasikan ke dokter hewan.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Apakah saya perlu memberikan air lebih banyak?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Ya, berikan lebih banyak air bersih untuk membantu menghidrasi kucing Anda. Anda juga bisa mencoba makanan basah yang kaya cairan.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_068",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Anjing saya terlihat lemas dan tidak mau makan. Apa yang harus saya lakukan?",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "anjing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "lemas",
+                        "start": 12,
+                        "end": 17
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "tidak mau makan",
+                        "start": 22,
+                        "end": 38
+                    }
+                ],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Lemas dan tidak mau makan dapat menjadi tanda masalah kesehatan serius. Cobalah berikan makanan basah dengan aroma kuat untuk merangsang nafsu makan.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Apa yang harus dilakukan jika dia tetap tidak mau makan?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Jika tetap tidak mau makan selama lebih dari 24 jam, segera bawa anjing Anda ke dokter hewan untuk pemeriksaan lebih lanjut.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_069",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Kucing saya terlihat sangat lemas dan nafasnya cepat. Apa yang harus saya lakukan?",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "kucing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "lemas",
+                        "start": 20,
+                        "end": 25
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "nafas cepat",
+                        "start": 30,
+                        "end": 42
+                    }
+                ],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Nafas cepat dan lemas dapat menjadi tanda masalah pernapasan serius seperti asma. Segera jauhkan dari debu atau iritasi dan konsultasikan ke dokter hewan.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Apakah saya perlu membawanya langsung ke klinik?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Ya, segera bawa kucing Anda ke dokter hewan jika pernapasannya tetap cepat atau kondisi semakin memburuk.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_070",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Anjing saya sering muntah dan tidak mau minum. Apa yang harus dilakukan?",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "anjing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "muntah",
+                        "start": 12,
+                        "end": 18
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "tidak mau minum",
+                        "start": 23,
+                        "end": 39
+                    }
+                ],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Pastikan anjing Anda tetap terhidrasi. Jika tidak mau minum, cobalah memberikan cairan elektrolit dengan spuit.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Apakah perlu memberinya makanan saat ini?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Hindari pemberian makanan berat saat anjing masih muntah. Tunggu 12 jam sebelum mencoba makanan ringan seperti nasi atau ayam rebus tanpa bumbu.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_071",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Kucing saya sering menggaruk tubuhnya hingga berdarah. Apa yang harus saya lakukan?",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "kucing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "menggaruk tubuh",
+                        "start": 12,
+                        "end": 28
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "berdarah",
+                        "start": 35,
+                        "end": 43
+                    }
+                ],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Menggaruk hingga berdarah dapat disebabkan oleh alergi atau parasit. Bersihkan area yang terluka dengan antiseptik ringan.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Apakah saya perlu memberinya obat?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Hanya berikan obat yang direkomendasikan oleh dokter hewan. Hindari penggunaan obat manusia pada kucing Anda.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_072",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Anjing saya terlihat lelah dan pincang setelah bermain. Apa langkah pertama yang harus dilakukan?",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "anjing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "lelah",
+                        "start": 12,
+                        "end": 17
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "pincang",
+                        "start": 22,
+                        "end": 29
+                    }
+                ],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Pincang setelah bermain dapat disebabkan oleh cedera ringan. Kompres kaki dengan kain dingin untuk mengurangi pembengkakan.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Kapan saya harus membawa ke dokter?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Jika pincang berlangsung lebih dari 48 jam atau ada pembengkakan signifikan, segera bawa ke dokter hewan untuk pemeriksaan.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_073",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Kucing saya terlihat lesu dan tidak mau bergerak. Apa yang harus dilakukan?",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "kucing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "lesu",
+                        "start": 12,
+                        "end": 16
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "tidak mau bergerak",
+                        "start": 21,
+                        "end": 39
+                    }
+                ],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Kucing yang lesu dan tidak mau bergerak bisa jadi mengalami masalah kesehatan serius seperti anemia. Pastikan dia tetap terhidrasi.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Apa yang bisa saya lakukan sementara sebelum ke dokter?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Berikan makanan tinggi protein yang mudah dicerna. Jika tidak ada perbaikan dalam 24 jam, segera bawa ke dokter hewan.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_074",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Anjing saya sering menggaruk bagian telinganya. Apa yang harus saya lakukan?",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "anjing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "menggaruk telinga",
+                        "start": 12,
+                        "end": 30
+                    }
+                ],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Menggaruk telinga bisa disebabkan oleh infeksi atau tungau. Bersihkan telinga dengan kapas yang dibasahi cairan pembersih khusus telinga.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Kapan saya perlu ke dokter?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Jika anjing terus menggaruk atau ada cairan berbau tidak sedap dari telinga, segera konsultasikan ke dokter hewan.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_075",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Kucing saya sering batuk dan terdengar mengi. Apa langkah awalnya?",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "kucing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "batuk",
+                        "start": 12,
+                        "end": 17
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "mengi",
+                        "start": 31,
+                        "end": 36
+                    }
+                ],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Batuk dan mengi bisa menjadi tanda asma atau infeksi pernapasan. Pastikan kucing Anda berada di lingkungan bebas debu dan alergen.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Apa yang perlu dilakukan jika gejala tidak membaik?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Jika gejala tidak membaik dalam 24 jam atau semakin parah, segera bawa kucing Anda ke dokter hewan untuk pemeriksaan lanjutan.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_076",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Anjing saya tampak lemas dan tidak mau bermain seperti biasa. Apa yang harus saya lakukan?",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "anjing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "lemas",
+                        "start": 12,
+                        "end": 17
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "tidak mau bermain",
+                        "start": 22,
+                        "end": 40
+                    }
+                ],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Lemas dan tidak mau bermain bisa menjadi tanda kelelahan atau masalah kesehatan lain. Pastikan anjing mendapatkan istirahat yang cukup.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Bagaimana cara memastikan dia nyaman saat istirahat?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Buat tempat tidur yang nyaman di area tenang dan pastikan suhu ruangan tidak terlalu dingin atau panas. Jika gejala berlanjut, konsultasikan ke dokter hewan.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_077",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Kucing saya terlihat kehilangan nafsu makan dan sering muntah. Apa yang harus saya lakukan?",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "kucing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "kehilangan nafsu makan",
+                        "start": 19,
+                        "end": 43
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "muntah",
+                        "start": 52,
+                        "end": 58
+                    }
+                ],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Kehilangan nafsu makan dan muntah dapat menjadi tanda gangguan pencernaan. Berikan makanan ringan seperti ayam rebus tanpa bumbu.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Apa yang harus dilakukan jika dia tidak mau makan?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Jika tetap tidak mau makan lebih dari 24 jam, segera bawa kucing Anda ke dokter hewan untuk pemeriksaan lebih lanjut.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_078",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Anjing saya terus menggelengkan kepala dan ada cairan di telinganya. Apa yang harus saya lakukan?",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "anjing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "menggelengkan kepala",
+                        "start": 12,
+                        "end": 32
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "cairan di telinga",
+                        "start": 41,
+                        "end": 58
+                    }
+                ],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Cairan di telinga dan menggelengkan kepala dapat menjadi tanda infeksi telinga. Bersihkan telinga dengan cairan khusus yang direkomendasikan dokter hewan.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Apakah ini memerlukan tindakan segera?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Ya, segera bawa anjing Anda ke dokter hewan untuk pemeriksaan lebih lanjut. Infeksi telinga bisa menyebabkan komplikasi jika tidak ditangani.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_079",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Kucing saya terlihat gelisah dan matanya terus berair. Apa yang harus saya lakukan?",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "kucing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "gelisah",
+                        "start": 12,
+                        "end": 19
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "mata berair",
+                        "start": 24,
+                        "end": 36
+                    }
+                ],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Mata yang berair dan gelisah dapat menjadi tanda konjungtivitis. Bersihkan mata dengan kapas yang dibasahi air hangat.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Apakah saya perlu membawa dia ke dokter?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Jika gejala tidak membaik dalam 1-2 hari, segera konsultasikan ke dokter hewan untuk pemeriksaan dan pengobatan lebih lanjut.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_080",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Anjing saya terlihat sangat lesu dan enggan makan. Apa langkah pertama yang harus diambil?",
+                "entities": [
+                    {
+                        "entity": "animal",
+                        "value": "anjing",
+                        "start": 0,
+                        "end": 6
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "lesu",
+                        "start": 20,
+                        "end": 24
+                    },
+                    {
+                        "entity": "symptom",
+                        "value": "enggan makan",
+                        "start": 29,
+                        "end": 41
+                    }
+                ],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Lesu dan enggan makan dapat menjadi tanda masalah kesehatan serius. Coba tawarkan makanan ringan seperti nasi atau ayam rebus tanpa bumbu.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "user",
+                "utterance": "Apa yang harus dilakukan jika dia tetap tidak mau makan?",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Jika enggan makan lebih dari 24 jam, segera bawa anjing Anda ke dokter hewan untuk pemeriksaan lebih lanjut.",
+                "entities": [],
+                "intent": "Rekomendasi Penanganan Awal"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_081",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Halo, saya butuh bantuan.",
+                "entities": [],
+                "intent": "Greeting"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Halo! Apa yang bisa saya bantu hari ini?",
+                "entities": [],
+                "intent": "Greeting"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_082",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Terima kasih sudah membantu saya.",
+                "entities": [],
+                "intent": "Thanks"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Sama-sama! Saya senang bisa membantu Anda.",
+                "entities": [],
+                "intent": "Thanks"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_083",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Selamat pagi, apakah Anda bisa membantu saya?",
+                "entities": [],
+                "intent": "Greeting"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Selamat pagi! Tentu saja, apa yang bisa saya bantu?",
+                "entities": [],
+                "intent": "Greeting"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_084",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Terima kasih atas sarannya, sangat membantu.",
+                "entities": [],
+                "intent": "Thanks"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Sama-sama! Saya senang mendengar saran saya bermanfaat untuk Anda.",
+                "entities": [],
+                "intent": "Thanks"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_085",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Hai, ada yang bisa membantu saya soal hewan peliharaan?",
+                "entities": [],
+                "intent": "Greeting"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Hai! Tentu, saya di sini untuk membantu Anda. Apa yang Anda butuhkan?",
+                "entities": [],
+                "intent": "Greeting"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_086",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Terima kasih banyak atas bantuannya!",
+                "entities": [],
+                "intent": "Thanks"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Dengan senang hati! Jangan ragu untuk menghubungi saya lagi jika Anda membutuhkan bantuan.",
+                "entities": [],
+                "intent": "Thanks"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_087",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Halo, saya punya pertanyaan tentang kesehatan hewan.",
+                "entities": [],
+                "intent": "Greeting"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Halo! Silakan ajukan pertanyaan Anda, saya akan mencoba membantu sebisa saya.",
+                "entities": [],
+                "intent": "Greeting"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_088",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Terima kasih banyak, saya sangat menghargainya.",
+                "entities": [],
+                "intent": "Thanks"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Tentu, saya senang bisa membantu Anda. Semoga semuanya berjalan dengan baik!",
+                "entities": [],
+                "intent": "Thanks"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_089",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Hai, saya ingin konsultasi soal anjing saya.",
+                "entities": [],
+                "intent": "Greeting"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Hai! Tentu saja, beri tahu saya masalahnya, dan saya akan membantu sebisa saya.",
+                "entities": [],
+                "intent": "Greeting"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_090",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Terima kasih sudah membantu saya dengan pertanyaan ini.",
+                "entities": [],
+                "intent": "Thanks"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Sama-sama! Jangan ragu untuk menghubungi saya lagi jika Anda memiliki pertanyaan lainnya.",
+                "entities": [],
+                "intent": "Thanks"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_091",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Hai.",
+                "entities": [],
+                "intent": "Greeting"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Hai! Tentu saja, beri tahu saya masalahnya, dan saya akan membantu sebisa saya.",
+                "entities": [],
+                "intent": "Greeting"
+            }
+        ]
+    },
+    {
+        "conversation_id": "conv_092",
+        "turns": [
+            {
+                "speaker": "user",
+                "utterance": "Halo.",
+                "entities": [],
+                "intent": "Greeting"
+            },
+            {
+                "speaker": "bot",
+                "utterance": "Halo! apa ada masalah dengan anjing atau kucing anda.",
+                "entities": [],
+                "intent": "Greeting"
+            }
+        ]
+    }
+
+
+]
+
