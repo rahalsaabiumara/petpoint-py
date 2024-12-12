@@ -1,6 +1,6 @@
-# 🐾 Panduan Menjalankan Chatbot Hewan dengan Docker Compose
+# Panduan Menjalankan Chatbot Hewan dengan Docker Compose
 
-## 📋 Daftar Isi
+## Daftar Isi
 - [🔧 Prasyarat](#prasyarat)
 - [📥 Mengkloning Repository](#mengkloning-repository)
 - [🚀 Menjalankan Aplikasi dengan Docker Compose](#menjalankan-aplikasi-dengan-docker-compose)
@@ -16,7 +16,7 @@ Sebelum memulai, pastikan Anda telah menginstal hal-hal berikut di sistem Anda:
 - **Docker**: Platform untuk menjalankan aplikasi dalam kontainer. Panduan instalasi dapat ditemukan di [dokumentasi resmi Docker](https://docs.docker.com/get-docker/).
 - **Docker Compose**: Alat untuk menjalankan aplikasi multi-kontainer. Panduan instalasi dapat ditemukan di [dokumentasi resmi Docker Compose](https://docs.docker.com/compose/install/).
 
-## 📥 Mengkloning Repository {#mengkloning-repository}
+## Mengkloning Repository
 
 1. **Kloning Repository**:
 
@@ -32,8 +32,7 @@ Sebelum memulai, pastikan Anda telah menginstal hal-hal berikut di sistem Anda:
    cd petpoint-py
    ```
 
-## 🚀 Menjalankan Aplikasi dengan Docker Compose {#menjalankan-aplikasi-dengan-docker-compose}
-
+## Menjalankan Aplikasi dengan Docker Compose
 1. **Membangun dan Menjalankan Kontainer**:
 
    Jalankan perintah berikut di root direktori proyek Anda untuk membangun image Docker dan menjalankan kontainer:
@@ -59,7 +58,7 @@ Sebelum memulai, pastikan Anda telah menginstal hal-hal berikut di sistem Anda:
    docker-compose ps
    ```
 
-## 🔍 Memeriksa Status Kontainer {#memeriksa-status-kontainer}
+## Memeriksa Status Kontainer
 
 1. **Melihat Log Kontainer Chatbot**:
 
@@ -79,8 +78,7 @@ Sebelum memulai, pastikan Anda telah menginstal hal-hal berikut di sistem Anda:
 
    Catatan: Tekan `Ctrl + C` untuk menghentikan tampilan log real-time.
 
-## 📡 Mengakses API {#mengakses-api}
-
+## Mengakses API
 Aplikasi chatbot Anda sekarang berjalan pada port 5000. Berikut adalah cara mengakses endpoint yang tersedia:
 
 1. **Health Check**
@@ -124,7 +122,7 @@ Aplikasi chatbot Anda sekarang berjalan pada port 5000. Berikut adalah cara meng
    }
    ```
 
-## 🧹 Menghentikan dan Menghapus Kontainer {#menghentikan-dan-menghapus-kontainer}
+## Menghentikan dan Menghapus Kontainer
 
 1. **Menghentikan Kontainer**:
 
@@ -144,7 +142,7 @@ Aplikasi chatbot Anda sekarang berjalan pada port 5000. Berikut adalah cara meng
 
    Peringatan: Flag `-v` akan menghapus volume yang terkait, yang dapat mengakibatkan kehilangan data yang disimpan di volume tersebut.
 
-## 📂 Struktur Proyek {#struktur-proyek}
+## Struktur Proyek
 
 ```
 ├── Dockerfile
