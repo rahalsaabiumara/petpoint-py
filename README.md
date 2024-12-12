@@ -1,12 +1,13 @@
 # 🐾 Panduan Menjalankan Chatbot Hewan dengan Docker Compose
 
 ## 📋 Daftar Isi
-- [🔧 Prasyarat](#🔧-prasyarat)
-- [📥 Mengkloning Repository](#📥-mengkloning-repository)
-- [🚀 Menjalankan Aplikasi dengan Docker Compose](#🚀-menjalankan-aplikasi-dengan-docker-compose)
-- [🔍 Memeriksa Status Kontainer](#🔍-memeriksa-status-kontainer)
-- [📡 Mengakses API](#📡-mengakses-api)
-- [🧹 Menghentikan dan Menghapus Kontainer](#🧹-menghentikan-dan-menghapus-kontainer)
+- [🔧 Prasyarat](#prasyarat)
+- [📥 Mengkloning Repository](#mengkloning-repository)
+- [🚀 Menjalankan Aplikasi dengan Docker Compose](#menjalankan-aplikasi-dengan-docker-compose)
+- [🔍 Memeriksa Status Kontainer](#memeriksa-status-kontainer)
+- [📡 Mengakses API](#mengakses-api)
+- [🧹 Menghentikan dan Menghapus Kontainer](#menghentikan-dan-menghapus-kontainer)
+- [📂 Struktur Proyek](#struktur-proyek)
 
 ## 🔧 Prasyarat
 
@@ -112,7 +113,7 @@ Aplikasi chatbot Anda sekarang berjalan pada port 5000. Berikut adalah cara meng
    Contoh Request menggunakan curl:
 
    ```bash
-   curl -X POST http://localhost:5000/chat/         -H "Content-Type: application/json"         -d '{"text": "Halo, saya melihat seekor kucing sakit di depan rumah.", "session_id": "12345"}'
+   curl -X POST http://localhost:5000/chat/        -H "Content-Type: application/json"        -d '{"text": "Halo, saya melihat seekor kucing sakit di depan rumah.", "session_id": "12345"}'
    ```
 
    Contoh Response:
@@ -143,7 +144,7 @@ Aplikasi chatbot Anda sekarang berjalan pada port 5000. Berikut adalah cara meng
 
    Peringatan: Flag `-v` akan menghapus volume yang terkait, yang dapat mengakibatkan kehilangan data yang disimpan di volume tersebut.
 
-## Struktur Proyek
+## 📂 Struktur Proyek
 
 ```
 ├── Dockerfile
